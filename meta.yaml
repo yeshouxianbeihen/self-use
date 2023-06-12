@@ -22,7 +22,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"hysteria","name":"hysteria","server":"152.69.208.195","port":18209,"auth_str":"d50157","alpn":"['h3']","up":10,"down":50,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":20971520,"recv_window_conn":5242880,"disable_mtu_discovery":true}
+  - {"type":"hysteria","name":"hysteria","server":"152.69.208.195","port":18209,"auth_str":"d50157",alpn: ['h3'],"up":10,"down":50,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":20971520,"recv_window_conn":5242880,"disable_mtu_discovery":true}
   - {"type":"vless","name":"default_name_1","server":"170.178.195.250","port":51073,"uuid":"e9cdb9d7-3588-44e6-cd84-54effe892cb1","skip-cert-verify":true,"network":"tcp","udp":true}
   - {"type":"vless","name":"default_name_2","server":"170.178.195.200","port":16378,"uuid":"8e68408f-9289-4059-ae22-2d8bfbae33e6","skip-cert-verify":true,"network":"tcp","udp":true}
 proxy-groups:
