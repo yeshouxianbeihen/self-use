@@ -23,7 +23,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {"type":"vless","name":"v2","server":"18.179.201.172","port":803,"uuid":"cd25b5cd-dfb4-4350-c2f4-c9150243276a","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"hysteria","name":"hysteria","server":"152.69.208.195","port":18209,"auth_str":"d50157","alpn":"h3","protocol":"udp","up":10,"down":50,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":20971520,"recv_window_conn":5242880,"disable_mtu_discovery":true}
+  - {"type":"hysteria","name":"hysteria","server":"152.69.208.195","port":18209,"auth_str":"d50157",alpn: ['h3'],"protocol":"udp","up":10,"down":50,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":20971520,"recv_window_conn":5242880,"disable_mtu_discovery":true}
   - {"type":"vless","name":"Cloudflare_PageEdge_随机Anycast","server":"cdn.chigua.tk","port":443,"uuid":"b0138d55-a493-4dc3-9932-c6f0391707c1","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edge.020770.xyz","ws-opts":{"path":"/vless/b0138d55-a493-4dc3-9932-c6f0391707c1?ed=2048","headers":{"host":"edge.020770.xyz"}}}
   - {"type":"vless","name":"Cloudflare_PageEdge","server":"dns.ton.org","port":443,"uuid":"b0138d55-a493-4dc3-9932-c6f0391707c1","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edge.020770.xyz","ws-opts":{"path":"/vless/b0138d55-a493-4dc3-9932-c6f0391707c1?ed=2048","headers":{"host":"edge.020770.xyz"}}}
   - {"type":"vless","name":"default_name_1","server":"170.178.195.250","port":51073,"uuid":"e9cdb9d7-3588-44e6-cd84-54effe892cb1","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
