@@ -4,8 +4,6 @@ vless://b0138d55-a493-4dc3-9932-c6f0391707c1@cdn.chigua.tk:443?encryption=none&s
 vless://b0138d55-a493-4dc3-9932-c6f0391707c1@dns.ton.org:443?encryption=none&security=tls&sni=edge.020770.xyz&type=ws&host=edge.020770.xyz&path=%2fvless%2fb0138d55-a493-4dc3-9932-c6f0391707c1%3fed%3d2048#Cloudflare_PageEdge
 vless://e9cdb9d7-3588-44e6-cd84-54effe892cb1@170.178.195.250:51073?encryption=none&security=none&type=tcp&headerType=none
 vless://8e68408f-9289-4059-ae22-2d8bfbae33e6@170.178.195.200:16378?encryption=none&security=none&type=tcp&headerType=none
-vless://17f9a7fe-2ea6-4548-ace4-3721fd85ad97@51.210.97.224:48066?flow=xtls-rprx-vision&encryption=none&security=reality&sni=www.amd.com&type=tcp&headerType=none#OVH+FRANCE+2023%2f06%2f11
-vless://811d4b6b-266f-4acd-f926-bea2c023c067@109.123.234.197:47521?flow=xtls-rprx-vision&encryption=none&security=reality&sni=www.vodafone.com&type=tcp&headerType=none#%f0%9f%87%b8%f0%9f%87%acby%40aries_init
 vless://b0138d55-a493-4dc3-9932-c6f0391707c1@visa.cn:8443?encryption=none&security=tls&sni=telegram24.vip&type=ws&host=telegram24.vip&path=%2f%3fed%3d2048#%40aries_init-Edge%e5%a4%87%e7%94%a8_TLS
-vless://b0138d55-a493-4dc3-9932-c6f0391707c1@visa.cn:2082?encryption=none&security=none&type=ws&host=malaysiadj.card-937.workers.dev&path=%2f%3fed%3d2048#%40aries_init-Edge%e5%a4%87%e7%94%a8_NoTLS
+
 
