@@ -51,8 +51,8 @@ proxy-groups:
       - '@aries_init-Edge备用_NoTLS'
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
+    url: http://www.apple.com/library/test/success.html
+    interval: 250
     tolerance: 50
     proxies:
       - v2
@@ -67,7 +67,7 @@ proxy-groups:
       - '@aries_init-Edge备用_NoTLS'
   - name: 🔯 故障转移
     type: fallback
-    url: http://www.gstatic.com/generate_204
+    url: http://www.apple.com/library/test/success.html
     interval: 180
     proxies:
       - v2
