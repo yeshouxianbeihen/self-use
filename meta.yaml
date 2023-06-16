@@ -23,19 +23,16 @@ dns:
     - tls://dns.google:853
 proxies:
   - {"type":"hysteria","name":"hysteria","server":"152.69.208.195","port":18209,"auth_str":"d50157",alpn: ['h3'],"protocol":"udp","up":10,"down":50,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":20971520,"recv_window_conn":5242880,"disable_mtu_discovery":true}
-  - {"type":"vless","name":"default_name_1","server":"170.178.195.250","port":51073,"uuid":"e9cdb9d7-3588-44e6-cd84-54effe892cb1","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"vless","name":"default_name_2","server":"170.178.195.200","port":16378,"uuid":"8e68408f-9289-4059-ae22-2d8bfbae33e6","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
+  - {"type":"vless","name":"default","server":"170.178.195.200","port":16378,"uuid":"8e68408f-9289-4059-ae22-2d8bfbae33e6","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
   - {"type":"vless","name":"Cloudflare_PageEdge","server":"dns.ton.org","port":443,"uuid":"b0138d55-a493-4dc3-9932-c6f0391707c1","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edge.020770.xyz","ws-opts":{"path":"/vless/b0138d55-a493-4dc3-9932-c6f0391707c1?ed=2048","headers":{"host":"edge.020770.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
-      - 🔯 故障转移
       - DIRECT
       - hysteria
-      - default_name_1
-      - default_name_2
+      - default
       - Cloudflare_PageEdge
   - name: ♻️ 自动选择
     type: url-test
@@ -44,17 +41,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - hysteria
-      - default_name_1
-      - default_name_2
-      - Cloudflare_PageEdge
-  - name: 🔯 故障转移
-    type: fallback
-    url: http://www.apple.com/library/test/success.html
-    interval: 180
-    proxies:
-      - hysteria
-      - default_name_1
-      - default_name_2
+      - default
       - Cloudflare_PageEdge
   - name: 🎯 全球直连
     type: select
@@ -73,10 +60,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🔯 故障转移
       - hysteria
-      - default_name_1
-      - default_name_2
+      - default
       - Cloudflare_PageEdge
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
