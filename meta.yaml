@@ -1,11 +1,3 @@
-#
-#-------------------------------------------------------------#
-#  创建者：https://v2rayse.com
-#  创建时间：2023-06-13 15:29:29
-#  模版：ACL4SSR_Mini_Fallback
-#  节点数量：4
-#-------------------------------------------------------------#
-#
 mixed-port: 7890
 allow-lan: true
 mode: Rule
@@ -23,7 +15,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {"type":"hysteria","name":"hysteria","server":"152.69.208.195","port":18209,"auth_str":"d50157",alpn: ['h3'],"protocol":"udp","up":10,"down":50,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":20971520,"recv_window_conn":5242880,"disable_mtu_discovery":true}
-  - {"type":"vless","name":"default","server":"170.178.195.200","port":16378,"uuid":"8e68408f-9289-4059-ae22-2d8bfbae33e6","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
+  - {"name":"GPT","type":"ss","server":"hz.dwdad.buzz","port":23839,"password":"9YjA2nIPU1","cipher":"aes-256-gcm"}
   - {"type":"vless","name":"Cloudflare_PageEdge","server":"dns.ton.org","port":443,"uuid":"b0138d55-a493-4dc3-9932-c6f0391707c1","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edge.020770.xyz","ws-opts":{"path":"/vless/b0138d55-a493-4dc3-9932-c6f0391707c1?ed=2048","headers":{"host":"edge.020770.xyz"}}}
 proxy-groups:
   - name: 🚀 节点选择
@@ -32,7 +24,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - hysteria
-      - default
+      - GPT
       - Cloudflare_PageEdge
   - name: ♻️ 自动选择
     type: url-test
@@ -41,7 +33,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - hysteria
-      - default
       - Cloudflare_PageEdge
   - name: 🎯 全球直连
     type: select
@@ -61,7 +52,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - hysteria
-      - default
+      - GPT
       - Cloudflare_PageEdge
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
