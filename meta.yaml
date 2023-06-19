@@ -17,30 +17,6 @@ proxies:
   - {"type":"hysteria","name":"hysteria","server":"152.69.208.195","port":18209,"auth_str":"d50157",alpn: ['h3'],"protocol":"udp","up":10,"down":50,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":20971520,"recv_window_conn":5242880,"disable_mtu_discovery":true}
   - {"name":"GPT","type":"ss","server":"hz.dwdad.buzz","port":23839,"password":"9YjA2nIPU1","cipher":"aes-256-gcm"}
   - {"type":"vless","name":"Cloudflare_PageEdge","server":"dns.ton.org","port":443,"uuid":"b0138d55-a493-4dc3-9932-c6f0391707c1","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edge.020770.xyz","ws-opts":{"path":"/vless/b0138d55-a493-4dc3-9932-c6f0391707c1?ed=2048","headers":{"host":"edge.020770.xyz"}}}
-  - name: "H1"
-    type: hysteria
-    server: 64.110.98.143
-    port: 47839
-    auth_str: 5b8cfc
-    alpn:
-      - h3
-    protocol: udp
-    up: 60
-    down: 300
-    sni: www.bing.com
-    skip-cert-verify: true
-  - name: "H2"
-    type: hysteria
-    server: 138.2.59.26
-    port: 48607
-    auth_str: 25fe4f
-    alpn:
-      - h3
-    protocol: udp
-    up: 60
-    down: 300
-    sni: www.bing.com
-    skip-cert-verify: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -48,8 +24,6 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
       - hysteria
-      - H1
-      - H2
       - GPT
       - Cloudflare_PageEdge
   - name: ♻️ 自动选择
@@ -78,8 +52,6 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
       - hysteria
-      - H1
-      - H2
       - GPT
       - Cloudflare_PageEdge
 rules:
