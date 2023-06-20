@@ -30,7 +30,7 @@ proxy-groups:
   - name: ⚡ ‍低延迟
     type: url-test
     url: http://www.apple.com/library/test/success.html
-    interval: 200
+    interval: 30
     tolerance: 50
     proxies:
       - '1'
