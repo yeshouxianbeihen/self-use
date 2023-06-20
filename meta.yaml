@@ -14,7 +14,8 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"hysteria","name":"hysteria","server":"152.69.208.195","port":18209,"auth_str":"d50157",alpn: ['h3'],"protocol":"udp","up":10,"down":50,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":20971520,"recv_window_conn":5242880,"disable_mtu_discovery":true}
+  - {"type":"hysteria","name":"1","server":"64.110.98.143","port":47839,"auth_str":"5b8cfc",alpn: ['h3'],"protocol":"udp","up":60,"down":300,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":125829120,"recv_window_conn":31457280,"disable_mtu_discovery":true}
+  - {"type":"hysteria","name":"2","server":"138.2.59.26","port":17915,"auth_str":"4069c9",alpn: ['h3'],"protocol":"udp","up":60,"down":300,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":125829120,"recv_window_conn":31457280,"disable_mtu_discovery":true}
   - {"type":"ss","name":"月中转","server":"hz.dwdad.buzz","port":23839,"cipher":"aes-256-gcm","password":"9YjA2nIPU1"}
 proxy-groups:
   - name: ✈️ ‍起飞
@@ -23,20 +24,23 @@ proxy-groups:
       - ⚡ ‍低延迟
       - 👆🏻 ‍指定
       - DIRECT
-      - hysteria
+      - '1'
+      - '2'
       - 月中转
   - name: ⚡ ‍低延迟
     type: url-test
     url: http://www.apple.com/library/test/success.html
     interval: 200
     tolerance: 50
-    proxies: 
-      - hysteria
+    proxies:
+      - '1'
+      - '2'
       - 月中转
   - name: 👆🏻 ‍指定
     type: select
-    proxies: 
-      - hysteria
+    proxies:
+      - '1'
+      - '2'
       - 月中转
   - name: 🛩️ ‍墙内
     type: select
