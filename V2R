@@ -14,54 +14,43 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"trojan","name":"IL_speednode_0040","server":"149.50.70.83","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"8DKJ|TG频道内随机时间更新订阅地址","server":"149.50.70.87","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"8DKJ|tg频道:@Zyw_Channel_1","server":"149.50.70.76","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0020","server":"nl3.nigirocloud.com","port":4003,"password":"PlF471nxneY0YevI","udp":true,"skip-cert-verify":true,"sni":"nl3.nigirocloud.com"}
   - {"type":"trojan","name":"IL_speednode_0018","server":"149.50.70.107","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"SG_speednode_0075","server":"hk2.gsjc.cfd","port":443,"password":"f5075d6e-c65b-4133-b4fa-301ce5ba1fa9","udp":true,"skip-cert-verify":true,"sni":"20-212-60-88.nhost.00cdn.com"}
+  - {"type":"trojan","name":"8DKJ|TG频道内随机时间更新订阅地址","server":"149.50.70.87","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
   - {"type":"trojan","name":"8DKJ|tg频道:@Zyw_Channel_2","server":"149.50.70.72","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0016","server":"149.50.71.155","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"TW_speednode_0085","server":"hinet2.downloadvip.cfd","port":443,"password":"b5f3d27d-c4bc-491d-ac6e-1a3429165639","udp":true,"skip-cert-verify":true,"sni":"download.xn--mes358a9urctx.com"}
+  - {"type":"trojan","name":"8DKJ|tg频道:@Zyw_Channel_1","server":"149.50.70.76","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0040","server":"149.50.70.83","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
   - {"type":"trojan","name":"以色列_0620026","server":"149.50.71.120","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"美国_06206411","server":"163.123.192.153","port":443,"password":"b5f3d27d-c4bc-491d-ac6e-1a3429165639","udp":true,"skip-cert-verify":true,"sni":"download.xn--mes358a9urctx.com"}
-  - {"type":"trojan","name":"IL_speednode_0017","server":"149.50.71.164","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"美国_0620032","server":"163.123.192.157","port":443,"password":"f5075d6e-c65b-4133-b4fa-301ce5ba1fa9","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"美国_06206412","server":"163.123.192.156","port":443,"password":"b5f3d27d-c4bc-491d-ac6e-1a3429165639","udp":true,"skip-cert-verify":true,"sni":"download.xn--mes358a9urctx.com"}
-  - {"type":"trojan","name":"美国_06201702","server":"163.123.192.154","port":443,"password":"b5f3d27d-c4bc-491d-ac6e-1a3429165639","udp":true,"skip-cert-verify":true,"sni":"download.xn--mes358a9urctx.com"}
-  - {"type":"trojan","name":"美国_06206410","server":"163.123.192.155","port":443,"password":"b5f3d27d-c4bc-491d-ac6e-1a3429165639","udp":true,"skip-cert-verify":true,"sni":"download.xn--mes358a9urctx.com"}
-  - {"type":"trojan","name":"YD|tg频道:@Zyw_Channel","server":"163.123.192.60","port":443,"password":"746b6774-e899-4205-a097-3da55c26f5b3","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0062","server":"149.50.66.124","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0032","server":"149.50.75.76","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"以色列_0620031","server":"149.50.67.151","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0015","server":"149.50.71.124","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0025","server":"149.50.69.127","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"US_speednode_0097","server":"64.42.182.226","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"trojan","name":"8DKJ|www.zyw.asia+ZYW免费节点_1","server":"149.50.92.74","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0043","server":"149.50.75.90","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0023","server":"149.50.75.197","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0046","server":"149.50.75.89","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"NO_speednode_0068","server":"185.90.61.153","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"trojan","name":"CF|www.zyw.asia+ZYW免费节点","server":"149.50.89.108","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"CF|tg频道:@Zyw_Channel","server":"149.50.66.99","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0021","server":"149.50.75.81","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0037","server":"de2.nigirocloud.com","port":4003,"password":"PlF471nxneY0YevI","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0039","server":"149.50.92.76","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
   - {"type":"trojan","name":"CN_speednode_0005","server":"us-08-cz2dg2.ferryhwp8ebm.com","port":7308,"password":"97d557df-6f6a-5bad-9483-600aba02da3a","udp":true,"skip-cert-verify":true,"sni":"us-08-650.duuk.info"}
-  - {"type":"trojan","name":"IL_speednode_0050","server":"149.50.92.75","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0015","server":"149.50.71.124","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0017","server":"149.50.71.164","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0025","server":"149.50.69.127","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0016","server":"149.50.71.155","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"CF|tg频道:@Zyw_Channel","server":"149.50.66.99","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0022","server":"149.50.75.170","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0036","server":"149.50.75.79","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0030","server":"149.50.66.127","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0062","server":"149.50.66.124","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"以色列_0620031","server":"149.50.67.151","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"8DKJ|www.zyw.asia+ZYW免费节点_1","server":"149.50.92.74","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0032","server":"149.50.75.76","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"nl3.barbecuepie.com:4003@trojan@US","server":"nl3.barbecuepie.com","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0045","server":"149.50.75.104","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0046","server":"149.50.75.89","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0039","server":"149.50.92.76","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"ss","name":"NO_speednode_0068","server":"185.90.61.153","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
+  - {"type":"trojan","name":"以色列_0620027","server":"149.50.92.73","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0021","server":"149.50.75.81","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"CF|www.zyw.asia+ZYW免费节点","server":"149.50.89.108","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0037","server":"de2.nigirocloud.com","port":4003,"password":"PlF471nxneY0YevI","udp":true,"skip-cert-verify":true}
   - {"type":"ss","name":"TR_speednode_0083","server":"45.89.52.66","port":9005,"cipher":"aes-256-cfb","password":"ZET59LF6DvCC8KVt"}
   - {"type":"trojan","name":"8DKJ|@Zyw_Channel","server":"149.50.75.105","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"TR_speednode_0081","server":"45.89.52.66","port":9000,"cipher":"aes-256-cfb","password":"a3GFYt36Sm82Vys9"}
-  - {"type":"trojan","name":"IL_speednode_0030","server":"149.50.66.127","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0045","server":"149.50.75.104","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0036","server":"149.50.75.79","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0034","server":"149.50.89.78","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IL_speednode_0050","server":"149.50.92.75","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
   - {"type":"ss","name":"TR_speednode_0082","server":"45.89.52.66","port":9001,"cipher":"aes-256-cfb","password":"UkXRsXvR6buDMG2Y"}
-  - {"type":"trojan","name":"nl3.barbecuepie.com:4003@trojan@US","server":"nl3.barbecuepie.com","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"KE_speednode_0064","server":"62.12.116.66","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"trojan","name":"IL_speednode_0020","server":"nl3.nigirocloud.com","port":4003,"password":"PlF471nxneY0YevI","udp":true,"skip-cert-verify":true,"sni":"nl3.nigirocloud.com"}
+  - {"type":"trojan","name":"IL_speednode_0043","server":"149.50.75.90","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
   - {"type":"trojan","name":"IL_speednode_0031","server":"149.50.89.110","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"以色列_0620027","server":"149.50.92.73","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"IL_speednode_0022","server":"149.50.75.170","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
+  - {"type":"ss","name":"TR_speednode_0081","server":"45.89.52.66","port":9000,"cipher":"aes-256-cfb","password":"a3GFYt36Sm82Vys9"}
+  - {"type":"trojan","name":"IL_speednode_0023","server":"149.50.75.197","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
   - {"type":"trojan","name":"8DKJ|www.zyw.asia+ZYW免费节点_2","server":"149.50.77.108","port":4003,"password":"TJCfE7Mx2YcA8kX8zg","udp":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
@@ -69,54 +58,43 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - IL_speednode_0040
-      - 8DKJ|TG频道内随机时间更新订阅地址
-      - 8DKJ|tg频道:@Zyw_Channel_1
+      - IL_speednode_0020
       - IL_speednode_0018
-      - SG_speednode_0075
+      - 8DKJ|TG频道内随机时间更新订阅地址
       - 8DKJ|tg频道:@Zyw_Channel_2
-      - IL_speednode_0016
-      - TW_speednode_0085
+      - 8DKJ|tg频道:@Zyw_Channel_1
+      - IL_speednode_0040
       - 以色列_0620026
-      - 美国_06206411
-      - IL_speednode_0017
-      - 美国_0620032
-      - 美国_06206412
-      - 美国_06201702
-      - 美国_06206410
-      - YD|tg频道:@Zyw_Channel
-      - IL_speednode_0062
-      - IL_speednode_0032
-      - 以色列_0620031
-      - IL_speednode_0015
-      - IL_speednode_0025
-      - US_speednode_0097
-      - 8DKJ|www.zyw.asia+ZYW免费节点_1
-      - IL_speednode_0043
-      - IL_speednode_0023
-      - IL_speednode_0046
-      - NO_speednode_0068
-      - CF|www.zyw.asia+ZYW免费节点
-      - CF|tg频道:@Zyw_Channel
-      - IL_speednode_0021
-      - IL_speednode_0037
-      - IL_speednode_0039
       - CN_speednode_0005
-      - IL_speednode_0050
+      - IL_speednode_0015
+      - IL_speednode_0017
+      - IL_speednode_0025
+      - IL_speednode_0016
+      - CF|tg频道:@Zyw_Channel
+      - IL_speednode_0022
+      - IL_speednode_0036
+      - IL_speednode_0030
+      - IL_speednode_0062
+      - 以色列_0620031
+      - 8DKJ|www.zyw.asia+ZYW免费节点_1
+      - IL_speednode_0032
+      - nl3.barbecuepie.com:4003@trojan@US
+      - IL_speednode_0045
+      - IL_speednode_0046
+      - IL_speednode_0039
+      - NO_speednode_0068
+      - 以色列_0620027
+      - IL_speednode_0021
+      - CF|www.zyw.asia+ZYW免费节点
+      - IL_speednode_0037
       - TR_speednode_0083
       - 8DKJ|@Zyw_Channel
-      - TR_speednode_0081
-      - IL_speednode_0030
-      - IL_speednode_0045
-      - IL_speednode_0036
-      - IL_speednode_0034
+      - IL_speednode_0050
       - TR_speednode_0082
-      - nl3.barbecuepie.com:4003@trojan@US
-      - KE_speednode_0064
-      - IL_speednode_0020
+      - IL_speednode_0043
       - IL_speednode_0031
-      - 以色列_0620027
-      - IL_speednode_0022
+      - TR_speednode_0081
+      - IL_speednode_0023
       - 8DKJ|www.zyw.asia+ZYW免费节点_2
   - name: ♻️ 自动选择
     type: url-test
@@ -124,54 +102,43 @@ proxy-groups:
     interval: 150
     tolerance: 50
     proxies:
-      - IL_speednode_0040
-      - 8DKJ|TG频道内随机时间更新订阅地址
-      - 8DKJ|tg频道:@Zyw_Channel_1
+      - IL_speednode_0020
       - IL_speednode_0018
-      - SG_speednode_0075
+      - 8DKJ|TG频道内随机时间更新订阅地址
       - 8DKJ|tg频道:@Zyw_Channel_2
-      - IL_speednode_0016
-      - TW_speednode_0085
+      - 8DKJ|tg频道:@Zyw_Channel_1
+      - IL_speednode_0040
       - 以色列_0620026
-      - 美国_06206411
-      - IL_speednode_0017
-      - 美国_0620032
-      - 美国_06206412
-      - 美国_06201702
-      - 美国_06206410
-      - YD|tg频道:@Zyw_Channel
-      - IL_speednode_0062
-      - IL_speednode_0032
-      - 以色列_0620031
-      - IL_speednode_0015
-      - IL_speednode_0025
-      - US_speednode_0097
-      - 8DKJ|www.zyw.asia+ZYW免费节点_1
-      - IL_speednode_0043
-      - IL_speednode_0023
-      - IL_speednode_0046
-      - NO_speednode_0068
-      - CF|www.zyw.asia+ZYW免费节点
-      - CF|tg频道:@Zyw_Channel
-      - IL_speednode_0021
-      - IL_speednode_0037
-      - IL_speednode_0039
       - CN_speednode_0005
-      - IL_speednode_0050
+      - IL_speednode_0015
+      - IL_speednode_0017
+      - IL_speednode_0025
+      - IL_speednode_0016
+      - CF|tg频道:@Zyw_Channel
+      - IL_speednode_0022
+      - IL_speednode_0036
+      - IL_speednode_0030
+      - IL_speednode_0062
+      - 以色列_0620031
+      - 8DKJ|www.zyw.asia+ZYW免费节点_1
+      - IL_speednode_0032
+      - nl3.barbecuepie.com:4003@trojan@US
+      - IL_speednode_0045
+      - IL_speednode_0046
+      - IL_speednode_0039
+      - NO_speednode_0068
+      - 以色列_0620027
+      - IL_speednode_0021
+      - CF|www.zyw.asia+ZYW免费节点
+      - IL_speednode_0037
       - TR_speednode_0083
       - 8DKJ|@Zyw_Channel
-      - TR_speednode_0081
-      - IL_speednode_0030
-      - IL_speednode_0045
-      - IL_speednode_0036
-      - IL_speednode_0034
+      - IL_speednode_0050
       - TR_speednode_0082
-      - nl3.barbecuepie.com:4003@trojan@US
-      - KE_speednode_0064
-      - IL_speednode_0020
+      - IL_speednode_0043
       - IL_speednode_0031
-      - 以色列_0620027
-      - IL_speednode_0022
+      - TR_speednode_0081
+      - IL_speednode_0023
       - 8DKJ|www.zyw.asia+ZYW免费节点_2
   - name: 🎯 全球直连
     type: select
@@ -190,54 +157,43 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - IL_speednode_0040
-      - 8DKJ|TG频道内随机时间更新订阅地址
-      - 8DKJ|tg频道:@Zyw_Channel_1
+      - IL_speednode_0020
       - IL_speednode_0018
-      - SG_speednode_0075
+      - 8DKJ|TG频道内随机时间更新订阅地址
       - 8DKJ|tg频道:@Zyw_Channel_2
-      - IL_speednode_0016
-      - TW_speednode_0085
+      - 8DKJ|tg频道:@Zyw_Channel_1
+      - IL_speednode_0040
       - 以色列_0620026
-      - 美国_06206411
-      - IL_speednode_0017
-      - 美国_0620032
-      - 美国_06206412
-      - 美国_06201702
-      - 美国_06206410
-      - YD|tg频道:@Zyw_Channel
-      - IL_speednode_0062
-      - IL_speednode_0032
-      - 以色列_0620031
-      - IL_speednode_0015
-      - IL_speednode_0025
-      - US_speednode_0097
-      - 8DKJ|www.zyw.asia+ZYW免费节点_1
-      - IL_speednode_0043
-      - IL_speednode_0023
-      - IL_speednode_0046
-      - NO_speednode_0068
-      - CF|www.zyw.asia+ZYW免费节点
-      - CF|tg频道:@Zyw_Channel
-      - IL_speednode_0021
-      - IL_speednode_0037
-      - IL_speednode_0039
       - CN_speednode_0005
-      - IL_speednode_0050
+      - IL_speednode_0015
+      - IL_speednode_0017
+      - IL_speednode_0025
+      - IL_speednode_0016
+      - CF|tg频道:@Zyw_Channel
+      - IL_speednode_0022
+      - IL_speednode_0036
+      - IL_speednode_0030
+      - IL_speednode_0062
+      - 以色列_0620031
+      - 8DKJ|www.zyw.asia+ZYW免费节点_1
+      - IL_speednode_0032
+      - nl3.barbecuepie.com:4003@trojan@US
+      - IL_speednode_0045
+      - IL_speednode_0046
+      - IL_speednode_0039
+      - NO_speednode_0068
+      - 以色列_0620027
+      - IL_speednode_0021
+      - CF|www.zyw.asia+ZYW免费节点
+      - IL_speednode_0037
       - TR_speednode_0083
       - 8DKJ|@Zyw_Channel
-      - TR_speednode_0081
-      - IL_speednode_0030
-      - IL_speednode_0045
-      - IL_speednode_0036
-      - IL_speednode_0034
+      - IL_speednode_0050
       - TR_speednode_0082
-      - nl3.barbecuepie.com:4003@trojan@US
-      - KE_speednode_0064
-      - IL_speednode_0020
+      - IL_speednode_0043
       - IL_speednode_0031
-      - 以色列_0620027
-      - IL_speednode_0022
+      - TR_speednode_0081
+      - IL_speednode_0023
       - 8DKJ|www.zyw.asia+ZYW免费节点_2
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
@@ -3645,4 +3601,3 @@ rules:
   - IP-CIDR,101.199.196.0/22,🎯 全球直连,no-resolve
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
-
