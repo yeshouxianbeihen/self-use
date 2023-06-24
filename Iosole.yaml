@@ -16,31 +16,22 @@ dns:
 proxies:
   - {"type":"vmess","name":"香港(soledad)","ws-opts":{"path":"/ace795f9-22e6-4659-89c3-d0cc2b0626be"},"server":"ifhubery.tk","port":"443","uuid":"ace795f9-22e6-4659-89c3-d0cc2b0626be","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"香港共享(soledad)","ws-opts":{"path":"/53ea22fb-fa9a-4bdf-c8bc-d843f8ee0fa9"},"server":"ifhubery.tk","port":"443","uuid":"53ea22fb-fa9a-4bdf-c8bc-d843f8ee0fa9","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"香港(soledaday)","ws-opts":{"path":"/e17aad92-cf83-4a70-b532-3acd69a80f49"},"server":"npsx.tk","port":"443","uuid":"e17aad92-cf83-4a70-b532-3acd69a80f49","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"香港共享(soledaday)","ws-opts":{"path":"/5541d12e-4676-4a52-edfe-68db8dfdded4"},"server":"npsx.tk","port":"443","uuid":"5541d12e-4676-4a52-edfe-68db8dfdded4","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"香港soledad-cft1","ws-opts":{"path":"/soledaday","headers":{"host":"d11dodqyl9dk4d.cloudfront.net"}},"server":"13.35.18.29","port":"443","uuid":"745c1225-b078-46e5-96de-ecdf511ea03b","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"香港soledad-cft1","ws-opts":{"path":"/soledaday","headers":{"host":"d11dodqyl9dk4d.cloudfront.net"}},"server":"18.155.69.110","port":"443","uuid":"745c1225-b078-46e5-96de-ecdf511ea03b","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"香港soledad-cft2","ws-opts":{"path":"/soledadays","headers":{"host":"dholvw1mz4ci7.cloudfront.net"}},"server":"52.84.251.197","port":"443","uuid":"89a83b8b-df1e-4582-dd59-e9992483ddec","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"香港soledad-cft3","ws-opts":{"path":"/soledadx","headers":{"host":"d18fitbyn2l830.cloudfront.net"}},"server":"13.224.250.236","port":"443","uuid":"2db91eb7-28d7-497b-b6a2-ac3de6f8ea51","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"香港soledad-cft4","ws-opts":{"path":"/soledads","headers":{"host":"d2wqyhnzfoyqbh.cloudfront.net"}},"server":"52.84.229.40","port":"443","uuid":"0b6dff02-2817-457f-bd94-da6b4dae920b","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"香港soledad-cft5","ws-opts":{"path":"/ifsoledad","headers":{"host":"d22zcqyuz8n7qp.cloudfront.net"}},"server":"54.230.150.75","port":"443","uuid":"c1959b16-35ba-4747-e7e8-167f36709cc0","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"香港soledad-cft6","ws-opts":{"path":"/soledadr","headers":{"host":"d2jx7l919i067f.cloudfront.net"}},"server":"13.35.16.213","port":"443","uuid":"777660e8-b481-4af0-8853-a18626c16428","alterId":"0","cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"香港soledad-cft7","ws-opts":{"path":"/ifsoledadr","headers":{"host":"d9pcry4txih81.cloudfront.net"}},"server":"13.224.255.140","port":"443","uuid":"94c5cae1-f150-4220-d18a-1bbab8a688b0","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"香港soledaday-cft1","ws-opts":{"path":"/soledaday","headers":{"host":"d2ytgmn85b2cgf.cloudfront.net"}},"server":"52.84.151.32","port":"443","uuid":"3598e7b5-8df4-4f14-befa-c88661391591","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"香港soledaday-cft2","ws-opts":{"path":"/soledadays","headers":{"host":"d1jr8qqw8enjly.cloudfront.net"}},"server":"13.35.17.86","port":"443","uuid":"a74d38c6-50fd-4bb0-e732-ea894384acb3","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"香港soledaday-cft3","ws-opts":{"path":"/soledadx","headers":{"host":"d2qr1z22xvxbmp.cloudfront.net"}},"server":"52.84.228.172","port":"443","uuid":"b50631d4-2bc8-487b-eaae-ae4480d7f9ec","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"香港soledaday-cft4","ws-opts":{"path":"/soledads","headers":{"host":"dii8296hnosjx.cloudfront.net"}},"server":"13.227.252.53","port":"443","uuid":"ed8fbca3-c33b-4ff4-f1e5-b2b76a0e9033","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"香港soledaday-cft5","ws-opts":{"path":"/ifsoledad","headers":{"host":"d2kprhnoz5skic.cloudfront.net"}},"server":"13.35.9.140","port":"443","uuid":"88b8d90a-50dd-41ac-f586-ace3ea4c879a","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"香港soledaday-cft6","ws-opts":{"path":"/soledadr","headers":{"host":"d2onzea6xq12mu.cloudfront.net"}},"server":"13.35.8.207","port":"443","uuid":"f7f7f546-a9c2-4be9-8d81-d48ea94a5c97","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"香港soledaday-cft7","ws-opts":{"path":"/ifsoledadr","headers":{"host":"d1iiajcbkfv7ed.cloudfront.net"}},"server":"13.35.21.29","port":"443","uuid":"89378669-440b-40c6-eb18-9fe0ff1e6cc1","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇭🇰香港(soledaday)","ws-opts":{"path":"/e17aad92-cf83-4a70-b532-3acd69a80f49"},"server":"npsx.tk","port":443,"uuid":"e17aad92-cf83-4a70-b532-3acd69a80f49","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇭🇰香港共享(soledaday)","ws-opts":{"path":"/5541d12e-4676-4a52-edfe-68db8dfdded4"},"server":"npsx.tk","port":443,"uuid":"5541d12e-4676-4a52-edfe-68db8dfdded4","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"🇭🇰香港soledaday-cft1","ws-opts":{"path":"/soledaday"},"server":"npsx.tk","port":44724,"uuid":"3598e7b5-8df4-4f14-befa-c88661391591","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"🇭🇰香港soledaday-cft2","ws-opts":{"path":"/soledadays"},"server":"npsx.tk","port":22014,"uuid":"a74d38c6-50fd-4bb0-e732-ea894384acb3","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"🇭🇰香港soledaday-cft3","ws-opts":{"path":"/soledadx"},"server":"npsx.tk","port":33279,"uuid":"b50631d4-2bc8-487b-eaae-ae4480d7f9ec","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"🇭🇰香港soledaday-cft4","ws-opts":{"path":"/soledads"},"server":"npsx.tk","port":22849,"uuid":"ed8fbca3-c33b-4ff4-f1e5-b2b76a0e9033","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"🇭🇰香港soledaday-cft5","ws-opts":{"path":"/ifsoledad"},"server":"npsx.tk","port":14838,"uuid":"88b8d90a-50dd-41ac-f586-ace3ea4c879a","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"🇭🇰香港soledaday-cft6","ws-opts":{"path":"/soledadr"},"server":"npsx.tk","port":29430,"uuid":"f7f7f546-a9c2-4be9-8d81-d48ea94a5c97","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"🇭🇰香港soledaday-cft7","ws-opts":{"path":"/ifsoledadr"},"server":"npsx.tk","port":34165,"uuid":"89378669-440b-40c6-eb18-9fe0ff1e6cc1","alterId":0,"cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"香港(soledaday)","ws-opts":{"path":"/7a774785-4400-4b51-9c3e-fa536f7eb54e"},"server":"ifhugo.tk","port":"443","uuid":"7a774785-4400-4b51-9c3e-fa536f7eb54e","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"香港共享(soledaday)","ws-opts":{"path":"/9d27cad0-5bf1-4233-c892-a857e419d643"},"server":"ifhugo.tk","port":"443","uuid":"9d27cad0-5bf1-4233-c892-a857e419d643","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"香港soledaday-cft1","ws-opts":{"path":"/soledaday","headers":{"host":"d4wmcuosb7vm7.cloudfront.net"}},"server":"52.84.151.32","port":"443","uuid":"4e5f0eb5-07b1-46f5-c731-2fa97ec5eeea","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"香港soledaday-cft2","ws-opts":{"path":"/soledadays","headers":{"host":"d1ssdosskrikgo.cloudfront.net"}},"server":"13.35.17.86","port":"443","uuid":"5a5e428a-6ac8-4f3a-c250-1b877b6870f5","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"香港soledaday-cft3","ws-opts":{"path":"/soledadx","headers":{"host":"d3bhsmtnbpcp94.cloudfront.net"}},"server":"52.84.228.172","port":"443","uuid":"2ec9b068-7f19-4a90-c389-479d611efac6","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"香港soledaday-cft4","ws-opts":{"path":"/soledads","headers":{"host":"d1h296l722haz1.cloudfront.net"}},"server":"52.84.151.97","port":"443","uuid":"8caa52a9-7100-4077-a918-a76ed1a62457","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"香港soledaday-cft5","ws-opts":{"path":"/ifsoledad","headers":{"host":"d15orw0mcelhx2.cloudfront.net"}},"server":"13.35.9.140","port":"443","uuid":"30bf76b5-3ec6-4bce-d111-0db92627ccdf","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"香港soledaday-cft6","ws-opts":{"path":"/soledadr","headers":{"host":"d257xi5xr6icid.cloudfront.net"}},"server":"13.35.8.207","port":"443","uuid":"20c6a2cd-a155-4971-c847-e99fd123b9e0","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"香港soledaday-cft7","ws-opts":{"path":"/ifsoledadr","headers":{"host":"d270mydi1ure7u.cloudfront.net"}},"server":"13.35.21.29","port":"443","uuid":"2ad688c2-f87d-48d0-bb98-89a19a540d69","alterId":"0","cipher":"auto","network":"ws","tls":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -49,8 +40,6 @@ proxy-groups:
       - DIRECT
       - 香港(soledad)
       - 香港共享(soledad)
-      - 香港(soledaday)
-      - 香港共享(soledaday)
       - 香港soledad-cft1
       - 香港soledad-cft2
       - 香港soledad-cft3
@@ -58,6 +47,8 @@ proxy-groups:
       - 香港soledad-cft5
       - 香港soledad-cft6
       - 香港soledad-cft7
+      - 香港(soledaday)
+      - 香港共享(soledaday)
       - 香港soledaday-cft1
       - 香港soledaday-cft2
       - 香港soledaday-cft3
@@ -65,15 +56,6 @@ proxy-groups:
       - 香港soledaday-cft5
       - 香港soledaday-cft6
       - 香港soledaday-cft7
-      - 🇭🇰香港(soledaday)
-      - 🇭🇰香港共享(soledaday)
-      - 🇭🇰香港soledaday-cft1
-      - 🇭🇰香港soledaday-cft2
-      - 🇭🇰香港soledaday-cft3
-      - 🇭🇰香港soledaday-cft4
-      - 🇭🇰香港soledaday-cft5
-      - 🇭🇰香港soledaday-cft6
-      - 🇭🇰香港soledaday-cft7
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.apple.com/library/test/success.html
@@ -82,8 +64,6 @@ proxy-groups:
     proxies:
       - 香港(soledad)
       - 香港共享(soledad)
-      - 香港(soledaday)
-      - 香港共享(soledaday)
       - 香港soledad-cft1
       - 香港soledad-cft2
       - 香港soledad-cft3
@@ -91,6 +71,8 @@ proxy-groups:
       - 香港soledad-cft5
       - 香港soledad-cft6
       - 香港soledad-cft7
+      - 香港(soledaday)
+      - 香港共享(soledaday)
       - 香港soledaday-cft1
       - 香港soledaday-cft2
       - 香港soledaday-cft3
@@ -98,15 +80,6 @@ proxy-groups:
       - 香港soledaday-cft5
       - 香港soledaday-cft6
       - 香港soledaday-cft7
-      - 🇭🇰香港(soledaday)
-      - 🇭🇰香港共享(soledaday)
-      - 🇭🇰香港soledaday-cft1
-      - 🇭🇰香港soledaday-cft2
-      - 🇭🇰香港soledaday-cft3
-      - 🇭🇰香港soledaday-cft4
-      - 🇭🇰香港soledaday-cft5
-      - 🇭🇰香港soledaday-cft6
-      - 🇭🇰香港soledaday-cft7
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -126,8 +99,6 @@ proxy-groups:
       - ♻️ 自动选择
       - 香港(soledad)
       - 香港共享(soledad)
-      - 香港(soledaday)
-      - 香港共享(soledaday)
       - 香港soledad-cft1
       - 香港soledad-cft2
       - 香港soledad-cft3
@@ -135,6 +106,8 @@ proxy-groups:
       - 香港soledad-cft5
       - 香港soledad-cft6
       - 香港soledad-cft7
+      - 香港(soledaday)
+      - 香港共享(soledaday)
       - 香港soledaday-cft1
       - 香港soledaday-cft2
       - 香港soledaday-cft3
@@ -142,15 +115,6 @@ proxy-groups:
       - 香港soledaday-cft5
       - 香港soledaday-cft6
       - 香港soledaday-cft7
-      - 🇭🇰香港(soledaday)
-      - 🇭🇰香港共享(soledaday)
-      - 🇭🇰香港soledaday-cft1
-      - 🇭🇰香港soledaday-cft2
-      - 🇭🇰香港soledaday-cft3
-      - 🇭🇰香港soledaday-cft4
-      - 🇭🇰香港soledaday-cft5
-      - 🇭🇰香港soledaday-cft6
-      - 🇭🇰香港soledaday-cft7
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
