@@ -14,99 +14,84 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"ss","name":"IT_speednode_0088","server":"5.188.226.187","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"trojan","name":"VN_speednode_0230","server":"202.158.244.220","port":443,"password":"19537db7-b002-4a60-8f91-59461bf56c3b","udp":true,"skip-cert-verify":true,"sni":"dl.kgvn.garenanow.com"}
-  - {"type":"ss","name":"PL_speednode_0120","server":"5.188.108.10","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"GB英国2+2.3MB/s","server":"85.159.214.65","port":41997,"cipher":"chacha20-ietf-poly1305","password":"4857406435"}
-  - {"type":"vmess","name":"SG_speednode_0153","ws-opts":{"path":"/","headers":{"host":"starlightboostor.top"}},"server":"starlightboostor.top","port":"50000","uuid":"24fc7d27-3ad3-4592-af6e-2220cab6047a","alterId":"0","cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"TW台湾23.4MB/s","server":"tw99-hinet.mynodes001.one","port":"445","uuid":"5f04de84-6b7e-3564-82c2-d2a998002629","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"CF|www.zyw.asia+ZYW免费节点","server":"cfvn3.cloudfast.vn","port":443,"password":"19537db7-b002-4a60-8f91-59461bf56c3b","udp":true,"skip-cert-verify":true,"sni":"cfvn3.cloudfast.vn"}
-  - {"type":"trojan","name":"SG_speednode_0122","server":"pqawssg01.gsjc.cfd","port":443,"password":"b2ac46e0-cf21-4dd3-bf99-60eeb18a1cee","udp":true,"skip-cert-verify":true,"sni":"pqawssg01.gsjc.cfd"}
-  - {"type":"trojan","name":"SG_speednode_0149","server":"pqawssg01.gsjc.cfd","port":443,"password":"b2ac46e0-cf21-4dd3-bf99-60eeb18a1cee","udp":true,"skip-cert-verify":true,"sni":"18-140-66-207.nhost.00cdn.com"}
-  - {"type":"trojan","name":"VN_speednode_0116","server":"202.158.244.220","port":443,"password":"19537db7-b002-4a60-8f91-59461bf56c3b","udp":true,"skip-cert-verify":true,"sni":"dl.kgvn.garenanow.com"}
-  - {"type":"vmess","name":"8DKJ|tg频道:@Zyw_Channel_1","server":"tw99-hinet.mynodes001.one","port":"445","uuid":"5f04de84-6b7e-3564-82c2-d2a998002629","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"KR_speednode_0101","server":"kr1.jb7ueoq73.xyz","port":80,"password":"a21e5380-7711-4c6d-af44-e6210e5436af","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"8DKJ|tg频道:@Zyw_Channel_2","server":"us-08-cz2dg2.ferryhwp8ebm.com","port":7308,"password":"97d557df-6f6a-5bad-9483-600aba02da3a","udp":true,"skip-cert-verify":true,"sni":"us-08-cz2dg2.ferryhwp8ebm.com"}
-  - {"type":"ss","name":"UA_speednode_0161","server":"5.188.6.8","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"vmess","name":"_TW_台湾_2_17@6_1","server":"tw99-hinet.mynodes001.one","port":"445","uuid":"5f04de84-6b7e-3564-82c2-d2a998002629","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"IT_speednode_0076","server":"5.188.226.187","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"trojan","name":"VN_speednode_0235","server":"103.173.255.21","port":443,"password":"99507239-7601-4c76-afda-18be311b0bec","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"VN_speednode_0208","server":"cfvn3.cloudfast.vn","port":443,"password":"19537db7-b002-4a60-8f91-59461bf56c3b","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"GB英国4+18.3MB/s","server":"85.159.214.65","port":41997,"cipher":"chacha20-ietf-poly1305","password":"4857406435"}
-  - {"type":"ss","name":"GB_speednode_0013","server":"121.127.46.147","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"trojan","name":"VN_speednode_0209","server":"103.173.255.21","port":443,"password":"99507239-7601-4c76-afda-18be311b0bec","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"VN_speednode_0234","server":"103.173.255.234","port":443,"password":"19ba270c-8ffc-4d3b-a526-01f51b0416f9","udp":true,"skip-cert-verify":true}
   - {"type":"ss","name":"JP_speednode_0091","server":"54.199.83.239","port":2333,"cipher":"aes-256-cfb","password":"doub.io"}
-  - {"type":"vmess","name":"TW台湾4368.7KB/s","server":"tw99-hinet.mynodes001.one","port":"445","uuid":"5f04de84-6b7e-3564-82c2-d2a998002629","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"JP_speednode_0079","server":"3.112.73.233","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"ssr","name":"_SG_新加坡_8_3@20","server":"sg-am3.eqsunshine.com","port":32001,"protocol":"origin","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","password":"3g0dHlKME"}
+  - {"type":"trojan","name":"VN_speednode_0234","server":"103.173.255.234","port":443,"password":"19ba270c-8ffc-4d3b-a526-01f51b0416f9","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","name":"HK香港3","server":"47.kccic2pa.xyz","port":"50047","uuid":"7271b7c6-f38e-45b8-8998-5a068d3b3086","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ssr","name":"_FR_法国_1_2@28","server":"fr-am1-5.eqsunshine.com","port":8181,"protocol":"origin","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","password":"RcfVcDzzB"}
+  - {"type":"trojan","name":"CN_speednode_0001","server":"s.steamdownload.top","port":36641,"password":"fedf39da-23df-4f2b-9673-baeae83b9529","udp":true,"skip-cert-verify":true,"sni":"s.steamdownload.top"}
+  - {"type":"trojan","name":"KR_speednode_0101","server":"kr1.jb7ueoq73.xyz","port":80,"password":"a21e5380-7711-4c6d-af44-e6210e5436af","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"KR_speednode_0021","server":"3.38.178.191","port":11525,"password":"75WJZnNuyW","udp":true,"skip-cert-verify":true}
+  - {"type":"ss","name":"IT_speednode_0088","server":"5.188.226.187","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
+  - {"type":"trojan","name":"VN_speednode_0235","server":"103.173.255.21","port":443,"password":"99507239-7601-4c76-afda-18be311b0bec","udp":true,"skip-cert-verify":true}
   - {"type":"trojan","name":"HK_speednode_0017","server":"hk7.yihaobao.xyz","port":443,"password":"bb72bd02-b929-405c-b274-e0ff95141df4","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"_TW_台湾_2_17@6_2","server":"tw99-hinet.mynodes001.one","port":"445","uuid":"5f04de84-6b7e-3564-82c2-d2a998002629","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"trojan","name":"KR_speednode_0022","server":"43.201.227.242","port":10023,"password":"e0db16b0-964e-4f14-8b67-cd0d627da872","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","name":"JP_speednode_0018","ws-opts":{"path":"/","headers":{"host":"zf2.678889.xyz"}},"server":"zf2.678889.xyz","port":"20010","uuid":"f5caf864-d3e4-435a-9e26-06af13c23419","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"trojan","name":"US_speednode_0061","server":"64.64.225.221","port":38712,"password":"lyfOBMxydA","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"VN_speednode_0208","server":"cfvn3.cloudfast.vn","port":443,"password":"19537db7-b002-4a60-8f91-59461bf56c3b","udp":true,"skip-cert-verify":true}
+  - {"type":"vmess","name":"FR_speednode_0009","ws-opts":{"path":"/","headers":{"host":"135.125.28.64"}},"server":"135.125.28.64","port":"17710","uuid":"a6956d50-c48a-404e-aacd-1267e46c6dbe","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"trojan","name":"VN_speednode_0230","server":"202.158.244.220","port":443,"password":"19537db7-b002-4a60-8f91-59461bf56c3b","udp":true,"skip-cert-verify":true,"sni":"dl.kgvn.garenanow.com"}
+  - {"type":"ss","name":"UA_speednode_0154","server":"5.188.6.8","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
+  - {"type":"trojan","name":"US_speednode_0062","server":"66.112.216.121","port":40317,"password":"AA3uvT5KGT","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"IN_speednode_0014","server":"152.70.74.66","port":443,"password":"d906afe5-7c3c-4ddc-aaa4-61c154a82e5e","udp":true,"skip-cert-verify":true}
+  - {"type":"ss","name":"PL_speednode_0148","server":"5.188.108.10","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
+  - {"type":"vmess","name":"JP_speednode_0020","ws-opts":{"path":"/","headers":{"host":"zf2.678889.xyz"}},"server":"zf2.678889.xyz","port":"20013","uuid":"f5caf864-d3e4-435a-9e26-06af13c23419","alterId":"0","cipher":"auto","network":"ws"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - IT_speednode_0088
-      - VN_speednode_0230
-      - PL_speednode_0120
-      - GB英国2+2.3MB/s
-      - SG_speednode_0153
-      - TW台湾23.4MB/s
-      - CF|www.zyw.asia+ZYW免费节点
-      - SG_speednode_0122
-      - SG_speednode_0149
-      - VN_speednode_0116
-      - 8DKJ|tg频道:@Zyw_Channel_1
-      - KR_speednode_0101
-      - 8DKJ|tg频道:@Zyw_Channel_2
-      - UA_speednode_0161
-      - _TW_台湾_2_17@6_1
-      - IT_speednode_0076
-      - VN_speednode_0235
-      - VN_speednode_0208
-      - GB英国4+18.3MB/s
-      - GB_speednode_0013
-      - VN_speednode_0209
-      - VN_speednode_0234
       - JP_speednode_0091
-      - TW台湾4368.7KB/s
-      - JP_speednode_0079
+      - _SG_新加坡_8_3@20
+      - VN_speednode_0234
+      - HK香港3
+      - _FR_法国_1_2@28
+      - CN_speednode_0001
+      - KR_speednode_0101
+      - KR_speednode_0021
+      - IT_speednode_0088
+      - VN_speednode_0235
       - HK_speednode_0017
-      - _TW_台湾_2_17@6_2
+      - KR_speednode_0022
+      - JP_speednode_0018
+      - US_speednode_0061
+      - VN_speednode_0208
+      - FR_speednode_0009
+      - VN_speednode_0230
+      - UA_speednode_0154
+      - US_speednode_0062
+      - IN_speednode_0014
+      - PL_speednode_0148
+      - JP_speednode_0020
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.apple.com/library/test/success.html
     interval: 150
     tolerance: 50
     proxies:
-      - IT_speednode_0088
-      - VN_speednode_0230
-      - PL_speednode_0120
-      - GB英国2+2.3MB/s
-      - SG_speednode_0153
-      - TW台湾23.4MB/s
-      - CF|www.zyw.asia+ZYW免费节点
-      - SG_speednode_0122
-      - SG_speednode_0149
-      - VN_speednode_0116
-      - 8DKJ|tg频道:@Zyw_Channel_1
-      - KR_speednode_0101
-      - 8DKJ|tg频道:@Zyw_Channel_2
-      - UA_speednode_0161
-      - _TW_台湾_2_17@6_1
-      - IT_speednode_0076
-      - VN_speednode_0235
-      - VN_speednode_0208
-      - GB英国4+18.3MB/s
-      - GB_speednode_0013
-      - VN_speednode_0209
-      - VN_speednode_0234
       - JP_speednode_0091
-      - TW台湾4368.7KB/s
-      - JP_speednode_0079
+      - _SG_新加坡_8_3@20
+      - VN_speednode_0234
+      - HK香港3
+      - _FR_法国_1_2@28
+      - CN_speednode_0001
+      - KR_speednode_0101
+      - KR_speednode_0021
+      - IT_speednode_0088
+      - VN_speednode_0235
       - HK_speednode_0017
-      - _TW_台湾_2_17@6_2
+      - KR_speednode_0022
+      - JP_speednode_0018
+      - US_speednode_0061
+      - VN_speednode_0208
+      - FR_speednode_0009
+      - VN_speednode_0230
+      - UA_speednode_0154
+      - US_speednode_0062
+      - IN_speednode_0014
+      - PL_speednode_0148
+      - JP_speednode_0020
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -124,33 +109,28 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - IT_speednode_0088
-      - VN_speednode_0230
-      - PL_speednode_0120
-      - GB英国2+2.3MB/s
-      - SG_speednode_0153
-      - TW台湾23.4MB/s
-      - CF|www.zyw.asia+ZYW免费节点
-      - SG_speednode_0122
-      - SG_speednode_0149
-      - VN_speednode_0116
-      - 8DKJ|tg频道:@Zyw_Channel_1
-      - KR_speednode_0101
-      - 8DKJ|tg频道:@Zyw_Channel_2
-      - UA_speednode_0161
-      - _TW_台湾_2_17@6_1
-      - IT_speednode_0076
-      - VN_speednode_0235
-      - VN_speednode_0208
-      - GB英国4+18.3MB/s
-      - GB_speednode_0013
-      - VN_speednode_0209
-      - VN_speednode_0234
       - JP_speednode_0091
-      - TW台湾4368.7KB/s
-      - JP_speednode_0079
+      - _SG_新加坡_8_3@20
+      - VN_speednode_0234
+      - HK香港3
+      - _FR_法国_1_2@28
+      - CN_speednode_0001
+      - KR_speednode_0101
+      - KR_speednode_0021
+      - IT_speednode_0088
+      - VN_speednode_0235
       - HK_speednode_0017
-      - _TW_台湾_2_17@6_2
+      - KR_speednode_0022
+      - JP_speednode_0018
+      - US_speednode_0061
+      - VN_speednode_0208
+      - FR_speednode_0009
+      - VN_speednode_0230
+      - UA_speednode_0154
+      - US_speednode_0062
+      - IN_speednode_0014
+      - PL_speednode_0148
+      - JP_speednode_0020
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
