@@ -14,63 +14,21 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"ss","name":"PL_speednode_0148","server":"5.188.108.10","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"UA_speednode_0154","server":"5.188.6.8","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ss","name":"GB_speednode_0019","server":"121.127.46.147","port":989,"cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
-  - {"type":"ssr","name":"_FR_法国_1_2@28","server":"fr-am1-5.eqsunshine.com","port":8181,"protocol":"origin","cipher":"aes-256-cfb","obfs":"tls1.2_ticket_auth","password":"RcfVcDzzB"}
-  - {"type":"vmess","name":"RU俄罗斯137.8KB/s","ws-opts":{"path":"/","headers":{"host":"195.133.53.253"}},"server":"195.133.53.253","port":"443","uuid":"04b38baf-5b78-4937-b27a-83057b08b776","alterId":"0","cipher":"auto","network":"ws"}
-  - {"type":"trojan","name":"8DKJ|www.zyw.asia+ZYW免费节点","server":"23.94.122.66","port":38505,"password":"dTjHHw2kDE","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"VN_speednode_0234","server":"103.173.255.234","port":443,"password":"19ba270c-8ffc-4d3b-a526-01f51b0416f9","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"HK_speednode_0017","server":"hk7.yihaobao.xyz","port":443,"password":"bb72bd02-b929-405c-b274-e0ff95141df4","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"VN_speednode_0235","server":"103.173.255.21","port":443,"password":"99507239-7601-4c76-afda-18be311b0bec","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"KR_speednode_0021","server":"3.38.178.191","port":11525,"password":"75WJZnNuyW","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"US_speednode_0061","server":"64.64.225.221","port":38712,"password":"lyfOBMxydA","udp":true,"skip-cert-verify":true}
-  - {"type":"vmess","name":"_TW_台湾_2_18@6","server":"tw99-hinet.mynodes001.one","port":"445","uuid":"5f04de84-6b7e-3564-82c2-d2a998002629","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"TW台湾3475.2KB/s","server":"tw99-hinet.mynodes001.one","port":"445","uuid":"5f04de84-6b7e-3564-82c2-d2a998002629","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"TW台湾42.9MB/s","server":"tw99-hinet.mynodes001.one","port":"445","uuid":"5f04de84-6b7e-3564-82c2-d2a998002629","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"ss","name":"JP_speednode_0091","server":"54.199.83.239","port":2333,"cipher":"aes-256-cfb","password":"doub.io"}
+  - {"type":"vmess","name":"233boy","server":"18.224.66.63","port":"55288","uuid":"9c8a27eb-d2cd-4e2c-ac18-1b428911fb84","alterId":"0","cipher":"auto","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - PL_speednode_0148
-      - UA_speednode_0154
-      - GB_speednode_0019
-      - _FR_法国_1_2@28
-      - RU俄罗斯137.8KB/s
-      - 8DKJ|www.zyw.asia+ZYW免费节点
-      - VN_speednode_0234
-      - HK_speednode_0017
-      - VN_speednode_0235
-      - KR_speednode_0021
-      - US_speednode_0061
-      - _TW_台湾_2_18@6
-      - TW台湾3475.2KB/s
-      - TW台湾42.9MB/s
-      - JP_speednode_0091
+      - 233boy
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.apple.com/library/test/success.html
     interval: 150
     tolerance: 50
     proxies:
-      - PL_speednode_0148
-      - UA_speednode_0154
-      - GB_speednode_0019
-      - _FR_法国_1_2@28
-      - RU俄罗斯137.8KB/s
-      - 8DKJ|www.zyw.asia+ZYW免费节点
-      - VN_speednode_0234
-      - HK_speednode_0017
-      - VN_speednode_0235
-      - KR_speednode_0021
-      - US_speednode_0061
-      - _TW_台湾_2_18@6
-      - TW台湾3475.2KB/s
-      - TW台湾42.9MB/s
-      - JP_speednode_0091
+      - 233boy
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -88,21 +46,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - PL_speednode_0148
-      - UA_speednode_0154
-      - GB_speednode_0019
-      - _FR_法国_1_2@28
-      - RU俄罗斯137.8KB/s
-      - 8DKJ|www.zyw.asia+ZYW免费节点
-      - VN_speednode_0234
-      - HK_speednode_0017
-      - VN_speednode_0235
-      - KR_speednode_0021
-      - US_speednode_0061
-      - _TW_台湾_2_18@6
-      - TW台湾3475.2KB/s
-      - TW台湾42.9MB/s
-      - JP_speednode_0091
+      - 233boy
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
