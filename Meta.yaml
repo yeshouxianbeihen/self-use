@@ -28,7 +28,7 @@ proxy-groups:
       - ddwd
       - 月中转
       - '2'
-      - 233boy-tcp-18.224.66.63
+      - 233boy
   - name: ⚡ ‍低延迟
     type: url-test
     url: http://www.apple.com/library/test/success.html
