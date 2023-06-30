@@ -16,11 +16,6 @@ dns:
 proxies:
   - {"type":"ss","name":"月中转","server":"hz.dwdad.buzz","port":23839,"cipher":"aes-256-gcm","password":"9YjA2nIPU1"}
   - {"type":"hysteria","name":"2","server":"138.2.59.26","port":17915,"auth_str":"4069c9",alpn: ['h3'],"protocol":"udp","up":60,"down":300,"skip-cert-verify":true,"recv_window":125829120,"recv_window_conn":31457280,"disable_mtu_discovery":true}
-  - {"type":"vmess","name":"🇹🇼_TW_1","ws-opts":{"path":"/"},"server":"34.81.12.50","port":8848,"uuid":"88c6d12b-614f-485f-83fc-fb0cc57c4801","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"🇭🇰_HK_2","ws-opts":{"path":"/"},"server":"34.92.213.162","port":65001,"uuid":"88c6d12b-614f-485f-83fc-fb0cc57c4801","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"🇭🇰_HK_3","ws-opts":{"path":"/"},"server":"34.92.213.162","port":65001,"uuid":"88c6d12b-614f-485f-83fc-fb0cc57c4801","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"🇹🇼_TW_4","ws-opts":{"path":"/"},"server":"34.81.12.50","port":8848,"uuid":"88c6d12b-614f-485f-83fc-fb0cc57c4801","alterId":0,"cipher":"auto","network":"ws"}
-  - {"type":"vmess","name":"🇹🇼_TW_5","ws-opts":{"path":"/"},"server":"34.81.12.50","port":8848,"uuid":"88c6d12b-614f-485f-83fc-fb0cc57c4801","alterId":0,"cipher":"auto","network":"ws"}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -30,11 +25,6 @@ proxy-groups:
       - DIRECT
       - 月中转
       - '2'
-      - 🇹🇼_TW_1
-      - 🇭🇰_HK_2
-      - 🇭🇰_HK_3
-      - 🇹🇼_TW_4
-      - 🇹🇼_TW_5
   - name: ⚡ ‍低延迟
     type: url-test
     url: http://www.apple.com/library/test/success.html
@@ -43,21 +33,11 @@ proxy-groups:
     proxies:
       - 月中转
       - '2'
-      - 🇹🇼_TW_1
-      - 🇭🇰_HK_2
-      - 🇭🇰_HK_3
-      - 🇹🇼_TW_4
-      - 🇹🇼_TW_5
   - name: 👆🏻 ‍指定
     type: select
     proxies:
       - 月中转
       - '2'
-      - 🇹🇼_TW_1
-      - 🇭🇰_HK_2
-      - 🇭🇰_HK_3
-      - 🇹🇼_TW_4
-      - 🇹🇼_TW_5
   - name: 🛩️ ‍墙内
     type: select
     proxies:
