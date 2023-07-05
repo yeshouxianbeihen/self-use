@@ -5,10 +5,8 @@ mode: Rule
 log-level: silent
 external-controller: 127.0.0.1:60000
 
-# 节点配置文件统一存放在 ./profiles/proxies/ 目录中
 
 proxy-providers:
-# 从链接导入的配置文件（支持多个Clash 订阅链接）
  foo:
    type: http
    path: ./profiles/proxies/foo.yaml
