@@ -15,16 +15,16 @@ dns:
     - tls://dns.google:853
 proxy-providers:
   Abot:
-    type: http
-    url:http://sub.store/download/Abot
+    type: "http"
+    url:"http://sub.store/download/Abot"
     interval: 3600
     path: ./provider1.yaml
     health-check:http://www.apple.com/library/test/success.html
       enable: true
       interval: 600
   HK:
-    type: http
-    url:http://sub.store/download/HK
+    type: "http"
+    url:"http://sub.store/download/HK"
     interval: 3600
     path: ./provider1.yaml
     health-check:http://www.apple.com/library/test/success.html
