@@ -15,21 +15,23 @@ dns:
     - tls://dns.google:853
 proxy-providers:
   Abot:
-    type: "http"
-    url:"http://sub.store/download/Abot"
+    type: http
+    path: ./profiles/proxies/foo.yaml
+    url: http://sub.store/download/Abot
     interval: 3600
-    path: ./provider1.yaml
-    health-check:http://www.apple.com/library/test/success.html
+    health-check:
       enable: true
-      interval: 600
-  HK:
-    type: "http"
-    url:"http://sub.store/download/HK"
+      url: http://www.apple.com/library/test/success.html
+      interval: 300
+  Abot1:
+    type: http
+    path: ./profiles/proxies/foo.yaml
+    url: http://sub.store/download/HK
     interval: 3600
-    path: ./provider1.yaml
-    health-check:http://www.apple.com/library/test/success.html
+    health-check:
       enable: true
-      interval: 600
+      url: http://www.apple.com/library/test/success.html
+      interval: 300
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
