@@ -1,7 +1,7 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2023-07-15 09:45:58
+#  创建时间：2023-07-15 10:12:31
 #  模版：ACL4SSR_Mini
 #  节点数量：2
 #-------------------------------------------------------------#
@@ -22,8 +22,8 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"hysteria","name":"1","server":"138.2.59.26","port":47839,"auth_str":"5b8cfc","alpn":"h3","protocol":"udp","up":60,"down":300,"skip-cert-verify":true,"recv_window":125829120,"recv_window_conn":31457280,"disable_mtu_discovery":true}
-  - {"type":"hysteria","name":"2","server":"138.2.59.26","port":17915,"auth_str":"4069c9","alpn":"h3","protocol":"udp","up":60,"down":300,"skip-cert-verify":true,"recv_window":125829120,"recv_window_conn":31457280,"disable_mtu_discovery":true}
+  - {"type":"hysteria","name":"1","server":"129.150.46.24","port":47839,"auth_str":"5b8cfc","alpn":"h3","protocol":"udp","up":60,"down":300,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":125829120,"recv_window_conn":31457280,"disable_mtu_discovery":true}
+  - {"type":"hysteria","name":"2","server":"129.150.46.24","port":17915,"auth_str":"4069c9","alpn":"h3","protocol":"udp","up":60,"down":300,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":125829120,"recv_window_conn":31457280,"disable_mtu_discovery":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
