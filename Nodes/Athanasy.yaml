@@ -15,8 +15,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {"type":"vless","name":"v2","server":"18.179.201.172","port":803,"uuid":"cd25b5cd-dfb4-4350-c2f4-c9150243276a","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"hysteria","name":"1","server":"138.2.59.26","port":17915,"auth_str":"4069c9","alpn":"h3","protocol":"udp","up":60,"down":300,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":125829120,"recv_window_conn":31457280,"disable_mtu_discovery":true}
-  - {"type":"hysteria","name":"白嫖WR","server":"152.69.208.195","port":18209,"auth_str":"d50157","alpn":"h3","protocol":"udp","up":10,"down":50,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":20971520,"recv_window_conn":5242880,"disable_mtu_discovery":true}
+  - {"type":"hysteria","name":"hysteria","server":"152.69.208.195","port":18209,"auth_str":"d50157",alpn: ['h3'],"protocol":"udp","up":10,"down":50,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":20971520,"recv_window_conn":5242880,"disable_mtu_discovery":true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -25,8 +24,7 @@ proxy-groups:
       - 👆🏻 ‍指定
       - DIRECT
       - v2
-      - '1'
-      - 白嫖WR
+      - hysteria
   - name: ⚡ ‍低延迟
     type: url-test
     url: http://www.apple.com/library/test/success.html
@@ -34,14 +32,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - v2
-      - '1'
-      - 白嫖WR
+      - hysteria
   - name: 👆🏻 ‍指定
     type: select
     proxies:
       - v2
-      - '1'
-      - 白嫖WR
+      - hysteria
   - name: 🛩️ ‍墙内
     type: select
     proxies:
@@ -9025,3 +9021,4 @@ rules:
   - PROCESS-NAME,baidunetdisk.exe,🛩️ ‍墙内
   - GEOIP,CN,🛩️ ‍墙内
   - MATCH,🌐 ‍未知站点
+
