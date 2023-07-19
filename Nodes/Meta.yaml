@@ -1,3 +1,11 @@
+#
+#-------------------------------------------------------------#
+#  创建者：https://v2rayse.com
+#  创建时间：2023-07-19 15:08:23
+#  模版：ACL4SSR_Mini
+#  节点数量：6
+#-------------------------------------------------------------#
+#
 mixed-port: 7890
 allow-lan: true
 mode: Rule
@@ -14,27 +22,36 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"vless","name":"v2","server":"18.179.201.172","port":803,"uuid":"cd25b5cd-dfb4-4350-c2f4-c9150243276a","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"hysteria","name":"1","server":"138.2.59.26","port":17915,"auth_str":"4069c9",alpn: ['h3'],"protocol":"udp","up":60,"down":300,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":125829120,"recv_window_conn":31457280,"disable_mtu_discovery":true}
-  - {"type":"hysteria","name":"白嫖WR","server":"152.69.208.195","port":18209,"auth_str":"d50157",alpn: ['h3'],"protocol":"udp","up":10,"down":50,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":20971520,"recv_window_conn":5242880,"disable_mtu_discovery":true}
+  - {"type":"vless","name":"repl_1","ws-opts":{"path":"/vl","headers":{"host":"my-v2ray.PlayMcBKuwu.repl.co"}},"server":"my-v2ray.PlayMcBKuwu.repl.co","port":443,"uuid":"232167af-45c6-4ee7-aade-bfed5471a6a8","alterId":32,"cipher":"none","network":"ws","tls":true}
+  - {"type":"vmess","name":"repl_2","ws-opts":{"path":"/vm","headers":{"host":"my-v2ray.PlayMcBKuwu.repl.co"}},"server":"my-v2ray.PlayMcBKuwu.repl.co","port":443,"uuid":"232167af-45c6-4ee7-aade-bfed5471a6a8","alterId":32,"cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"replit-trojan","server":"v2ray.PlayMcBKuwu.repl.co","port":443,"password":"441e7d5a-46ef-4c8f-9ec1-5fd5ace6934e","udp":true,"skip-cert-verify":true}
+  - {"type":"vless","name":"replit-vless","ws-opts":{"path":"/441e7d5a-46ef-4c8f-9ec1-5fd5ace6934e-vl","headers":{"host":"v2ray.PlayMcBKuwu.repl.co"}},"server":"v2ray.PlayMcBKuwu.repl.co","port":443,"uuid":"441e7d5a-46ef-4c8f-9ec1-5fd5ace6934e","alterId":32,"cipher":"none","network":"ws","tls":true}
+  - {"type":"vmess","name":"replit-vmess","ws-opts":{"path":"/441e7d5a-46ef-4c8f-9ec1-5fd5ace6934e-vm","headers":{"host":"v2ray.PlayMcBKuwu.repl.co"}},"server":"v2ray.PlayMcBKuwu.repl.co","port":443,"uuid":"441e7d5a-46ef-4c8f-9ec1-5fd5ace6934e","alterId":32,"cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"repl_3","server":"my-v2ray.PlayMcBKuwu.repl.co","port":443,"password":"232167af-45c6-4ee7-aade-bfed5471a6a8","udp":true,"skip-cert-verify":true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - v2
-      - '1'
-      - 白嫖WR
+      - repl_1
+      - repl_2
+      - replit-trojan
+      - replit-vless
+      - replit-vmess
+      - repl_3
   - name: ♻️ 自动选择
     type: url-test
-    url: http://www.apple.com/library/test/success.html
+    url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - v2
-      - '1'
-      - 白嫖WR
+      - repl_1
+      - repl_2
+      - replit-trojan
+      - replit-vless
+      - replit-vmess
+      - repl_3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -52,9 +69,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v2
-      - '1'
-      - 白嫖WR
+      - repl_1
+      - repl_2
+      - replit-trojan
+      - replit-vless
+      - replit-vmess
+      - repl_3
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
