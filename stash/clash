@@ -1,170 +1,617 @@
-mixed-port: 7890
-#---------------------------------------------------#
+tiles:
+  - name: AppStorexianmianAPP
+    icon: 'applelogo'
+    backgroundColor: '#b8b8b8'
+    argument: 'appCount='
+  - name: IPxinxi
+    icon: 'mappin.and.ellipse'
+    backgroundColor: '#f50505'
+script-providers:
+  AppStorexianmianAPP:
+    url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/appsdoor.js
+  IPxinxi:
+    url: https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/ip-api.js
+
+
+
 allow-lan: false
-mode: Rule
+bind-address: '*'
+dns:
+  default-nameserver:
+    - 119.29.29.29
+    - 119.28.28.28
+    - 223.5.5.5
+    - 114.114.114.114
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - '*.lan'
+    - localhost.ptlogin2.qq.com
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - '+.xboxlive.com'
+    - 'msftconnecttest.com'
+    - 'xbox.*.microsoft.com'
+    - '*.battlenet.com.cn'
+    - '*.battlenet.com'
+    - '*.blzstatic.cn'
+    - '*.battle.net'
+  fake-ip-range: 198.18.0.1/16
+  listen: 0.0.0.0:1053
+external-controller: 127.0.0.1:9090
 log-level: silent
-external-controller: 127.0.0.1:60000
-
-
-proxy-providers:
- foo:
-   type: http
-   path: ./profiles/proxies/foo.yaml
-   url: https://raw.githubusercontent.com/fengzui007/Subscription-hosting/main/1-clash
-   interval: 3600 
-   filter: 'Hong Kong' # 删选出含有该关键词的节点
-   health-check:
-     enable: true
-     url: http://www.gstatic.com/generate_204
-     interval: 300
-
+mixed-port: 7890
+mode: Rule
+proxies:
 proxy-groups:
-- name: PROXY
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 3600
-  use: # 引入proxy-provider 使用 use 关键字
-   - foo
-   - bar
-  proxies:
-   - DIRECT
-
-# clash-rules项目提供的规则集
+  - name: "🚀 策略选择"
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇷🇺 俄罗斯节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+      - 🇮🇳 印度
+      - 🇩🇪 德国
+      - 🇨🇦 加拿大
+      - 🌐 全球直连
+      - 🤖️ 人工智能
+      - 📲 Telegram
+      - 📹 YouTube
+      - 🎥 Netflix
+      - 🎬 Disney+
+      - 🎻 Spotify
+      - 📄 Twitter
+      - 🪙 Paypal
+      - 👤 Facebook
+      - 📖 Reddit
+      - 🐦 Discord
+      - 📽 哔哩哔哩
+      - 🍿 国外媒体
+      - 🍔 国内媒体
+      - 🍟 新浪微博
+      - Ⓜ️ 微软服务
+      - 🍎 苹果服务
+      - 🎮 游戏平台
+    type: select
+    use:
+      - MyProxy
+  - name: ♻️ ALL
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    interval: 600
+    use:
+      - MyProxy
+  - name: 🤖️ 人工智能
+    proxies:
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇩🇪 德国
+    type: select
+    use: 
+  - name: 📲 Telegram
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 📹 YouTube
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 🎥 Netflix
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 🎬 Disney+
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 🎻 Spotify
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 📄 Twitter
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 🪙 Paypal
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 👤 Facebook
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 📖 Reddit
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 🐦 Discord
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 📽 哔哩哔哩
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 🍿 国外媒体
+    proxies:
+      - ♻️ ALL
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 🍔 国内媒体
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 🍟 新浪微博
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: Ⓜ️ 微软服务
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 🍎 苹果服务
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - name: 🎮 游戏平台
+    proxies:
+      - 🌐 全球直连
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇺🇸 美国节点
+      - 🇰🇷 韩国节点
+      - 🇬🇧 英国节点
+      - 🇯🇵 日本节点
+      - 🇸🇬 新加坡节点
+    type: select
+    use: 
+  - icon: 
+    interval: 600
+    name: "🇭🇰 香港节点"
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-HK
+  - icon: 
+    interval: 600
+    name: "🇨🇳 台湾节点"
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-TW
+  - icon: 
+    interval: 600
+    name: "🇺🇸 美国节点"
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-US
+  - icon: 
+    interval: 600
+    name: "🇰🇷 韩国节点"
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-KR
+  - icon: 
+    interval: 600
+    name: "🇷🇺 俄罗斯节点"
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-RU
+  - icon: 
+    interval: 600
+    name: "🇬🇧 英国节点"
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-UK
+  - icon: 
+    interval: 600
+    name: "🇯🇵 日本节点"
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-JP
+  - icon: 
+    interval: 600
+    name: "🇸🇬 新加坡节点"
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-SG
+  - icon: 
+    interval: 600
+    name: "🇮🇳 印度"
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-IN
+  - icon: 
+    interval: 600
+    name: "🇩🇪 德国"
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-DE
+  - icon: 
+    interval: 600
+    name: "🇨🇦 加拿大"
+    proxies: 
+    type: url-test
+    url: "http://cp.cloudflare.com/generate_204"
+    use:
+      - MyProxy-CA
+  - icon: 
+    name: "🌐 全球直连"
+    proxies:
+      - DIRECT
+    type: select
+  - icon: 
+    name: FINAL
+    proxies:
+      - 🚀 策略选择
+    type: select
+proxies:
+  - name: '1'
+    type: hysteria
+    server: 64.110.98.143
+    port: 47839
+    benchmark-url: http://www.apple.com/library/test/success.html
+    benchmark-timeout: 5
+    up-speed: 60
+    down-speed: 300
+    auth-str: 5b8cfc
+    protocol: '' # udp / wechat-video
+    obfs: '' # obfs password
+    sni: example.com # Server Name Indication，如果空会使用 server 中的值
+    alpn:
+      - hysteria
+    skip-cert-verify: true
+  - name: 'hysteria'
+    type: hysteria
+    server: server
+    port: 443
+    benchmark-url: http://www.apple.com
+    benchmark-timeout: 5
+    up-speed: 100 # 上传带宽（单位：Mbps）
+    down-speed: 100 # 下载带宽（单位：Mbps）
+    auth-str: your-password
+    # auth: aHR0cHM6Ly9oeXN0ZXJpYS5uZXR3b3JrL2RvY3MvYWR2YW5jZWQtdXNhZ2Uv # bytes encoded in base64
+    protocol: '' # udp / wechat-video
+    obfs: '' # obfs password
+    sni: example.com # Server Name Indication，如果空会使用 server 中的值
+    alpn:
+      - hysteria
+    skip-cert-verify: true
 rule-providers:
-  reject:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
-    path: ./profiles/rules/reject.yaml
+  去广告:
+    behavior: classical
     interval: 86400
-  icloud:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/icloud.txt"
-    path: ./profiles/rules/icloud.yaml
+    url: https://yfamily.vercel.app/rule/AntiAD.rule
+  人工智能:
+    behavior: classical
     interval: 86400
-  apple:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/apple.txt"
-    path: ./profiles/rules/apple.yaml
+    url: https://yfamily.vercel.app/rule/ai.rule
+  微软服务:
+    behavior: classical
     interval: 86400
-  google:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/google.txt"
-    path: ./profiles/rules/google.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
+  苹果服务:
+    behavior: classical
     interval: 86400
-  proxy:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/proxy.txt"
-    path: ./profiles/rules/proxy.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml
+  苹果服务2:
+    behavior: classical
     interval: 86400
-  direct:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/direct.txt"
-    path: ./profiles/rules/direct.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppStore/AppStore.yaml
+  策略选择:
+    behavior: classical
     interval: 86400
-  private:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/private.txt"
-    path: ./profiles/rules/private.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AppleProxy/AppleProxy.yaml
+  TELEGRAM:
+    behavior: classical
     interval: 86400
-  gfw:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/gfw.txt"
-    path: ./profiles/rules/gfw.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+  新浪微博:
+    behavior: classical
     interval: 86400
-  greatfire:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/greatfire.txt"
-    path: ./profiles/rules/greatfire.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Weibo/Weibo.yaml
+  TWITTER:
+    behavior: classical
     interval: 86400
-  tld-not-cn:
-    type: http
-    behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/tld-not-cn.txt"
-    path: ./profiles/rules/tld-not-cn.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
+  游戏平台:
+    behavior: classical
     interval: 86400
-  telegramcidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt"
-    path: ./profiles/rules/telegramcidr.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PlayStation/PlayStation.yaml
+  游戏平台2:
+    behavior: classical
     interval: 86400
-  cncidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/cncidr.txt"
-    path: ./profiles/rules/cncidr.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml
+  游戏平台3:
+    behavior: classical
     interval: 86400
-  lancidr:
-    type: http
-    behavior: ipcidr
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/lancidr.txt"
-    path: ./profiles/rules/lancidr.yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Sony/Sony.yaml
+  游戏平台4:
+    behavior: classical
     interval: 86400
-# 分流规则
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml
+  游戏平台5:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.yaml
+  游戏平台6:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WanMeiShiJie/WanMeiShiJie.yaml
+  游戏平台7:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard.yaml
+  SPOTIFY:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+  PAYPAL:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal.yaml
+  FACEBOOK:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml
+  REDDIT:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.yaml
+  DISCORD:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml
+  YOUTUBE:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+  YOUTUBE2:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTubeMusic/YouTubeMusic.yaml
+  NETFLIX:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+  DISNEY+:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
+  哔哩哔哩:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili.yaml
+  国内媒体:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+  国外媒体:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml
+  策略选择2:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitch/Twitch.yaml
+  全球直连:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Douyu/Douyu.yaml
+  策略选择3:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml
+  策略选择4:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy.yaml
+  策略选择5:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Domain.yaml
+  全球直连2:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
+  全球直连3:
+    behavior: classical
+    interval: 86400
+    url: https://yfamily.vercel.app/rule/ASN-CN.rule
+  全球直连4:
+    behavior: classical
+    interval: 86400
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/WeChat/WeChat.yaml
 rules:
-  - PROCESS-NAME,v2ray,DIRECT
-  - PROCESS-NAME,xray,DIRECT
-  - PROCESS-NAME,naive,DIRECT
-  - PROCESS-NAME,trojan,DIRECT
-  - PROCESS-NAME,trojan-go,DIRECT
-  - PROCESS-NAME,ss-local,DIRECT
-  - PROCESS-NAME,privoxy,DIRECT
-  - PROCESS-NAME,leaf,DIRECT
-  - PROCESS-NAME,v2ray.exe,DIRECT
-  - PROCESS-NAME,xray.exe,DIRECT
-  - PROCESS-NAME,naive.exe,DIRECT
-  - PROCESS-NAME,trojan.exe,DIRECT
-  - PROCESS-NAME,trojan-go.exe,DIRECT
-  - PROCESS-NAME,ss-local.exe,DIRECT
-  - PROCESS-NAME,privoxy.exe,DIRECT
-  - PROCESS-NAME,leaf.exe,DIRECT
-  - PROCESS-NAME,Surge,DIRECT
-  - PROCESS-NAME,Surge 2,DIRECT
-  - PROCESS-NAME,Surge 3,DIRECT
-  - PROCESS-NAME,Surge 4,DIRECT
-  - PROCESS-NAME,Surge%202,DIRECT
-  - PROCESS-NAME,Surge%203,DIRECT
-  - PROCESS-NAME,Surge%204,DIRECT
-  - PROCESS-NAME,Thunder,DIRECT
-  - PROCESS-NAME,DownloadService,DIRECT
-  - PROCESS-NAME,qBittorrent,DIRECT
-  - PROCESS-NAME,Transmission,DIRECT
-  - PROCESS-NAME,fdm,DIRECT
-  - PROCESS-NAME,aria2c,DIRECT
-  - PROCESS-NAME,Folx,DIRECT
-  - PROCESS-NAME,NetTransport,DIRECT
-  - PROCESS-NAME,uTorrent,DIRECT
-  - PROCESS-NAME,WebTorrent,DIRECT
-  - PROCESS-NAME,aria2c.exe,DIRECT
-  - PROCESS-NAME,BitComet.exe,DIRECT
-  - PROCESS-NAME,fdm.exe,DIRECT
-  - PROCESS-NAME,NetTransport.exe,DIRECT
-  - PROCESS-NAME,qbittorrent.exe,DIRECT
-  - PROCESS-NAME,Thunder.exe,DIRECT
-  - PROCESS-NAME,ThunderVIP.exe,DIRECT
-  - PROCESS-NAME,transmission-daemon.exe,DIRECT
-  - PROCESS-NAME,transmission-qt.exe,DIRECT
-  - PROCESS-NAME,uTorrent.exe,DIRECT
-  - PROCESS-NAME,WebTorrent.exe,DIRECT
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,private,DIRECT
-  - RULE-SET,reject,REJECT
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,google,DIRECT
-  - RULE-SET,proxy,PROXY
-  - RULE-SET,direct,DIRECT
-  - RULE-SET,telegramcidr,PROXY
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,PROXY
+  - RULE-SET,去广告,REJECT
+  - RULE-SET,人工智能,🤖️ 人工智能
+  - RULE-SET,微软服务,Ⓜ️ 微软服务
+  - RULE-SET,苹果服务,🍎 苹果服务
+  - RULE-SET,苹果服务2,🍎 苹果服务
+  - RULE-SET,策略选择,🚀 策略选择
+  - RULE-SET,策略选择2,🚀 策略选择
+  - RULE-SET,策略选择3,🚀 策略选择
+  - RULE-SET,策略选择4,🚀 策略选择
+  - RULE-SET,策略选择5,🚀 策略选择
+  - RULE-SET,TELEGRAM,📲 Telegram
+  - RULE-SET,新浪微博,🍟 新浪微博
+  - RULE-SET,全球直连,🌐 全球直连
+  - RULE-SET,全球直连2,🌐 全球直连
+  - RULE-SET,全球直连3,🌐 全球直连
+  - RULE-SET,全球直连4,🌐 全球直连
+  - RULE-SET,TWITTER,📄 Twitter
+  - RULE-SET,游戏平台,🎮 游戏平台
+  - RULE-SET,游戏平台2,🎮 游戏平台
+  - RULE-SET,游戏平台3,🎮 游戏平台
+  - RULE-SET,游戏平台4,🎮 游戏平台
+  - RULE-SET,游戏平台5,🎮 游戏平台
+  - RULE-SET,游戏平台6,🎮 游戏平台
+  - RULE-SET,游戏平台7,🎮 游戏平台
+  - RULE-SET,SPOTIFY,🎻 Spotify
+  - RULE-SET,PAYPAL,🪙 Paypal
+  - RULE-SET,FACEBOOK,👤 Facebook
+  - RULE-SET,REDDIT,📖 Reddit
+  - RULE-SET,DISCORD,🐦 Discord
+  - RULE-SET,YOUTUBE,📹 YouTube
+  - RULE-SET,YOUTUBE2,📹 YouTube
+  - RULE-SET,NETFLIX,🎥 Netflix
+  - RULE-SET,DISNEY+,🎬 Disney+
+  - RULE-SET,哔哩哔哩,📽 哔哩哔哩
+  - RULE-SET,国内媒体,🍔 国内媒体
+  - RULE-SET,国外媒体,🍿 国外媒体
+  - MATCH,FINAL
+subscribe-url: https://sub1.smallstrawberry.com/api/v1/client/subscribe?token=48691bc671811fcecd9c2b2adf87c3c7
+x1.00
