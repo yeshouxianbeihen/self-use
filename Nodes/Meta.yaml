@@ -14,10 +14,8 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"vless","name":"Glitch自建(cf单向优选香港ip1)","server":"8.210.117.18","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ifscipt.tk","ws-opts":{"path":"/","headers":{"host":"ifscipt.tk"}}}
-  - {"type":"vless","name":"Glitch自建(cf单向优选香港ip2)","server":"8.218.119.115","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ifscipt.tk","ws-opts":{"path":"/","headers":{"host":"ifscipt.tk"}}}
-  - {"type":"vless","name":"Glitch自建(cf单向优选香港ip3)","server":"103.200.112.108","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ifscipt.tk","ws-opts":{"path":"/","headers":{"host":"ifscipt.tk"}}}
-  - {"type":"vless","name":"Glitch自建(cf单向优选香港ip4)","server":"8.217.147.230","port":443,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"ifscipt.tk","ws-opts":{"path":"/","headers":{"host":"ifscipt.tk"}}}
+  - {"type":"vless","name":"Cloudflare_PageEdge","server":"dns.ton.org","port":443,"uuid":"b0138d55-a493-4dc3-9932-c6f0391707c1","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edge.020770.xyz","ws-opts":{"path":"/vless/b0138d55-a493-4dc3-9932-c6f0391707c1?ed=2048","headers":{"host":"edge.020770.xyz"}}}
+  - {"type":"vless","name":"Cloudflare_PageEdge_随机Anycast","server":"cdn.chigua.tk","port":443,"uuid":"b0138d55-a493-4dc3-9932-c6f0391707c1","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"edge.020770.xyz","ws-opts":{"path":"/vless/b0138d55-a493-4dc3-9932-c6f0391707c1?ed=2048","headers":{"host":"edge.020770.xyz"}}}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
@@ -25,27 +23,21 @@ proxy-groups:
       - ⚡ ‍低延迟
       - 👆🏻 ‍指定
       - DIRECT
-      - Glitch自建(cf单向优选香港ip1)
-      - Glitch自建(cf单向优选香港ip2)
-      - Glitch自建(cf单向优选香港ip3)
-      - Glitch自建(cf单向优选香港ip4)
+      - Cloudflare_PageEdge
+      - Cloudflare_PageEdge_随机Anycast
   - name: ⚡ ‍低延迟
     type: url-test
     url: http://www.apple.com/library/test/success.html
     interval: 150
     tolerance: 50
     proxies:
-      - Glitch自建(cf单向优选香港ip1)
-      - Glitch自建(cf单向优选香港ip2)
-      - Glitch自建(cf单向优选香港ip3)
-      - Glitch自建(cf单向优选香港ip4)
+      - Cloudflare_PageEdge
+      - Cloudflare_PageEdge_随机Anycast
   - name: 👆🏻 ‍指定
     type: select
     proxies:
-      - Glitch自建(cf单向优选香港ip1)
-      - Glitch自建(cf单向优选香港ip2)
-      - Glitch自建(cf单向优选香港ip3)
-      - Glitch自建(cf单向优选香港ip4)
+      - Cloudflare_PageEdge
+      - Cloudflare_PageEdge_随机Anycast
   - name: 🛩️ ‍墙内
     type: select
     proxies:
