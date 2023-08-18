@@ -15,7 +15,7 @@ dns:
     - tls://dns.google:853
 proxies:
   - {"type":"vless","name":"v2","server":"18.179.201.172","port":803,"uuid":"cd25b5cd-dfb4-4350-c2f4-c9150243276a","skip-cert-verify":true,"network":"tcp","tls":false,"udp":true}
-  - {"type":"hysteria","name":"1","server":"141.147.170.159","port":47839,"auth_str":"5b8cfc","alpn":"h3","protocol":"udp","up":60,"down":300,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":125829120,"recv_window_conn":31457280,"disable_mtu_discovery":true}
+  - {"type":"hysteria","name":"1","server":"64.110.98.143","port":47839,"auth_str":"5b8cfc","alpn":"h3","protocol":"udp","up":60,"down":300,"sni":"www.bing.com","skip-cert-verify":true,"recv_window":125829120,"recv_window_conn":31457280,"disable_mtu_discovery":true}
 proxy-groups:
   - name: ✈️ ‍起飞
     type: select
