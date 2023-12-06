@@ -1,9 +1,9 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2023-11-16 10:07:14
+#  创建时间：2023-12-06 20:56:13
 #  模版：ACL4SSR
-#  节点数量：6
+#  节点数量：14
 #-------------------------------------------------------------#
 #
 mixed-port: 7890
@@ -22,81 +22,137 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"vless","name":"v1.kangoo.workers.dev","server":"www.csgo.com","port":2095,"uuid":"d7294bec-e79a-4c30-bdd3-b84c9dc40791","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"v1.kangoo.workers.dev","ws-opts":{"path":"/?ed=2048","headers":{"host":"v1.kangoo.workers.dev"}}}
   - {"type":"vless","name":"1022.kangoo.workers.dev","server":"www.visa.co.jp","port":80,"uuid":"d342d11f-d424-4583-b36e-523ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1022.kangoo.workers.dev","ws-opts":{"path":"/?ed=2048","headers":{"host":"1022.kangoo.workers.dev"}}}
   - {"type":"vless","name":"yx.sin33.top","server":"yx.sin33.top","port":2087,"uuid":"d342d11e-d424-4588-b36e-524ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"yx.sin33.top","ws-opts":{"path":"/?ed=2048","headers":{"host":"yx.sin33.top"}}}
   - {"type":"vless","name":"yx1.sin33.top","server":"yx1.sin33.top","port":2096,"uuid":"d342d11e-d424-4583-b36e-524ab1f0afa5","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"yx1.sin33.top","ws-opts":{"path":"/?ed=2048","headers":{"host":"yx1.sin33.top"}}}
   - {"type":"vless","name":"v1","server":"www.csgo.com","port":2095,"uuid":"d7294bec-e79a-4c30-bdd3-b84c9dc40791","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"v1.kangoo.workers.dev","ws-opts":{"path":"/?ed=2048","headers":{"host":"v1.kangoo.workers.dev"}}}
   - {"type":"vless","name":"1022v2","server":"yx.ppga.eu.org","port":80,"uuid":"d342d11f-d424-4583-b36e-523ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1022.kangoo.workers.dev","ws-opts":{"path":"/?ed=2048","headers":{"host":"1022.kangoo.workers.dev"}}}
+  - {"type":"vmess","name":"cdngcore","ws-opts":{"path":"/gcore","headers":{"host":"buyiyangde.com"}},"server":"5.101.222.13","port":"80","uuid":"0dbbc182-083e-420a-ddc7-42d7c67ae50a","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vless","name":"ArgoX-Vl","server":"104.19.217.190","port":80,"uuid":"83b8af8a-b61f-45f1-952f-399a3619c33c","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"medline-isp-leather-vendor.trycloudflare.com","ws-opts":{"path":"/kanlee133-vl?ed=2048","headers":{"host":"medline-isp-leather-vendor.trycloudflare.com"}}}
+  - {"type":"vless","name":"cf.ppga.free.hr","server":"104.19.18.246","port":443,"uuid":"8ff793cf-4115-4a63-a644-0c6d9a6d7905","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"cf.ppga.free.hr","ws-opts":{"path":"/?ed=2048","headers":{"host":"cf.ppga.free.hr"}}}
+  - {"type":"vless","name":"hkcf.ppga.free.hr","server":"199.15.76.35","port":443,"uuid":"742940df-dbfe-46dc-947f-96e22fb26e38","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"hkcf.ppga.free.hr","ws-opts":{"path":"/?ed=2048","headers":{"host":"hkcf.ppga.free.hr"}}}
+  - {"type":"vless","name":"jp.ppga.eu.org","server":"138.2.56.147","port":443,"uuid":"d7294bec-e79a-4c30-bdd3-b84c9dc40791","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"jp.ppga.eu.org","ws-opts":{"path":"/?ed=2048","headers":{"host":"jp.ppga.eu.org"}}}
+  - {"type":"vless","name":"hk.ppga.free.hr","server":"47.243.161.235","port":443,"uuid":"c3893826-9fe1-4d4b-9526-b0c949bf3c26","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"hk.ppga.free.hr","ws-opts":{"path":"/?ed=2048","headers":{"host":"hk.ppga.free.hr"}}}
+  - {"type":"vless","name":"sp.ppga.free.hr","server":"8.219.170.180","port":443,"uuid":"4dd980e5-f07b-4627-872c-c215cb5a1e7f","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"sp.ppga.free.hr","ws-opts":{"path":"/?ed=2048","headers":{"host":"sp.ppga.free.hr"}}}
+  - {"type":"vless","name":"us.ppga.eu.org","server":"138.2.238.22","port":443,"uuid":"d342d11f-d424-4583-b36e-523ab1f0afa4","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"1022.ppga.eu.org","ws-opts":{"path":"/?ed=2048","headers":{"host":"1022.ppga.eu.org"}}}
+  - {"type":"vless","name":"s5.ppga.eu.org","server":"138.2.232.253","port":443,"uuid":"45c1f2e2-19ef-4bfb-90c0-6b8b46c3abc3","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"s5.ppga.eu.org","ws-opts":{"path":"/?ed=2048","headers":{"host":"s5.ppga.eu.org"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - v1.kangoo.workers.dev
       - 1022.kangoo.workers.dev
       - yx.sin33.top
       - yx1.sin33.top
       - v1
       - 1022v2
+      - cdngcore
+      - ArgoX-Vl
+      - cf.ppga.free.hr
+      - hkcf.ppga.free.hr
+      - jp.ppga.eu.org
+      - hk.ppga.free.hr
+      - sp.ppga.free.hr
+      - us.ppga.eu.org
+      - s5.ppga.eu.org
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - v1.kangoo.workers.dev
       - 1022.kangoo.workers.dev
       - yx.sin33.top
       - yx1.sin33.top
       - v1
       - 1022v2
+      - cdngcore
+      - ArgoX-Vl
+      - cf.ppga.free.hr
+      - hkcf.ppga.free.hr
+      - jp.ppga.eu.org
+      - hk.ppga.free.hr
+      - sp.ppga.free.hr
+      - us.ppga.eu.org
+      - s5.ppga.eu.org
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - v1.kangoo.workers.dev
       - 1022.kangoo.workers.dev
       - yx.sin33.top
       - yx1.sin33.top
       - v1
       - 1022v2
+      - cdngcore
+      - ArgoX-Vl
+      - cf.ppga.free.hr
+      - hkcf.ppga.free.hr
+      - jp.ppga.eu.org
+      - hk.ppga.free.hr
+      - sp.ppga.free.hr
+      - us.ppga.eu.org
+      - s5.ppga.eu.org
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v1.kangoo.workers.dev
       - 1022.kangoo.workers.dev
       - yx.sin33.top
       - yx1.sin33.top
       - v1
       - 1022v2
+      - cdngcore
+      - ArgoX-Vl
+      - cf.ppga.free.hr
+      - hkcf.ppga.free.hr
+      - jp.ppga.eu.org
+      - hk.ppga.free.hr
+      - sp.ppga.free.hr
+      - us.ppga.eu.org
+      - s5.ppga.eu.org
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - v1.kangoo.workers.dev
       - 1022.kangoo.workers.dev
       - yx.sin33.top
       - yx1.sin33.top
       - v1
       - 1022v2
+      - cdngcore
+      - ArgoX-Vl
+      - cf.ppga.free.hr
+      - hkcf.ppga.free.hr
+      - jp.ppga.eu.org
+      - hk.ppga.free.hr
+      - sp.ppga.free.hr
+      - us.ppga.eu.org
+      - s5.ppga.eu.org
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - v1.kangoo.workers.dev
       - 1022.kangoo.workers.dev
       - yx.sin33.top
       - yx1.sin33.top
       - v1
       - 1022v2
+      - cdngcore
+      - ArgoX-Vl
+      - cf.ppga.free.hr
+      - hkcf.ppga.free.hr
+      - jp.ppga.eu.org
+      - hk.ppga.free.hr
+      - sp.ppga.free.hr
+      - us.ppga.eu.org
+      - s5.ppga.eu.org
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -119,12 +175,20 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - v1.kangoo.workers.dev
       - 1022.kangoo.workers.dev
       - yx.sin33.top
       - yx1.sin33.top
       - v1
       - 1022v2
+      - cdngcore
+      - ArgoX-Vl
+      - cf.ppga.free.hr
+      - hkcf.ppga.free.hr
+      - jp.ppga.eu.org
+      - hk.ppga.free.hr
+      - sp.ppga.free.hr
+      - us.ppga.eu.org
+      - s5.ppga.eu.org
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
