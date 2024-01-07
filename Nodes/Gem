@@ -1,7 +1,7 @@
 #
 #-------------------------------------------------------------#
 #  创建者：https://v2rayse.com
-#  创建时间：2023-11-08 21:38:30
+#  创建时间：2024-01-07 11:04:43
 #  模版：ACL4SSR
 #  节点数量：1
 #-------------------------------------------------------------#
@@ -22,46 +22,46 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - {"type":"vless","name":"kk|lk@pc.com","server":"164.92.87.46","port":1443,"uuid":"04ad4a4b-5fe3-45e7-8d41-ba2794489d3b","skip-cert-verify":true,"network":"tcp","flow":"xtls-rprx-vision","servername":"blog.api.www.cloudflare.com","tls":false,"udp":true}
+  - {"type":"vmess","name":"DO-德国-ipv4","server":"161.35.194.196","port":"33596","uuid":"f7814d2b-46d2-4fc2-8002-0a942c56aa5e","alterId":"0","cipher":"auto","network":"quic"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - kk|lk@pc.com
+      - DO-德国-ipv4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - kk|lk@pc.com
+      - DO-德国-ipv4
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - kk|lk@pc.com
+      - DO-德国-ipv4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - kk|lk@pc.com
+      - DO-德国-ipv4
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - kk|lk@pc.com
+      - DO-德国-ipv4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - kk|lk@pc.com
+      - DO-德国-ipv4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -84,7 +84,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - kk|lk@pc.com
+      - DO-德国-ipv4
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
