@@ -50,20 +50,11 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxy-providers:
-  CFworker:
+  emperorofkor:
     type: http
     url: https://raw.githubusercontent.com/qiaofeng6666/CFworker/main/Clash.yml
     interval: 3600
-    path: ./sub/CFworker.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
-  x:
-    type: http
-    url: https://raw.githubusercontent.com/mwyyds/x/main/clashmeta.yaml
-    interval: 3600
-    path: ./sub/x.yaml
+    path: ./sub/emperorofkor.yaml
     health-check:
       enable: true
       interval: 600
@@ -75,13 +66,11 @@ proxy-groups:
   - ♻️ 自动选择
   - DIRECT
   use:
-  - CFworker
-  - x
+  - emperorofkor
 - name: ♻️ 自动选择
   type: url-test
   use:
-  - CFworker
-  - x
+  - emperorofkor
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
