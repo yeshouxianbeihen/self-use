@@ -52,7 +52,7 @@ dns:
 proxy-providers:
   emperorofkor:
     type: http
-    url: https://raw.githubusercontent.com/emperorofkor/-/main/README.md
+    url: https://raw.githubusercontent.com/qiaofeng6666/CFworker/main/Clash.yml
     interval: 3600
     path: ./sub/emperorofkor.yaml
     health-check:
