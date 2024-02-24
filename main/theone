@@ -1,0 +1,412 @@
+mode: rule
+mixed-port: 7897
+socks-port: 7898
+port: 7899
+allow-lan: false
+log-level: silent
+ipv6: false
+secret: ''
+external-controller: 127.0.0.1:9097
+dns:
+  enable: true
+  listen: :53
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  - 8.8.8.8
+  - 1.1.1.1
+  use-hosts: true
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  fallback:
+  - https://1.0.0.1/dns-query
+  - https://doh.dns.sb/dns-query
+  - https://dns.cloudflare.com/dns-query
+  - https://dns.twnic.tw/dns-query
+  - tls://8.8.4.4:853
+  - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
+    - 0.0.0.0/32
+tun:
+  stack: gVisor
+  device: Meta
+  auto-route: true
+  strict-route: true
+  auto-detect-interface: true
+  dns-hijack:
+  - any:53
+  - tcp://any:53
+  mtu: 9000
+  enable: false
+unified-delay: true
+global-client-fingerprint: chrome
+proxy-providers:
+  CFworker:
+    type: http
+    url: https://raw.githubusercontent.com/qiaofeng6666/CFworker/main/Clash.yml
+    interval: 3600
+    path: ./sub/CFworker.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+  x:
+    type: http
+    url: https://raw.githubusercontent.com/mwyyds/x/main/clashmeta.yaml
+    interval: 3600
+    path: ./sub/x.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+  Abbot:
+    type: http
+    url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
+    interval: 3600
+    path: ./sub/Abbot.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html    
+proxy-groups:
+- name: Global
+  type: select
+  use:
+  - CFworker
+  - x
+  - Abbot
+  proxies:
+  - 自动选择
+  - DIRECT
+  - 香港选择
+  - 香港自动
+  - 日本选择
+  - 日本自动
+  - 狮城选择
+  - 狮城自动
+  - 美国选择
+  - 美国自动
+  - 特殊选择
+  - 特殊自动
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Area.png
+- name: 自动选择
+  type: url-test
+  use:
+  - CFworker
+  - x
+  - Abbot
+  url: http://www.apple.com/library/test/success.html
+  interval: 300
+  tolerance: 50
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/lightning(2).png
+- name: 香港选择
+  type: select
+  filter: '🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港'
+  use:
+  - CFworker
+  - x
+  - Abbot
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Hongkong.png
+- name: 香港自动
+  type: url-test
+  filter: '🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港'
+  use:
+  - CFworker
+  - x
+  - Abbot
+  url: http://www.apple.com/library/test/success.html
+  interval: 300
+  tolerance: 50
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Hongkong.png
+- name: 日本选择
+  type: select
+  filter: '🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
+  use:
+  - CFworker
+  - x
+  - Abbot
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Japan.png
+- name: 日本自动
+  type: url-test
+  filter: '🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
+  use:
+  - CFworker
+  - x
+  - Abbot
+  url: http://www.apple.com/library/test/success.html
+  interval: 300
+  tolerance: 50
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Japan.png
+- name: 狮城选择
+  type: select
+  filter: '🇸🇬|SG|Singapore|新|坡|狮'
+  use:
+  - CFworker
+  - x
+  - Abbot
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/singapore(1).png
+- name: 狮城自动
+  type: url-test
+  filter: '🇸🇬|SG|Singapore|新|坡|狮'
+  use:
+  - CFworker
+  - x
+  - Abbot
+  url: http://www.apple.com/library/test/success.html
+  interval: 300
+  tolerance: 50
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/singapore(1).png
+- name: 美国选择
+  type: select
+  filter: '🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥'
+  use:
+  - CFworker
+  - x
+  - Abbot
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/US.png
+- name: 美国自动
+  type: url-test
+  filter: '🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥'
+  use:
+  - CFworker
+  - x
+  - Abbot
+  url: http://www.apple.com/library/test/success.html
+  interval: 300
+  tolerance: 50
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/US.png
+- name: 特殊选择
+  type: select
+  exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥"
+  use:
+  - CFworker
+  - x
+  - Abbot
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
+- name: 特殊自动
+  type: url-test
+  exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥"
+  use:
+  - CFworker
+  - x
+  - Abbot
+  url: http://www.apple.com/library/test/success.html
+  interval: 300
+  tolerance: 50
+  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Static.png
+- name: Apple
+  type: select
+  proxies:
+  - Global
+  - 自动选择
+  - 香港选择
+  - 香港自动
+  - 日本选择
+  - 日本自动
+  - 狮城选择
+  - 狮城自动
+  - 美国选择
+  - 美国自动
+  - 特殊选择
+  - 特殊自动
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/apple.png
+- name: Microsoft
+  type: select
+  proxies:
+  - Global
+  - 自动选择
+  - 香港选择
+  - 香港自动
+  - 日本选择
+  - 日本自动
+  - 狮城选择
+  - 狮城自动
+  - 美国选择
+  - 美国自动
+  - 特殊选择
+  - 特殊自动
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/microsoft.png
+- name: Telegram
+  type: select
+  proxies:
+  - Global
+  - 自动选择
+  - 香港选择
+  - 香港自动
+  - 日本选择
+  - 日本自动
+  - 狮城选择
+  - 狮城自动
+  - 美国选择
+  - 美国自动
+  - 特殊选择
+  - 特殊自动
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/telegram(1).png
+- name: Copliot
+  type: select
+  proxies:
+  - Global
+  - 自动选择
+  - 香港选择
+  - 香港自动
+  - 日本选择
+  - 日本自动
+  - 狮城选择
+  - 狮城自动
+  - 美国选择
+  - 美国自动
+  - 特殊选择
+  - 特殊自动
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/Copilot.png
+- name: OpenAi
+  type: select
+  proxies:
+  - Global
+  - 自动选择
+  - 香港选择
+  - 香港自动
+  - 日本选择
+  - 日本自动
+  - 狮城选择
+  - 狮城自动
+  - 美国选择
+  - 美国自动
+  - 特殊选择
+  - 特殊自动
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/chatgpt4.0.png
+- name: YouTube
+  type: select
+  proxies:
+  - Global
+  - 自动选择
+  - 香港选择
+  - 香港自动
+  - 日本选择
+  - 日本自动
+  - 狮城选择
+  - 狮城自动
+  - 美国选择
+  - 美国自动
+  - 特殊选择
+  - 特殊自动
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/youtube.png
+- name: Spotify
+  type: select
+  proxies:
+  - Global
+  - 自动选择
+  - 香港选择
+  - 香港自动
+  - 日本选择
+  - 日本自动
+  - 狮城选择
+  - 狮城自动
+  - 美国选择
+  - 美国自动
+  - 特殊选择
+  - 特殊自动
+  icon: https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/spotify(green).png
+- name: Final
+  type: select
+  proxies:
+  - DIRECT
+  - Global
+  icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Final.png
+rule-providers:
+  Lan:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan.yaml"
+    path: ./profiles/ruleset/Lan.yaml
+    interval: 86400
+  Reject:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Reject.yaml"
+    path: ./Rules/Reject.yaml
+    interval: 86400
+  OpenAi:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml"
+    path: ./profiles/ruleset/OpenAi.yaml
+    interval: 86400
+  Copliot:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml"
+    path: ./profiles/ruleset/Copilot.yaml
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple.yaml"
+    path: ./profiles/ruleset/Apple.yaml
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml"
+    path: ./profiles/ruleset/Microsoft.yaml
+    interval: 86400
+  Speedtest:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest.yaml"
+    path: ./profiles/ruleset/Speedtest.yaml
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml"
+    path: ./profiles/ruleset/Telegram.yaml
+    interval: 86400
+  YouTube:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml"
+    path: ./profiles/ruleset/YouTube.yaml
+    interval: 86400
+  Spotify:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml"
+    path: ./profiles/ruleset/Spotify.yaml
+    interval: 86400
+  Global:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Proxy/Proxy_Classical.yaml"
+    path: ./profiles/ruleset/Global.yaml
+    interval: 86400
+  China:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml"
+    path: ./profiles/ruleset/China.yaml
+    interval: 86400
+rules:
+  - RULE-SET,Reject,REJECT
+  - RULE-SET,Copliot,Copliot
+  - RULE-SET,Apple,Apple
+  - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,Speedtest,Global
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,OpenAi,OpenAi
+  - RULE-SET,YouTube,YouTube
+  - RULE-SET,Spotify,Spotify
+  - RULE-SET,Global,Global
+  - RULE-SET,China,DIRECT
+  - RULE-SET,Lan,DIRECT
+#   - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,Final
