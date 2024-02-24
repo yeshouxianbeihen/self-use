@@ -206,7 +206,7 @@ proxy-groups:
   - 🇺🇸 美国自动
   - 🇦🇶 特殊选择
   - 🇦🇶 特殊自动
-- name: 🌐 Microsoft
+- name: Ⓜ️ Microsoft
   type: select
   proxies:
   - 🗺️ Global
@@ -338,6 +338,12 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml"
     path: ./profiles/ruleset/Microsoft.yaml
     interval: 86400
+  Google:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google.yaml"
+    path: ./profiles/ruleset/Google.yaml
+    interval: 86400
   Speedtest:
     type: http
     behavior: classical
@@ -377,11 +383,12 @@ rule-providers:
 rules:
   - RULE-SET,Reject,REJECT
   - RULE-SET,Copliot,🤖 Copliot
+  - RULE-SET,OpenAi,🤖 OpenAi
   - RULE-SET,Apple,🍎 Apple
-  - RULE-SET,Microsoft,🌐 Microsoft
+  - RULE-SET,Microsoft,Ⓜ️ Microsoft
+  - RULE-SET,Google,Ⓜ️ Microsoft
   - RULE-SET,Speedtest,🗺️ Global
   - RULE-SET,Telegram,📱 Telegram
-  - RULE-SET,OpenAi,🤖 OpenAi
   - RULE-SET,YouTube,📺 YouTube
   - RULE-SET,Spotify,🎶 Spotify
   - RULE-SET,Global,🗺️ Global
