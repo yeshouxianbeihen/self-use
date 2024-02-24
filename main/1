@@ -78,7 +78,7 @@ proxy-providers:
       interval: 600
       url: http://www.apple.com/library/test/success.html    
 proxy-groups:
-- name: Global
+- name: 🗺️ Global
   type: select
   use:
   - CFworker
@@ -87,16 +87,16 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 香港选择
-  - 香港自动
-  - 日本选择
-  - 日本自动
-  - 狮城选择
-  - 狮城自动
-  - 美国选择
-  - 美国自动
-  - 特殊选择
-  - 特殊自动
+  - 🇭🇰 香港选择
+  - 🇭🇰 香港自动
+  - 🇯🇵 日本选择
+  - 🇯🇵 日本自动
+  - 🇸🇬 狮城选择
+  - 🇸🇬 狮城自动
+  - 🇺🇸 美国选择
+  - 🇺🇸 美国自动
+  - 🇦🇶 特殊选择
+  - 🇦🇶 特殊自动
 - name: ♻️ 自动选择
   type: url-test
   use:
@@ -106,14 +106,14 @@ proxy-groups:
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
-- name: 香港选择
+- name: 🇭🇰 香港选择
   type: select
   filter: '🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港'
   use:
   - CFworker
   - x
   - Abbot
-- name: 香港自动
+- name: 🇭🇰 香港自动
   type: url-test
   filter: '🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港'
   use:
@@ -123,14 +123,14 @@ proxy-groups:
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
-- name: 日本选择
+- name: 🇯🇵 日本选择
   type: select
   filter: '🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
   use:
   - CFworker
   - x
   - Abbot
-- name: 日本自动
+- name: 🇯🇵 日本自动
   type: url-test
   filter: '🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
   use:
@@ -140,14 +140,14 @@ proxy-groups:
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
-- name: 狮城选择
+- name: 🇸🇬 狮城选择
   type: select
   filter: '🇸🇬|SG|Singapore|新|坡|狮'
   use:
   - CFworker
   - x
   - Abbot
-- name: 狮城自动
+- name: 🇸🇬 狮城自动
   type: url-test
   filter: '🇸🇬|SG|Singapore|新|坡|狮'
   use:
@@ -157,14 +157,14 @@ proxy-groups:
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
-- name: 美国选择
+- name: 🇺🇸 美国选择
   type: select
   filter: '🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥'
   use:
   - CFworker
   - x
   - Abbot
-- name: 美国自动
+- name: 🇺🇸 美国自动
   type: url-test
   filter: '🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥'
   use:
@@ -174,14 +174,14 @@ proxy-groups:
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
-- name: 特殊选择
+- name: 🇦🇶 特殊选择
   type: select
   exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥"
   use:
   - CFworker
   - x
   - Abbot
-- name: 特殊自动
+- name: 🇦🇶 特殊自动
   type: url-test
   exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥"
   use:
@@ -191,116 +191,116 @@ proxy-groups:
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
-- name: Apple
+- name: 🍎 Apple
   type: select
   proxies:
-  - Global
+  - 🗺️ Global
   - ♻️ 自动选择
-  - 香港选择
-  - 香港自动
-  - 日本选择
-  - 日本自动
-  - 狮城选择
-  - 狮城自动
-  - 美国选择
-  - 美国自动
-  - 特殊选择
-  - 特殊自动
-- name: Microsoft
+  - 🇭🇰 香港选择
+  - 🇭🇰 香港自动
+  - 🇯🇵 日本选择
+  - 🇯🇵 日本自动
+  - 🇸🇬 狮城选择
+  - 🇸🇬 狮城自动
+  - 🇺🇸 美国选择
+  - 🇺🇸 美国自动
+  - 🇦🇶 特殊选择
+  - 🇦🇶 特殊自动
+- name: 🌐 Microsoft
   type: select
   proxies:
-  - Global
+  - 🗺️ Global
   - ♻️ 自动选择
-  - 香港选择
-  - 香港自动
-  - 日本选择
-  - 日本自动
-  - 狮城选择
-  - 狮城自动
-  - 美国选择
-  - 美国自动
-  - 特殊选择
-  - 特殊自动
-- name: Telegram
+  - 🇭🇰 香港选择
+  - 🇭🇰 香港自动
+  - 🇯🇵 日本选择
+  - 🇯🇵 日本自动
+  - 🇸🇬 狮城选择
+  - 🇸🇬 狮城自动
+  - 🇺🇸 美国选择
+  - 🇺🇸 美国自动
+  - 🇦🇶 特殊选择
+  - 🇦🇶 特殊自动
+- name: 📱 Telegram
   type: select
   proxies:
-  - Global
+  - 🗺️ Global
   - ♻️ 自动选择
-  - 香港选择
-  - 香港自动
-  - 日本选择
-  - 日本自动
-  - 狮城选择
-  - 狮城自动
-  - 美国选择
-  - 美国自动
-  - 特殊选择
-  - 特殊自动
-- name: Copliot
+  - 🇭🇰 香港选择
+  - 🇭🇰 香港自动
+  - 🇯🇵 日本选择
+  - 🇯🇵 日本自动
+  - 🇸🇬 狮城选择
+  - 🇸🇬 狮城自动
+  - 🇺🇸 美国选择
+  - 🇺🇸 美国自动
+  - 🇦🇶 特殊选择
+  - 🇦🇶 特殊自动
+- name: 🤖 Copliot
   type: select
   proxies:
-  - Global
+  - 🗺️ Global
   - ♻️ 自动选择
-  - 香港选择
-  - 香港自动
-  - 日本选择
-  - 日本自动
-  - 狮城选择
-  - 狮城自动
-  - 美国选择
-  - 美国自动
-  - 特殊选择
-  - 特殊自动
-- name: OpenAi
+  - 🇭🇰 香港选择
+  - 🇭🇰 香港自动
+  - 🇯🇵 日本选择
+  - 🇯🇵 日本自动
+  - 🇸🇬 狮城选择
+  - 🇸🇬 狮城自动
+  - 🇺🇸 美国选择
+  - 🇺🇸 美国自动
+  - 🇦🇶 特殊选择
+  - 🇦🇶 特殊自动
+- name: 🤖 OpenAi
   type: select
   proxies:
-  - Global
+  - 🗺️ Global
   - ♻️ 自动选择
-  - 香港选择
-  - 香港自动
-  - 日本选择
-  - 日本自动
-  - 狮城选择
-  - 狮城自动
-  - 美国选择
-  - 美国自动
-  - 特殊选择
-  - 特殊自动
-- name: YouTube
+  - 🇭🇰 香港选择
+  - 🇭🇰 香港自动
+  - 🇯🇵 日本选择
+  - 🇯🇵 日本自动
+  - 🇸🇬 狮城选择
+  - 🇸🇬 狮城自动
+  - 🇺🇸 美国选择
+  - 🇺🇸 美国自动
+  - 🇦🇶 特殊选择
+  - 🇦🇶 特殊自动
+- name: 📺 YouTube
   type: select
   proxies:
-  - Global
+  - 🗺️ Global
   - ♻️ 自动选择
-  - 香港选择
-  - 香港自动
-  - 日本选择
-  - 日本自动
-  - 狮城选择
-  - 狮城自动
-  - 美国选择
-  - 美国自动
-  - 特殊选择
-  - 特殊自动
-- name: Spotify
+  - 🇭🇰 香港选择
+  - 🇭🇰 香港自动
+  - 🇯🇵 日本选择
+  - 🇯🇵 日本自动
+  - 🇸🇬 狮城选择
+  - 🇸🇬 狮城自动
+  - 🇺🇸 美国选择
+  - 🇺🇸 美国自动
+  - 🇦🇶 特殊选择
+  - 🇦🇶 特殊自动
+- name: 🎶 Spotify
   type: select
   proxies:
-  - Global
+  - 🗺️ Global
   - ♻️ 自动选择
-  - 香港选择
-  - 香港自动
-  - 日本选择
-  - 日本自动
-  - 狮城选择
-  - 狮城自动
-  - 美国选择
-  - 美国自动
-  - 特殊选择
-  - 特殊自动
-- name: Final
+  - 🇭🇰 香港选择
+  - 🇭🇰 香港自动
+  - 🇯🇵 日本选择
+  - 🇯🇵 日本自动
+  - 🇸🇬 狮城选择
+  - 🇸🇬 狮城自动
+  - 🇺🇸 美国选择
+  - 🇺🇸 美国自动
+  - 🇦🇶 特殊选择
+  - 🇦🇶 特殊自动
+- name: 🌐 Final
   type: select
   proxies:
   - DIRECT
-  - Global
+  - 🗺️ Global
 rule-providers:
   Lan:
     type: http
@@ -370,16 +370,15 @@ rule-providers:
     interval: 86400
 rules:
   - RULE-SET,Lan,DIRECT
-  - RULE-SET,Copliot,Copliot
-  - RULE-SET,Apple,Apple
-  - RULE-SET,Microsoft,Microsoft
-  - RULE-SET,Speedtest,Global
-  - RULE-SET,Telegram,Telegram
-  - RULE-SET,OpenAi,OpenAi
-  - RULE-SET,YouTube,YouTube
-  - RULE-SET,OpenAi,OpenAi
-  - RULE-SET,Spotify,Spotify
+  - RULE-SET,Copliot,🤖 Copliot
+  - RULE-SET,Apple,🍎 Apple
+  - RULE-SET,Microsoft,🌐 Microsoft
+  - RULE-SET,Speedtest,🗺️ Global
+  - RULE-SET,Telegram,📱 Telegram
+  - RULE-SET,OpenAi,🤖 OpenAi
+  - RULE-SET,YouTube,📺 YouTube
+  - RULE-SET,Spotify,🎶 Spotify
   - RULE-SET,China,DIRECT
 #   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,Final
+  - MATCH,🌐 Final
