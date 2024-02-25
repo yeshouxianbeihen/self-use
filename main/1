@@ -77,16 +77,39 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html    
+  dingyue:
+    type: http
+    url: https://raw.githubusercontent.com/kany2000/dingyue/main/README.md
+    interval: 3600
+    path: ./sub/dingyue.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html   
+  list:
+    type: http
+    url: https://sub.xeton.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fshentong0722%2Flist%2Fmain%2Fmain.txt
+    interval: 3600
+    path: ./sub/list.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html   
+  yhh:
+    type: http
+    url: https://raw.githubusercontent.com/yuanzhou029/JD-N-jd/main/yhh.txt
+    interval: 3600
+    path: ./sub/yhh.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html   
 proxy-groups:
 - name: 🗺️ Global
   type: select
-  use:
-  - CFworker
-  - x
-  - Abbot
   proxies:
+  - ⚡ 手动选择
   - ♻️ 自动选择
-  - DIRECT
   - 🇭🇰 香港选择
   - 🇭🇰 香港自动
   - 🇯🇵 日本选择
@@ -97,12 +120,27 @@ proxy-groups:
   - 🇺🇸 美国自动
   - 🇦🇶 特殊选择
   - 🇦🇶 特殊自动
+- name: ⚡ 手动选择
+  type: select
+  use:
+  - CFworker
+  - x
+  - Abbot
+  - dingyue
+  - list
+  - yhh
+  url: http://www.apple.com/library/test/success.html
+  interval: 300
+  tolerance: 50
 - name: ♻️ 自动选择
   type: url-test
   use:
   - CFworker
   - x
   - Abbot
+  - dingyue
+  - list
+  - yhh
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -113,6 +151,9 @@ proxy-groups:
   - CFworker
   - x
   - Abbot
+  - dingyue
+  - list
+  - yhh
 - name: 🇭🇰 香港自动
   type: url-test
   filter: '🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港'
@@ -120,6 +161,9 @@ proxy-groups:
   - CFworker
   - x
   - Abbot
+  - dingyue
+  - list
+  - yhh
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -130,6 +174,9 @@ proxy-groups:
   - CFworker
   - x
   - Abbot
+  - dingyue
+  - list
+  - yhh
 - name: 🇯🇵 日本自动
   type: url-test
   filter: '🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
@@ -137,6 +184,9 @@ proxy-groups:
   - CFworker
   - x
   - Abbot
+  - dingyue
+  - list
+  - yhh
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -147,6 +197,9 @@ proxy-groups:
   - CFworker
   - x
   - Abbot
+  - dingyue
+  - list
+  - yhh
 - name: 🇸🇬 狮城自动
   type: url-test
   filter: '🇸🇬|SG|Singapore|新|坡|狮'
@@ -154,6 +207,9 @@ proxy-groups:
   - CFworker
   - x
   - Abbot
+  - dingyue
+  - list
+  - yhh
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -164,6 +220,9 @@ proxy-groups:
   - CFworker
   - x
   - Abbot
+  - dingyue
+  - list
+  - yhh
 - name: 🇺🇸 美国自动
   type: url-test
   filter: '🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥'
@@ -171,6 +230,9 @@ proxy-groups:
   - CFworker
   - x
   - Abbot
+  - dingyue
+  - list
+  - yhh
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -181,6 +243,9 @@ proxy-groups:
   - CFworker
   - x
   - Abbot
+  - dingyue
+  - list
+  - yhh
 - name: 🇦🇶 特殊自动
   type: url-test
   exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥"
@@ -188,13 +253,16 @@ proxy-groups:
   - CFworker
   - x
   - Abbot
+  - dingyue
+  - list
+  - yhh
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
 - name: 🍎 Apple
   type: select
   proxies:
-  - 🗺️ Global
+  - ⚡ 手动选择
   - ♻️ 自动选择
   - 🇭🇰 香港选择
   - 🇭🇰 香港自动
@@ -206,10 +274,11 @@ proxy-groups:
   - 🇺🇸 美国自动
   - 🇦🇶 特殊选择
   - 🇦🇶 特殊自动
+  - DIRECT
 - name: Ⓜ️ Microsoft
   type: select
   proxies:
-  - 🗺️ Global
+  - ⚡ 手动选择
   - ♻️ 自动选择
   - 🇭🇰 香港选择
   - 🇭🇰 香港自动
@@ -224,7 +293,7 @@ proxy-groups:
 - name: 📱 Telegram
   type: select
   proxies:
-  - 🗺️ Global
+  - ⚡ 手动选择
   - ♻️ 自动选择
   - 🇭🇰 香港选择
   - 🇭🇰 香港自动
@@ -239,7 +308,7 @@ proxy-groups:
 - name: 🤖 Copliot
   type: select
   proxies:
-  - 🗺️ Global
+  - ⚡ 手动选择
   - ♻️ 自动选择
   - 🇭🇰 香港选择
   - 🇭🇰 香港自动
@@ -254,7 +323,7 @@ proxy-groups:
 - name: 🤖 OpenAi
   type: select
   proxies:
-  - 🗺️ Global
+  - ⚡ 手动选择
   - ♻️ 自动选择
   - 🇭🇰 香港选择
   - 🇭🇰 香港自动
@@ -269,7 +338,7 @@ proxy-groups:
 - name: 📺 YouTube
   type: select
   proxies:
-  - 🗺️ Global
+  - ⚡ 手动选择
   - ♻️ 自动选择
   - 🇭🇰 香港选择
   - 🇭🇰 香港自动
@@ -284,7 +353,7 @@ proxy-groups:
 - name: 🎶 Spotify
   type: select
   proxies:
-  - 🗺️ Global
+  - ⚡ 手动选择
   - ♻️ 自动选择
   - 🇭🇰 香港选择
   - 🇭🇰 香港自动
