@@ -90,15 +90,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html   
-  yhh:
-    type: http
-    url: https://raw.githubusercontent.com/yuanzhou029/JD-N-jd/main/yhh.txt
-    interval: 3600
-    path: ./sub/yhh.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html   
   1:
     type: http
     url: https://sub.xf.free.hr/auto?host=worker-edtunnel.aulige.sbs&uuid=de7b9120-5c79-49c7-bcf1-2d3476392ae3
@@ -150,7 +141,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -165,7 +155,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -181,7 +170,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -194,7 +182,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -210,7 +197,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -223,7 +209,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -239,7 +224,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -252,7 +236,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -268,7 +251,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -281,7 +263,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -297,7 +278,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -310,7 +290,6 @@ proxy-groups:
   - Abbot
   - dingyue
   - list
-  - yhh
   - 1
   - 2
   - zxnode
@@ -468,6 +447,12 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml"
     path: ./profiles/ruleset/Copilot.yaml
     interval: 86400
+  GitHub:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
+    path: ./profiles/ruleset/GitHub.yaml
+    interval: 86400
   Apple:
     type: http
     behavior: classical
@@ -526,6 +511,7 @@ rules:
   - RULE-SET,Reject,REJECT
   - RULE-SET,Copliot,🤖 Copliot
   - RULE-SET,OpenAi,🤖 OpenAi
+  - RULE-SET,GitHub,🗺️ Global
   - RULE-SET,Apple,🍎 Apple
   - RULE-SET,Google,🌌 Google
   - RULE-SET,Microsoft,Ⓜ️ Microsoft
@@ -539,3 +525,4 @@ rules:
 #   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,🌐 Final
+
