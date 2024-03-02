@@ -1,0 +1,125 @@
+proxy-providers:
+  CFworker:
+    type: http
+    url: https://raw.githubusercontent.com/qiaofeng6666/CFworker/main/Clash.yml
+    interval: 3600
+    path: ./sub/CFworker.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+  x:
+    type: http
+    url: https://raw.githubusercontent.com/mwyyds/x/main/clashmeta.yaml
+    interval: 3600
+    path: ./sub/x.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+  Abbot:
+    type: http
+    url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
+    interval: 3600
+    path: ./sub/Abbot.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html    
+  dingyue:
+    type: http
+    url: https://raw.githubusercontent.com/kany2000/dingyue/main/README.md
+    interval: 3600
+    path: ./sub/dingyue.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html   
+  list:
+    type: http
+    url: https://sub.xeton.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fshentong0722%2Flist%2Fmain%2Fmain.txt
+    interval: 3600
+    path: ./sub/list.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html   
+  zxnode:
+    type: http
+    url: https://sub.xeton.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fzhangxi995%2Fzxnode%2Fmain%2Fnode.txt
+    interval: 3600
+    path: ./sub/zxnode.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
+  ZZO:
+    type: http
+    url: https://sub.xeton.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fbukall%2Fjiedian%2Fmain%2F24-2-20.txt
+    interval: 3600
+    path: ./sub/ZZO.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+  youxuan-jiedian:
+    type: http
+    url: https://raw.githubusercontent.com/2500765/youxuan-jiedian/main/README.md
+    interval: 3600
+    path: ./sub/youxuan-jiedian.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html    
+  JIEDIAN:
+    type: http
+    url: https://raw.githubusercontent.com/2500765/jiedian/main/README.md
+    interval: 3600
+    path: ./sub/JIEDIAN.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html    
+  DY1:
+    type: http
+    url: https://raw.githubusercontent.com/chihya72/DingYue/main/DingYue.html
+    interval: 3600
+    path: ./sub/DY1.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
+  dyjkso:
+    type: http
+    url: https://raw.githubusercontent.com/xcft65rdeg/dingyue/main/dyjkso
+    interval: 3600
+    path: ./sub/dyjkso.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
+  camerarts:
+    type: http
+    url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
+    interval: 3600
+    path: ./sub/camerarts.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html 
+
+
+###
+  use:
+  - CFworker
+  - x
+  - Abbot
+  - dingyue
+  - list
+  - zxnode
+  - ZZO
+  - youxuan-jiedian
+  - JIEDIAN
+  - DY1
+  - dyjkso
+  - camerarts
