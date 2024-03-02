@@ -44,6 +44,24 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html   
+  1:
+    type: http
+    url: https://sub.xf.free.hr/auto?host=worker-edtunnel.aulige.sbs&uuid=de7b9120-5c79-49c7-bcf1-2d3476392ae3
+    interval: 3600
+    path: ./sub/1.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
+  2:
+    type: http
+    url: https://worker-edgetunnel.aulige.sbs/1a561287-f433-4ace-b167-3a7016597abf
+    interval: 3600
+    path: ./sub/2.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
   zxnode:
     type: http
     url: https://sub.xeton.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fzhangxi995%2Fzxnode%2Fmain%2Fnode.txt
@@ -116,6 +134,8 @@ proxy-providers:
   - Abbot
   - dingyue
   - list
+  - 1
+  - 2
   - zxnode
   - ZZO
   - youxuan-jiedian
