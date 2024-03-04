@@ -125,6 +125,24 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html 
+  K:
+    type: http
+    url: https://raw.githubusercontent.com/KKname4188/kk/main/kk
+    interval: 3600
+    path: ./sub/K.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html 
+  bukall:
+    type: http
+    url: https://raw.githubusercontent.com/bukall/dingyue/main/1.txt
+    interval: 3600
+    path: ./sub/bukall.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
 
 
 ###
@@ -143,3 +161,5 @@ proxy-providers:
   - DY1
   - dyjkso
   - camerarts
+  - K
+  - bukall
