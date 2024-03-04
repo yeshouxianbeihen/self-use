@@ -163,7 +163,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://www.apple.com/library/test/success.html    
+      url: http://www.apple.com/library/test/success.html   
   DY1:
     type: http
     url: https://raw.githubusercontent.com/chihya72/DingYue/main/DingYue.html
@@ -172,21 +172,21 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://www.apple.com/library/test/success.html  
-  dyjkso:
-    type: http
-    url: https://raw.githubusercontent.com/xcft65rdeg/dingyue/main/dyjkso
-    interval: 3600
-    path: ./sub/dyjkso.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html  
+      url: http://www.apple.com/library/test/success.html   
   camerarts:
     type: http
     url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
     interval: 3600
     path: ./sub/camerarts.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html 
+  K:
+    type: http
+    url: https://raw.githubusercontent.com/KKname4188/kk/main/kk
+    interval: 3600
+    path: ./sub/K.yaml
     health-check:
       enable: true
       interval: 600
@@ -210,36 +210,36 @@ proxy-groups:
 - name: ⚡ 手动选择
   type: select
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
 - name: ♻️ 自动选择
   type: url-test
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -247,34 +247,34 @@ proxy-groups:
   type: select
   filter: '🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港'
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
 - name: 🇭🇰 香港自动
   type: url-test
   filter: '🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港'
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -282,34 +282,34 @@ proxy-groups:
   type: select
   filter: '🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
 - name: 🇯🇵 日本自动
   type: url-test
   filter: '🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -317,34 +317,34 @@ proxy-groups:
   type: select
   filter: '🇸🇬|SG|Singapore|新|坡|狮'
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
 - name: 🇸🇬 狮城自动
   type: url-test
   filter: '🇸🇬|SG|Singapore|新|坡|狮'
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -352,34 +352,34 @@ proxy-groups:
   type: select
   filter: '🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加利|加尼'
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
 - name: 🇺🇸 美国自动
   type: url-test
   filter: '🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加利|加尼'
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -387,34 +387,34 @@ proxy-groups:
   type: select
   exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥"
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
 - name: 🇦🇶 特殊自动
   type: url-test
   exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥"
   use:
+  - K
   - CFworker
+  - camerarts
+  - DY1
   - x
-  - Abbot
-  - dingyue
-  - list
-  - zxnode
-  - ZZO
   - youxuan-jiedian
   - JIEDIAN
-  - DY1
-  - dyjkso
-  - camerarts
+  - ZZO
+  - list
+  - Abbot
+  - dingyue
+  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
