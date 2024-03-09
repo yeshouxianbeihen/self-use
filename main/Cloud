@@ -83,105 +83,6 @@ tun:
 unified-delay: true
 global-client-fingerprint: chrome
 proxy-providers:
-  CFworker:
-    type: http
-    url: https://raw.githubusercontent.com/qiaofeng6666/CFworker/main/Clash.yml
-    interval: 3600
-    path: ./sub/CFworker.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
-  x:
-    type: http
-    url: https://raw.githubusercontent.com/mwyyds/x/main/clashmeta.yaml
-    interval: 3600
-    path: ./sub/x.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
-  Abbot:
-    type: http
-    url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
-    interval: 3600
-    path: ./sub/Abbot.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html    
-  dingyue:
-    type: http
-    url: https://raw.githubusercontent.com/kany2000/dingyue/main/README.md
-    interval: 3600
-    path: ./sub/dingyue.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html   
-  list:
-    type: http
-    url: https://sub.xeton.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fshentong0722%2Flist%2Fmain%2Fmain.txt
-    interval: 3600
-    path: ./sub/list.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html   
-  zxnode:
-    type: http
-    url: https://sub.xeton.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fzhangxi995%2Fzxnode%2Fmain%2Fnode.txt
-    interval: 3600
-    path: ./sub/zxnode.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html  
-  ZZO:
-    type: http
-    url: https://sub.xeton.dev/sub?target=clash&url=https%3A%2F%2Fraw.githubusercontent.com%2Fbukall%2Fjiedian%2Fmain%2F24-2-20.txt
-    interval: 3600
-    path: ./sub/ZZO.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
-  youxuan-jiedian:
-    type: http
-    url: https://raw.githubusercontent.com/2500765/youxuan-jiedian/main/README.md
-    interval: 3600
-    path: ./sub/youxuan-jiedian.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html    
-  JIEDIAN:
-    type: http
-    url: https://raw.githubusercontent.com/2500765/jiedian/main/README.md
-    interval: 3600
-    path: ./sub/JIEDIAN.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html   
-  DY1:
-    type: http
-    url: https://raw.githubusercontent.com/chihya72/DingYue/main/DingYue.html
-    interval: 3600
-    path: ./sub/DY1.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html   
-  camerarts:
-    type: http
-    url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
-    interval: 3600
-    path: ./sub/camerarts.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html 
   K:
     type: http
     url: https://raw.githubusercontent.com/KKname4188/kk/main/kk
@@ -191,6 +92,78 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html 
+  camerarts:
+    type: http
+    url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
+    interval: 3600
+    path: ./sub/camerarts.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html 
+  sub:
+    type: http
+    url: https://raw.githubusercontent.com/shz1203/subscription/main/README.md
+    interval: 3600
+    path: ./sub/subl.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
+  CFworker:
+    type: http
+    url: https://raw.githubusercontent.com/qiaofeng6666/CFworker/main/Clash.yml
+    interval: 3600
+    path: ./sub/CFworker.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+  US:
+    type: http
+    url: https://raw.githubusercontent.com/2500765/jiedian/main/README.md
+    interval: 3600
+    path: ./sub/US.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html   
+  US1:
+    type: http
+    url: https://raw.githubusercontent.com/2500765/youxuan-jiedian/main/README.md
+    interval: 3600
+    path: ./sub/US1.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html   
+  N:
+    type: http
+    url: https://raw.githubusercontent.com/5etdgx/dingyue0307/main/new
+    interval: 3600
+    path: ./sub/N.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
+  nugya:
+    type: http
+    url: https://raw.githubusercontent.com/nugya/jiedian/main/1
+    interval: 3600
+    path: ./sub/nugya.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
+  Abbot:
+    type: http
+    url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
+    interval: 3600
+    path: ./sub/Abbot.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html     
 proxy-groups:
 - name: 🗺️ Global
   type: select
@@ -211,17 +184,14 @@ proxy-groups:
   type: select
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -229,17 +199,14 @@ proxy-groups:
   type: url-test
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -248,33 +215,27 @@ proxy-groups:
   filter: '🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港'
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
 - name: 🇭🇰 香港自动
   type: url-test
   filter: '🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港'
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -283,33 +244,27 @@ proxy-groups:
   filter: '🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
 - name: 🇯🇵 日本自动
   type: url-test
   filter: '🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -318,33 +273,27 @@ proxy-groups:
   filter: '🇸🇬|SG|Singapore|新|坡|狮'
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
 - name: 🇸🇬 狮城自动
   type: url-test
   filter: '🇸🇬|SG|Singapore|新|坡|狮'
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -353,33 +302,27 @@ proxy-groups:
   filter: '🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加利|加尼'
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
 - name: 🇺🇸 美国自动
   type: url-test
   filter: '🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加利|加尼'
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
@@ -388,33 +331,27 @@ proxy-groups:
   exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥"
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
 - name: 🇦🇶 特殊自动
   type: url-test
   exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥"
   use:
   - K
+  - sub
   - CFworker
   - camerarts
-  - DY1
-  - x
-  - youxuan-jiedian
-  - JIEDIAN
-  - ZZO
-  - list
+  - US
+  - US1
+  - N
+  - nugya
   - Abbot
-  - dingyue
-  - zxnode
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
