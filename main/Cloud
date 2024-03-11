@@ -416,6 +416,21 @@ proxy-groups:
   - 🇺🇸 美国自动
   - 🇦🇶 特殊选择
   - 🇦🇶 特殊自动
+- name: 👹 Reddit
+  type: select
+  proxies:
+  - ⚡ 手动选择
+  - ♻️ 自动选择
+  - 🇭🇰 香港选择
+  - 🇭🇰 香港自动
+  - 🇯🇵 日本选择
+  - 🇯🇵 日本自动
+  - 🇸🇬 狮城选择
+  - 🇸🇬 狮城自动
+  - 🇺🇸 美国选择
+  - 🇺🇸 美国自动
+  - 🇦🇶 特殊选择
+  - 🇦🇶 特殊自动
 - name: 🤖 Copliot
   type: select
   proxies:
@@ -542,6 +557,12 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml"
     path: ./profiles/ruleset/Telegram.yaml
     interval: 86400
+  Reddit:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.yaml"
+    path: ./profiles/ruleset/Reddit.yaml
+    interval: 86400
   YouTube:
     type: http
     behavior: classical
@@ -576,6 +597,7 @@ rules:
   - RULE-SET,Microsoft,Ⓜ️ Microsoft
   - RULE-SET,Speedtest,🗺️ Global
   - RULE-SET,Telegram,📱 Telegram
+  - RULE-SET,Reddit,👹 Reddit
   - RULE-SET,YouTube,📺 YouTube
   - RULE-SET,Spotify,🎶 Spotify
   - RULE-SET,Global,🗺️ Global
