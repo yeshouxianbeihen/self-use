@@ -92,15 +92,6 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html 
-  camerarts:
-    type: http
-    url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
-    interval: 3600
-    path: ./sub/camerarts.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html 
   sub:
     type: http
     url: https://raw.githubusercontent.com/shz1203/subscription/main/README.md
@@ -119,6 +110,15 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html
+  camerarts:
+    type: http
+    url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
+    interval: 3600
+    path: ./sub/camerarts.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html 
   US:
     type: http
     url: https://raw.githubusercontent.com/2500765/jiedian/main/README.md
@@ -136,7 +136,16 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://www.apple.com/library/test/success.html   
+      url: http://www.apple.com/library/test/success.html  
+  pm:
+    type: http
+    url: https://raw.githubusercontent.com/chihya72/DingYue/main/DingYue.html
+    interval: 3600
+    path: ./sub/pm.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
   N:
     type: http
     url: https://raw.githubusercontent.com/5etdgx/dingyue0307/main/new
@@ -182,179 +191,76 @@ proxy-groups:
   - 🇦🇶 特殊自动
 - name: ⚡ 手动选择
   type: select
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
 - name: ♻️ 自动选择
   type: url-test
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
 - name: 🇭🇰 香港选择
   type: select
   filter: '🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港'
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
 - name: 🇭🇰 香港自动
   type: url-test
   filter: '🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港'
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
+  hidden: true
 - name: 🇯🇵 日本选择
   type: select
   filter: '🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
 - name: 🇯🇵 日本自动
   type: url-test
   filter: '🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
+  hidden: true
 - name: 🇸🇬 狮城选择
   type: select
   filter: '🇸🇬|SG|Singapore|新|坡|狮'
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
 - name: 🇸🇬 狮城自动
   type: url-test
   filter: '🇸🇬|SG|Singapore|新|坡|狮'
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
+  hidden: true
 - name: 🇺🇸 美国选择
   type: select
   filter: '🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加利|加尼'
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
 - name: 🇺🇸 美国自动
   type: url-test
   filter: '🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加利|加尼'
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
+  hidden: true
 - name: 🇦🇶 特殊选择
   type: select
   exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥"
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
 - name: 🇦🇶 特殊自动
   type: url-test
   exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥"
-  use:
-  - K
-  - sub
-  - CFworker
-  - camerarts
-  - US
-  - US1
-  - N
-  - nugya
-  - Abbot
+  include-all-providers: true
   url: http://www.apple.com/library/test/success.html
   interval: 300
   tolerance: 50
+  hidden: true
 - name: 🍎 Apple
   type: select
   proxies:
