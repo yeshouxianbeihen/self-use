@@ -146,6 +146,7 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html  
+    exclude-filter: "BT|谷歌"
   N:
     type: http
     url: https://raw.githubusercontent.com/5etdgx/dingyue0307/main/new
