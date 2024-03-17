@@ -166,6 +166,16 @@ proxy-providers:
       interval: 600
       url: http://www.apple.com/library/test/success.html  
     filter: "reality"
+  j:
+    type: http
+    url: https://raw.githubusercontent.com/yydsdd211/yyds/main/j
+    interval: 3600
+    path: ./sub/j.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
+    filter: "新"
   Abbot:
     type: http
     url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
