@@ -92,24 +92,16 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html 
-  sub:
+  pm:
     type: http
-    url: https://raw.githubusercontent.com/shz1203/subscription/main/README.md
+    url: https://raw.githubusercontent.com/chihya72/DingYue/main/DingYue.html
     interval: 3600
-    path: ./sub/subl.yaml
+    path: ./sub/pm.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html  
-  CFworker:
-    type: http
-    url: https://raw.githubusercontent.com/qiaofeng6666/CFworker/main/Clash.yml
-    interval: 3600
-    path: ./sub/CFworker.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
+    exclude-filter: "BT|谷歌"
   camerarts:
     type: http
     url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
@@ -127,26 +119,16 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://www.apple.com/library/test/success.html   
-  US1:
-    type: http
-    url: https://raw.githubusercontent.com/2500765/youxuan-jiedian/main/README.md
-    interval: 3600
-    path: ./sub/US1.yaml
-    health-check:
-      enable: true
-      interval: 600
       url: http://www.apple.com/library/test/success.html  
-  pm:
-    type: http
-    url: https://raw.githubusercontent.com/chihya72/DingYue/main/DingYue.html
-    interval: 3600
-    path: ./sub/pm.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html  
-    exclude-filter: "BT|谷歌"
+#  US1:
+#    type: http
+#    url: https://raw.githubusercontent.com/2500765/youxuan-jiedian/main/README.md
+#    interval: 3600
+#    path: ./sub/US1.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html 
   N:
     type: http
     url: https://raw.githubusercontent.com/5etdgx/dingyue0307/main/new
@@ -155,17 +137,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://www.apple.com/library/test/success.html  
-  nugya:
-    type: http
-    url: https://raw.githubusercontent.com/nugya/jiedian/3af010a7ed741d26a971ccfacdfe11b51a30b893/1
-    interval: 3600
-    path: ./sub/nugya.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html  
-    filter: "reality"
+      url: http://www.apple.com/library/test/success.html   
   j:
     type: http
     url: https://raw.githubusercontent.com/yydsdd211/yyds/main/j
@@ -176,6 +148,52 @@ proxy-providers:
       interval: 600
       url: http://www.apple.com/library/test/success.html  
     filter: "新"
+  sub:
+    type: http
+    url: https://raw.githubusercontent.com/shz1203/subscription/main/README.md
+    interval: 3600
+    path: ./sub/subl.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
+  CFworker:
+    type: http
+    url: https://raw.githubusercontent.com/qiaofeng6666/CFworker/main/Clash.yml
+    interval: 3600
+    path: ./sub/CFworker.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html 
+  Abbot:
+    type: http
+    url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
+    interval: 3600
+    path: ./sub/Abbot.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html 
+  timg03:
+    type: http
+    url: https://raw.githubusercontent.com/yeshouxianbeihen/self-use/main/main/timg03
+    interval: 3600
+    path: ./sub/timg03.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+#  dyjkso:
+#    type: http
+#    url: https://raw.githubusercontent.com/xcft65rdeg/dingyue/main/dyjkso
+#    interval: 3600
+#    path: ./sub/dyjkso.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html
+#    filter: "-0"
 #  oracle:
 #    type: http
 #    url: https://raw.githubusercontent.com/soyoung28/dingyue/main/oracle
@@ -194,15 +212,15 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html  
-  Abbot:
-    type: http
-    url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
-    interval: 3600
-    path: ./sub/Abbot.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html     
+#  nugya:
+#    type: http
+#    url: https://raw.githubusercontent.com/nugya/jiedian/main/1
+#    interval: 3600
+#    path: ./sub/nugya1.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html     
 proxy-groups:
 - name: 🗺️ Global
   type: select
