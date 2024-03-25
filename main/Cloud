@@ -184,6 +184,15 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html
+  helpken:
+    type: http
+    url: https://raw.githubusercontent.com/helpken/-/main/README.md
+    interval: 3600
+    path: ./sub/helpken.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
 #  dyjkso:
 #    type: http
 #    url: https://raw.githubusercontent.com/xcft65rdeg/dingyue/main/dyjkso
