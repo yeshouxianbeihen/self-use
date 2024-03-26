@@ -92,6 +92,15 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html 
+  ONE:
+    type: http
+    url: https://raw.githubusercontent.com/vvshener/dingyue/main/v2ray
+    interval: 3600
+    path: ./sub/ONE.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html 
   pm:
     type: http
     url: https://raw.githubusercontent.com/chihya72/DingYue/main/DingYue.html
@@ -137,7 +146,7 @@ proxy-providers:
     health-check:
       enable: true
       interval: 600
-      url: http://www.apple.com/library/test/success.html   
+      url: http://www.apple.com/library/test/success.html    
   j:
     type: http
     url: https://raw.githubusercontent.com/yydsdd211/yyds/main/j
