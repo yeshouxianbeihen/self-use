@@ -157,6 +157,15 @@ proxy-providers:
       interval: 600
       url: http://www.apple.com/library/test/success.html  
     filter: "新"
+  qinshi:
+    type: http
+    url: https://raw.githubusercontent.com/qinshi1352006/dingyue/main/dingyue
+    interval: 3600
+    path: ./sub/qinshi.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
 ##  sub:
 #    type: http
 #    url: https://raw.githubusercontent.com/shz1203/subscription/main/README.md
@@ -184,6 +193,24 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html
+###  yywzl-HK:
+#    type: http
+#    url: https://raw.githubusercontent.com/yywzl/Surge/main/subscribe/tls-20.txt
+#    interval: 3600
+#    path: ./sub/yywzl-HK.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html 
+###  yywzl-US:
+#    type: http
+#    url: https://raw.githubusercontent.com/yywzl/Surge/main/subscribe/us-as906.txt
+#    interval: 3600
+#    path: ./sub/yywzl-US.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html 
   Abbot:
     type: http
     url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
