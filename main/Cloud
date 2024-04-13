@@ -101,6 +101,16 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html 
+  Jasonpan19930920:
+    type: http
+    url: https://raw.githubusercontent.com/Jasonpan19930920/ziyong/main/clash
+    interval: 3600
+    path: ./sub/Jasonpan19930920.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html 
+    exclude-filter: "WARP"
   pm:
     type: http
     url: https://raw.githubusercontent.com/chihya72/DingYue/main/DingYue.html
