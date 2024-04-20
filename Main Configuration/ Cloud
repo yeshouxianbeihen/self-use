@@ -111,16 +111,25 @@ proxy-providers:
       interval: 600
       url: http://www.apple.com/library/test/success.html 
     exclude-filter: "WARP"
-  pm:
+  No1:
     type: http
-    url: https://raw.githubusercontent.com/chihya72/DingYue/main/DingYue.html
+    url: https://raw.githubusercontent.com/yeshouxianbeihen/self-use/main/main/Node/1
     interval: 3600
-    path: ./sub/pm.yaml
+    path: ./sub/No1.yaml
     health-check:
       enable: true
       interval: 600
-      url: http://www.apple.com/library/test/success.html  
-    exclude-filter: "BT|谷歌"
+      url: http://www.apple.com/library/test/success.html 
+#  pm:
+#    type: http
+#    url: https://raw.githubusercontent.com/chihya72/DingYue/main/DingYue.html
+#    interval: 3600
+#    path: ./sub/pm.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html  
+#    exclude-filter: "BT|谷歌"
   camerarts:
     type: http
     url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
@@ -130,16 +139,16 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html 
-  US:
-    type: http
-    url: https://raw.githubusercontent.com/2500765/jiedian/main/README.md
-    interval: 3600
-    path: ./sub/US.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html  
-#  US1:
+##  US:
+#    type: http
+#    url: https://raw.githubusercontent.com/2500765/jiedian/main/README.md
+#    interval: 3600
+#    path: ./sub/US.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html  
+##  US1:
 #    type: http
 #    url: https://raw.githubusercontent.com/2500765/youxuan-jiedian/main/README.md
 #    interval: 3600
@@ -194,6 +203,15 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
+##  laolang123:
+#    type: http
+#    url: https://github.com/laolang123/jiedian/blob/main/jiedian
+#    interval: 3600
+#    path: ./sub/laolang123.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html
   KyoSakuyo:
     type: http
     url: https://gitea.kyosakuyo.com/KyoSakuyo/SakuyoDb/raw/branch/main/config_in_use/burst.yaml
@@ -203,6 +221,33 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html
+  kingpoweris:
+    type: http
+    url: https://raw.githubusercontent.com/kingpoweris/jiedianwang/main/youyong
+    interval: 3600
+    path: ./sub/kingpoweris.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+  GoRelay:
+    type: http
+    url: https://raw.githubusercontent.com/little-nine321/dingyue/main/GoRelay
+    interval: 3600
+    path: ./sub/GoRelay.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+###  NNR:
+#    type: http
+#    url: https://raw.githubusercontent.com/little-nine321/dingyue/main/NNR
+#    interval: 3600
+#    path: ./sub/NNR.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html
 ###  yywzl-HK:
 #    type: http
 #    url: https://raw.githubusercontent.com/yywzl/Surge/main/subscribe/tls-20.txt
@@ -221,6 +266,15 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
+##  ZengPlusone:
+#    type: http
+#    url: https://raw.githubusercontent.com/ZengPlusone/-/main/README.md
+#    interval: 3600
+#    path: ./sub/ZengPlusone.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html 
   Abbot:
     type: http
     url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
@@ -230,6 +284,18 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html 
+##  lsit:
+#    type: http
+#    url: https://raw.githubusercontent.com/shentong0722/list/main/main.txt
+#    interval: 3600
+#    path: ./sub/lsit.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html 
+#
+#
+#
 ###  VI:
 #    type: http
 #    url: https://raw.githubusercontent.com/anyuhaoxuan/VPN1/main/.gitignore
