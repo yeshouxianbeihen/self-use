@@ -82,16 +82,22 @@ tun:
   enable: false
 unified-delay: true
 global-client-fingerprint: chrome
+
+
+
+
+
 proxy-providers:
-  K:
-    type: http
-    url: https://raw.githubusercontent.com/KKname4188/kk/main/kk
-    interval: 3600
-    path: ./sub/K.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html 
+##  K:
+#    type: http
+#    url: https://raw.githubusercontent.com/KKname4188/kk/main/kk
+#    interval: 3600
+#    path: ./sub/K.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html 
+
   ONE:
     type: http
     url: https://raw.githubusercontent.com/vvshener/dingyue/main/v2ray
@@ -101,6 +107,7 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html 
+
   Jasonpan19930920:
     type: http
     url: https://raw.githubusercontent.com/Jasonpan19930920/ziyong/main/clash
@@ -111,15 +118,38 @@ proxy-providers:
       interval: 600
       url: http://www.apple.com/library/test/success.html 
     exclude-filter: "WARP"
-  No1:
+
+  KyoSakuyo:
     type: http
-    url: https://raw.githubusercontent.com/yeshouxianbeihen/self-use/main/main/Node/1
+    url: https://gitea.kyosakuyo.com/KyoSakuyo/SakuyoDb/raw/branch/main/config_in_use/burst.yaml
     interval: 3600
-    path: ./sub/No1.yaml
+    path: ./sub/KyoSakuyo.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+
+  GITHUB-1220:
+    type: http
+    url: https://raw.githubusercontent.com/GITHUB-1220/VPN-Config/main/Clash/Config.yml
+    interval: 3600
+    path: ./sub/GITHUB-1220.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html 
+
+  SurpassHR:
+    type: http
+    url: https://gist.githubusercontent.com/SurpassHR/deb10290f3ec4127af413b6113df6437/raw/9913c813a9de9c6391d3d56db24767d111a09092/MyServers.yaml
+    interval: 3600
+    path: ./sub/SurpassHR.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html 
+    exclude-filter: "Osaka"
+
 #  pm:
 #    type: http
 #    url: https://raw.githubusercontent.com/chihya72/DingYue/main/DingYue.html
@@ -129,16 +159,8 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html  
-#    exclude-filter: "BT|谷歌"
-  camerarts:
-    type: http
-    url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
-    interval: 3600
-    path: ./sub/camerarts.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html 
+#    exclude-filter: "BT|谷歌" 
+
 ##  US:
 #    type: http
 #    url: https://raw.githubusercontent.com/2500765/jiedian/main/README.md
@@ -148,6 +170,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html  
+
 ##  US1:
 #    type: http
 #    url: https://raw.githubusercontent.com/2500765/youxuan-jiedian/main/README.md
@@ -157,6 +180,17 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
+
+  camerarts:
+    type: http
+    url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
+    interval: 3600
+    path: ./sub/camerarts.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+
 ##  N:
 #    type: http
 #    url: https://raw.githubusercontent.com/5etdgx/dingyue0307/main/new
@@ -165,7 +199,19 @@ proxy-providers:
 #    health-check:
 #      enable: true
 #      interval: 600
-#      url: http://www.apple.com/library/test/success.html    
+#      url: http://www.apple.com/library/test/success.html 
+
+  233:
+    type: http
+    url: https://raw.githubusercontent.com/chrislinplus/-1/main/README.md
+    interval: 3600
+    path: ./sub/233.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html  
+    filter: "233"   
+
   j:
     type: http
     url: https://raw.githubusercontent.com/yydsdd211/yyds/main/j
@@ -176,6 +222,7 @@ proxy-providers:
       interval: 600
       url: http://www.apple.com/library/test/success.html  
     filter: "新"
+
   qinshi:
     type: http
     url: https://raw.githubusercontent.com/qinshi1352006/dingyue/main/dingyue
@@ -185,6 +232,7 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html  
+
 ##  sub:
 #    type: http
 #    url: https://raw.githubusercontent.com/shz1203/subscription/main/README.md
@@ -194,6 +242,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html  
+
 ##  CFworker:
 #    type: http
 #    url: https://raw.githubusercontent.com/qiaofeng6666/CFworker/main/Clash.yml
@@ -203,6 +252,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
+
 ##  laolang123:
 #    type: http
 #    url: https://github.com/laolang123/jiedian/blob/main/jiedian
@@ -212,24 +262,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html
-  KyoSakuyo:
-    type: http
-    url: https://gitea.kyosakuyo.com/KyoSakuyo/SakuyoDb/raw/branch/main/config_in_use/burst.yaml
-    interval: 3600
-    path: ./sub/KyoSakuyo.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
-  kingpoweris:
-    type: http
-    url: https://raw.githubusercontent.com/kingpoweris/jiedianwang/main/youyong
-    interval: 3600
-    path: ./sub/kingpoweris.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
+
   GoRelay:
     type: http
     url: https://raw.githubusercontent.com/little-nine321/dingyue/main/GoRelay
@@ -239,6 +272,18 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html
+    filter: "推荐"
+
+  kingpoweris:
+    type: http
+    url: https://raw.githubusercontent.com/kingpoweris/jiedianwang/main/youyong
+    interval: 3600
+    path: ./sub/kingpoweris.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html
+
 ###  NNR:
 #    type: http
 #    url: https://raw.githubusercontent.com/little-nine321/dingyue/main/NNR
@@ -248,6 +293,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html
+
 ###  yywzl-HK:
 #    type: http
 #    url: https://raw.githubusercontent.com/yywzl/Surge/main/subscribe/tls-20.txt
@@ -257,6 +303,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
+
 ###  yywzl-US:
 #    type: http
 #    url: https://raw.githubusercontent.com/yywzl/Surge/main/subscribe/us-as906.txt
@@ -266,6 +313,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
+
 ##  ZengPlusone:
 #    type: http
 #    url: https://raw.githubusercontent.com/ZengPlusone/-/main/README.md
@@ -275,6 +323,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
+
   Abbot:
     type: http
     url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
@@ -284,6 +333,8 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html 
+    filter: "台湾"
+
 ##  lsit:
 #    type: http
 #    url: https://raw.githubusercontent.com/shentong0722/list/main/main.txt
@@ -296,6 +347,7 @@ proxy-providers:
 #
 #
 #
+
 ###  VI:
 #    type: http
 #    url: https://raw.githubusercontent.com/anyuhaoxuan/VPN1/main/.gitignore
@@ -305,6 +357,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
+
 ###  helpken:
 #    type: http
 #    url: https://raw.githubusercontent.com/helpken/-/main/README.md
@@ -314,6 +367,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html
+
 ###  dyjkso:
 #    type: http
 #    url: https://raw.githubusercontent.com/xcft65rdeg/dingyue/main/dyjkso
@@ -324,6 +378,7 @@ proxy-providers:
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html
 #    filter: "-0"
+
 ###  oracle:
 #    type: http
 #    url: https://raw.githubusercontent.com/soyoung28/dingyue/main/oracle
@@ -333,6 +388,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html  
+
 ###  FS:
 #    type: http
 #    url: https://raw.githubusercontent.com/soyoung28/dingyue/main/freesub
@@ -342,6 +398,7 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html  
+
 ###  nugya:
 #    type: http
 #    url: https://raw.githubusercontent.com/nugya/jiedian/main/1
@@ -351,6 +408,11 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html     
+
+
+
+
+
 proxy-groups:
 - name: 🗺️ Global
   type: select
@@ -385,11 +447,11 @@ proxy-groups:
   tolerance: 50
 - name: 🇺🇸 美国选择
   type: select
-  filter: '(?i)🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加利|加尼'
+  filter: '(?i)🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加利|加尼|Los Angeles'
   include-all-providers: true
 - name: 🇺🇸 美国自动
   type: url-test
-  filter: '(?i)🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加利|加尼'
+  filter: '(?i)🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加利|加尼|Los Angeles'
   include-all-providers: true
   url: http://www.apple.com/library/test/success.html
   interval: 300
@@ -457,11 +519,11 @@ proxy-groups:
   hidden: true
 - name: 🇦🇶 特殊选择
   type: select
-  exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加尼|台|tw|taiwan|韩|🇰🇷|KR|Korea|首尔"
+  exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加尼|Los Angeles|台|tw|taiwan|韩|🇰🇷|KR|Korea|首尔"
   include-all-providers: true
 - name: 🇦🇶 特殊自动
   type: url-test
-  exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加尼|台|tw|taiwan|韩|🇰🇷|KR|Korea|首尔"
+  exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加尼|Los Angeles|台|tw|taiwan|韩|🇰🇷|KR|Korea|首尔"
   include-all-providers: true
   url: http://www.apple.com/library/test/success.html
   interval: 300
@@ -663,6 +725,11 @@ proxy-groups:
   proxies:
   - DIRECT
   - 🗺️ Global
+
+
+
+
+
 rule-providers:
   Lan:
     type: http
@@ -760,6 +827,11 @@ rule-providers:
     url: "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/China/China.yaml"
     path: ./profiles/ruleset/China.yaml
     interval: 86400
+
+
+
+
+
 rules:
   - RULE-SET,Reject,REJECT
   - RULE-SET,Copliot,🤖 Copliot
