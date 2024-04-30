@@ -190,16 +190,17 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html
+    exclude-filter: "game"
 
-  camerarts:
-    type: http
-    url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
-    interval: 3600
-    path: ./sub/camerarts.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
+##  camerarts:
+#    type: http
+#    url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
+#    interval: 3600
+#    path: ./sub/camerarts.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html
 
 ##  N:
 #    type: http
@@ -273,16 +274,15 @@ proxy-providers:
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html
 
-  GoRelay:
+  NNR:
     type: http
-    url: https://raw.githubusercontent.com/little-nine321/dingyue/main/GoRelay
+    url: https://raw.githubusercontent.com/little-nine321/dingyue/main/NNR
     interval: 3600
-    path: ./sub/GoRelay.yaml
+    path: ./sub/NNR.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html
-    filter: "推荐"
 
   kingpoweris:
     type: http
@@ -334,16 +334,16 @@ proxy-providers:
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
 
-  Abbot:
-    type: http
-    url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
-    interval: 3600
-    path: ./sub/Abbot.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html 
-    filter: "台湾"
+##  Abbot:
+#    type: http
+#    url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
+#    interval: 3600
+#    path: ./sub/Abbot.yaml
+#    health-check:
+#      enable: true
+#      interval: 600
+#      url: http://www.apple.com/library/test/success.html 
+#    filter: "台湾"
 
 ##  lsit:
 #    type: http
