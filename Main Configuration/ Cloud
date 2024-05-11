@@ -99,6 +99,16 @@ proxy-providers:
       interval: 600
       url: http://www.apple.com/library/test/success.html 
 
+  0ne:
+    type: http
+    url: https://raw.githubusercontent.com/JumperShao/subscription/main/v2ray
+    interval: 3600
+    path: ./sub/0ne.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.apple.com/library/test/success.html 
+
 #  Jasonpan19930920:
 #    type: http
 #    url: https://raw.githubusercontent.com/Jasonpan19930920/ziyong/main/clash
@@ -394,11 +404,11 @@ proxy-groups:
   hidden: true
 - name: 🇯🇵 日本选择
   type: select
-  filter: '(?i)🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
+  filter: '(?i)🇯🇵|JP|Japan|日|本|川|泉|东京|Tokyo|大阪|埼玉|沪|深'
   include-all-providers: true
 - name: 🇯🇵 日本自动
   type: url-test
-  filter: '(?i)🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深'
+  filter: '(?i)🇯🇵|JP|Japan|日|本|川|泉|东京|Tokyo|大阪|埼玉|沪|深'
   include-all-providers: true
   url: http://www.apple.com/library/test/success.html
   interval: 300
@@ -430,11 +440,11 @@ proxy-groups:
   hidden: true
 - name: 🇦🇶 特殊选择
   type: select
-  exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|usa|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加尼|Los Angeles|台|tw|taiwan|韩|🇰🇷|KR|Korea|首尔"
+  exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|Tokyo|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|usa|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加尼|Los Angeles|台|tw|taiwan|韩|🇰🇷|KR|Korea|首尔"
   include-all-providers: true
 - name: 🇦🇶 特殊自动
   type: url-test
-  exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|usa|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加尼|Los Angeles|台|tw|taiwan|韩|🇰🇷|KR|Korea|首尔"
+  exclude-filter: "🇭🇰|HK|hk|Hong Kong|HongKong|hongkong|港|🇯🇵|JP|Japan|日|本|川|泉|东京|Tokyo|大阪|埼玉|沪|深|🇸🇬|SG|Singapore|新|坡|狮|🇺🇸|US|usa|USA|United States|UnitedStates|American|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|加尼|Los Angeles|台|tw|taiwan|韩|🇰🇷|KR|Korea|首尔"
   include-all-providers: true
   url: http://www.apple.com/library/test/success.html
   interval: 300
