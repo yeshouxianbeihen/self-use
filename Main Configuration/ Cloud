@@ -99,16 +99,6 @@ proxy-providers:
       interval: 600
       url: http://www.apple.com/library/test/success.html 
 
-  0ne:
-    type: http
-    url: https://raw.githubusercontent.com/JumperShao/subscription/main/v2ray
-    interval: 3600
-    path: ./sub/0ne.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html 
-
 #  Jasonpan19930920:
 #    type: http
 #    url: https://raw.githubusercontent.com/Jasonpan19930920/ziyong/main/clash
@@ -119,16 +109,6 @@ proxy-providers:
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
 #    exclude-filter: "WARP"
-
-  KyoSakuyo:
-    type: http
-    url: https://gitea.kyosakuyo.com/KyoSakuyo/SakuyoDb/raw/branch/main/config_in_use/burst.yaml
-    interval: 3600
-    path: ./sub/KyoSakuyo.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
 
   GITHUB-1220:
     type: http
@@ -182,6 +162,7 @@ proxy-providers:
       url: http://www.apple.com/library/test/success.html
     exclude-filter: "game"
 
+#油管节点
 ##  camerarts:
 #    type: http
 #    url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
@@ -191,16 +172,6 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html
-
-##  N:
-#    type: http
-#    url: https://raw.githubusercontent.com/5etdgx/dingyue0307/main/new
-#    interval: 3600
-#    path: ./sub/N.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.apple.com/library/test/success.html 
 
   233:
     type: http
@@ -222,7 +193,8 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.apple.com/library/test/success.html
-  
+
+#类节点池1  
 ##  sub:
 #    type: http
 #    url: https://raw.githubusercontent.com/shz1203/subscription/main/README.md
@@ -233,6 +205,7 @@ proxy-providers:
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html  
 
+#类节点池2
 ##  CFworker:
 #    type: http
 #    url: https://raw.githubusercontent.com/qiaofeng6666/CFworker/main/Clash.yml
@@ -242,26 +215,6 @@ proxy-providers:
 #      enable: true
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
-
-##  laolang123:
-#    type: http
-#    url: https://github.com/laolang123/jiedian/blob/main/jiedian
-#    interval: 3600
-#    path: ./sub/laolang123.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.apple.com/library/test/success.html
-
-  NNR:
-    type: http
-    url: https://raw.githubusercontent.com/little-nine321/dingyue/main/NNR
-    interval: 3600
-    path: ./sub/NNR.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
 
   Hk-ingpoweris:
     type: http
@@ -297,6 +250,7 @@ proxy-providers:
 #
 #
 
+#符号节点？
 ###  VI:
 #    type: http
 #    url: https://raw.githubusercontent.com/anyuhaoxuan/VPN1/main/.gitignore
@@ -307,7 +261,7 @@ proxy-providers:
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html 
 
-###  helpken:
+#####  helpken:
 #    type: http
 #    url: https://raw.githubusercontent.com/helpken/-/main/README.md
 #    interval: 3600
@@ -317,7 +271,7 @@ proxy-providers:
 #      interval: 600
 #      url: http://www.apple.com/library/test/success.html
 
-###  dyjkso:
+#####  dyjkso:
 #    type: http
 #    url: https://raw.githubusercontent.com/xcft65rdeg/dingyue/main/dyjkso
 #    interval: 3600
@@ -546,7 +500,7 @@ proxy-groups:
   - 🇰🇷 韩国自动
   - 🇦🇶 特殊选择
   - 🇦🇶 特殊自动
-- name: 🤖 Copliot
+- name: 🤖 OpenAi
   type: select
   proxies:
   - ⚡ 手动选择
@@ -565,7 +519,7 @@ proxy-groups:
   - 🇰🇷 韩国自动
   - 🇦🇶 特殊选择
   - 🇦🇶 特殊自动
-- name: 🤖 OpenAi
+- name: 🤖 Copliot
   type: select
   proxies:
   - ⚡ 手动选择
@@ -755,8 +709,8 @@ rule-providers:
 
 rules:
   - RULE-SET,Reject,REJECT
-  - RULE-SET,Copliot,🤖 Copliot
   - RULE-SET,OpenAi,🤖 OpenAi
+  - RULE-SET,Copliot,🤖 Copliot
   - RULE-SET,Claude,🤖 Claude
   - RULE-SET,GitHub,🗺️ Global
   - RULE-SET,Apple,🍎 Apple
