@@ -1,3 +1,4 @@
+#混杂配置（KR）头部
 mode: rule
 mixed-port: 7897
 socks-port: 7898
@@ -87,199 +88,119 @@ global-client-fingerprint: chrome
 
 
 
+NodeParam: &NodeParam {type: http, interval: 3600, health-check: {enable: true, url: http://www.apple.com/library/test/success.html, interval: 600}}
+
 proxy-providers:
 
   ONE:
-    type: http
+    <<: *NodeParam
     url: https://raw.githubusercontent.com/vvshener/dingyue/main/v2ray
-    interval: 3600
     path: ./sub/ONE.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html 
 
 #  Jasonpan19930920:
-#    type: http
+#    <<: *NodeParam
 #    url: https://raw.githubusercontent.com/Jasonpan19930920/ziyong/main/clash
-#    interval: 3600
 #    path: ./sub/Jasonpan19930920.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.apple.com/library/test/success.html 
 #    exclude-filter: "WARP"
 
+  zijian:
+    <<: *NodeParam
+    url: https://raw.githubusercontent.com/yeshouxianbeihen/self-use/main/Main%20Configuration/zj
+#    url: https://raw.githubusercontent.com/nggezi/zijian/main/README.md
+    path: ./sub/zijian.yaml
+
   GITHUB-1220:
-    type: http
+    <<: *NodeParam
     url: https://raw.githubusercontent.com/GITHUB-1220/VPN-Config/main/Clash/Config.yml
-    interval: 3600
     path: ./sub/GITHUB-1220.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html 
 
   SurpassHR:
-    type: http
+    <<: *NodeParam
     url: https://gist.githubusercontent.com/SurpassHR/deb10290f3ec4127af413b6113df6437/raw/9913c813a9de9c6391d3d56db24767d111a09092/MyServers.yaml
-    interval: 3600
     path: ./sub/SurpassHR.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html 
     exclude-filter: "Osaka"
 
   US:
-    type: http
+    <<: *NodeParam
     url: https://raw.githubusercontent.com/2500765/jiedian/main/README.md
-    interval: 3600
     path: ./sub/US.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html  
 
   US1:
-    type: http
+    <<: *NodeParam
     url: https://raw.githubusercontent.com/yeshouxianbeihen/self-use/main/Main%20Configuration/US
-    interval: 3600
     path: ./sub/US1.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html 
 
   magic-surfing:
-    type: http
+    <<: *NodeParam
     url: https://raw.githubusercontent.com/magic-surfing/rule-providers/master/config.yaml
-    interval: 3600
     path: ./sub/magic-surfing.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
     exclude-filter: "game"
 
 #油管节点
 ##  camerarts:
-#    type: http
+#    <<: *NodeParam
 #    url: https://raw.githubusercontent.com/camerarts/dingyue/main/1
-#    interval: 3600
 #    path: ./sub/camerarts.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.apple.com/library/test/success.html
 
   233:
-    type: http
+    <<: *NodeParam
     url: https://raw.githubusercontent.com/chrislinplus/-1/main/README.md
-    interval: 3600
-    path: ./sub/233.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html  
+    path: ./sub/233.yaml 
     filter: "233"   
 
   qinshi:
-    type: http
+    <<: *NodeParam
     url: https://raw.githubusercontent.com/qinshi1352006/dingyue/main/dingyue
-    interval: 3600
     path: ./sub/qinshi.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html
 
 #类节点池1  
 ##  sub:
-#    type: http
+#    <<: *NodeParam
 #    url: https://raw.githubusercontent.com/shz1203/subscription/main/README.md
-#    interval: 3600
 #    path: ./sub/subl.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.apple.com/library/test/success.html  
 
 #类节点池2
 ##  CFworker:
-#    type: http
+#    <<: *NodeParam
 #    url: https://raw.githubusercontent.com/qiaofeng6666/CFworker/main/Clash.yml
-#    interval: 3600
 #    path: ./sub/CFworker.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.apple.com/library/test/success.html 
 
-  Hk-ingpoweris:
-    type: http
-    url: https://raw.githubusercontent.com/kingpoweris/jiedianwang/main/youyong
-    interval: 3600
-    path: ./sub/Hk-ingpoweris.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.apple.com/library/test/success.html 
+  ces:
+    <<: *NodeParam
+    url: https://raw.githubusercontent.com/qingtingjjjjjjj/biaopiao/main/ces
+    path: ./sub/ces.yaml
 
 ##  Abbot:
-#    type: http
+#    <<: *NodeParam
 #    url: https://sub.xeton.dev/sub?target=clash&new_name=true&url=https%3A%2F%2Fraw.githubusercontent.com%2FAbbott1991%2FQuantumult-X%2Fmain%2Fsub&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Mini.ini
-#    interval: 3600
 #    path: ./sub/Abbot.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.apple.com/library/test/success.html 
 #    filter: "台湾"
 
 ##  lsit:
-#    type: http
+#    <<: *NodeParam
 #    url: https://raw.githubusercontent.com/shentong0722/list/main/main.txt
-#    interval: 3600
 #    path: ./sub/lsit.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.apple.com/library/test/success.html 
+
 #
 #
 #
 
 #符号节点？
 ###  VI:
-#    type: http
+#    <<: *NodeParam
 #    url: https://raw.githubusercontent.com/anyuhaoxuan/VPN1/main/.gitignore
-#    interval: 3600
 #    path: ./sub/VI.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.apple.com/library/test/success.html 
 
 #####  helpken:
-#    type: http
+#    <<: *NodeParam
 #    url: https://raw.githubusercontent.com/helpken/-/main/README.md
-#    interval: 3600
 #    path: ./sub/helpken.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.apple.com/library/test/success.html
+
 
 #####  dyjkso:
-#    type: http
+#    <<: *NodeParam
 #    url: https://raw.githubusercontent.com/xcft65rdeg/dingyue/main/dyjkso
-#    interval: 3600
 #    path: ./sub/dyjkso.yaml
-#    health-check:
-#      enable: true
-#      interval: 600
-#      url: http://www.apple.com/library/test/success.html
 #    filter: "-0"
 
 
