@@ -71,5 +71,3 @@ vless://8187887f-b152-48ce-8ab1-3b1d42687364@fbi.gov:443?encryption=none&securit
 
 trojan://CMLiu@150.66.24.104:34237?security=tls&sni=trojan.pagess.filegear-sg.me&fp=randomized&type=ws&host=trojan.pagess.filegear-sg.me&path=%2F%3Fed%3D2048#KIX%E3%80%90%E8%AF%B7%E5%8B%BF%E6%B5%8B%E9%80%9F%E3%80%91
 trojan://CMLiu@203.69.248.40:27381?security=tls&sni=trojan.pagess.filegear-sg.me&fp=randomized&type=ws&host=trojan.pagess.filegear-sg.me&path=%2F%3Fed%3D2048#KHH%E3%80%90%E8%AF%B7%E5%8B%BF%E6%B5%8B%E9%80%9F%E3%80%91
-vless://3232bf97-7422-4679-83e2-c84f4c14f009@ali.055500.xyz:80?encryption=none&security=none&sni=singbox.vwgykbnad.workers.dev&fp=randomized&type=ws&host=singbox.vwgykbnad.workers.dev&path=%2F%3Fed%3D2048#Sing-box
-trojan://CMLiu@47.75.101.0:3443?security=tls&sni=trojan.pagess.filegear-sg.me&fp=randomized&type=ws&host=trojan.pagess.filegear-sg.me&path=%2F%3Fed%3D2048#HKG%E3%80%90%E8%AF%B7%E5%8B%BF%E6%B5%8B%E9%80%9F%E3%80%91
