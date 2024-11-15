@@ -1,0 +1,21 @@
+proxies:
+  - {"type":"vless","name":"HK DIRECT 01","server":"47.76.32.153","port":14141,"uuid":"ce69ea9f-5781-43b1-a12c-a36af7455b25","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"Unm2g9z3kjiTatrQ3_pxEvjem1V47ibMl_9htBWZ9EQ","short-id":"6ba85179e30d4fc2"},"network":"grpc","grpc-opts":{"grpc-service-name":"HK DIRECT 01"},"udp":true,"servername":"cdn-dynmedia-1.microsoft.com"}
+  - {"type":"vless","name":"HK DIRECT 02","server":"103.122.244.26","port":14141,"uuid":"ce69ea9f-5781-43b1-a12c-a36af7455b25","tls":true,"client-fingerprint":"chrome","skip-cert-verify":false,"reality-opts":{"public-key":"R7hhCLcB_eJhGLC6kb7XmI7Z82tpRN99hRcK6Ziw53o","short-id":"6ba85179e30d4fc2"},"network":"grpc","grpc-opts":{"grpc-service-name":"HK DIRECT 02"},"udp":true,"servername":"cdn-dynmedia-1.microsoft.com"}
+  - {"sni":"hk1.polo.vmofly.pro","type":"trojan","password":"dc57e28a4c6f73f4a009ae1eb1c67026","server":"183.238.50.20","port":10883,"name":"HK 01","udp":true}
+  - {"sni":"hk2.polo.vmofly.pro","type":"trojan","password":"dc57e28a4c6f73f4a009ae1eb1c67026","server":"183.238.50.20","port":11411,"name":"HK 02","udp":true}
+  - {"name":"HK 03","type":"ss","server":"111.29.57.127","port":25000,"cipher":"aes-128-gcm","password":"c08a6845-4085-43b7-90df-b780853e426a","udp":true}
+  - {"name":"HK 04","type":"ss","server":"183.238.50.19","port":39210,"cipher":"chacha20-ietf-poly1305","password":"47628bd2-98fe-4799-a3ca-01527d5475d8","udp":true}
+  - {"name":"HK 05","type":"ss","server":"120.232.81.13","port":40000,"cipher":"chacha20-ietf-poly1305","password":"c4f8915d-edf7-4230-86cb-d1bb76980a78","udp":true}
+  - {"sni":"tw.polo.vmofly.pro","type":"trojan","password":"dc57e28a4c6f73f4a009ae1eb1c67026","server":"183.232.249.211","port":20892,"name":"TW 01","udp":true}
+  - {"name":"TW 04","type":"ss","server":"123.88.148.130","port":42481,"cipher":"chacha20-ietf-poly1305","password":"47628bd2-98fe-4799-a3ca-01527d5475d8","udp":true}
+  - {"name":"TW 05","type":"ss","server":"120.232.81.13","port":40020,"cipher":"chacha20-ietf-poly1305","password":"c4f8915d-edf7-4230-86cb-d1bb76980a78","udp":true}
+  - {"sni":"jp1.polo.vmofly.pro","type":"trojan","password":"dc57e28a4c6f73f4a009ae1eb1c67026","server":"183.232.249.211","port":35691,"name":"JP 01","udp":true}
+  - {"sni":"jp2.polo.vmofly.pro","type":"trojan","password":"dc57e28a4c6f73f4a009ae1eb1c67026","server":"183.232.249.211","port":47876,"name":"JP 02","udp":true}
+  - {"name":"JP 04","type":"ss","server":"120.233.171.172","port":22225,"cipher":"chacha20-ietf-poly1305","password":"47628bd2-98fe-4799-a3ca-01527d5475d8","udp":true}
+  - {"name":"JP 05","type":"ss","server":"120.232.81.13","port":40003,"cipher":"chacha20-ietf-poly1305","password":"c4f8915d-edf7-4230-86cb-d1bb76980a78","udp":true}
+  - {"sni":"sg2.polo.vmofly.pro","type":"trojan","password":"dc57e28a4c6f73f4a009ae1eb1c67026","server":"183.232.249.211","port":28645,"name":"SG 01","udp":true}
+  - {"name":"SG 04","type":"ss","server":"123.88.148.130","port":42729,"cipher":"chacha20-ietf-poly1305","password":"47628bd2-98fe-4799-a3ca-01527d5475d8","udp":true}
+  - {"name":"SG 05","type":"ss","server":"120.232.81.13","port":40005,"cipher":"chacha20-ietf-poly1305","password":"c4f8915d-edf7-4230-86cb-d1bb76980a78","udp":true}
+  - {"name":"US 01","type":"ss","server":"183.232.249.211","port":49197,"cipher":"chacha20-ietf-poly1305","password":"dc57e28a4c6f73f4a009ae1eb1c67026","udp":true}
+  - {"name":"US 04","type":"ss","server":"120.233.171.172","port":40824,"cipher":"chacha20-ietf-poly1305","password":"47628bd2-98fe-4799-a3ca-01527d5475d8","udp":true}
+  - {"name":"US 05","type":"ss","server":"120.232.81.13","port":40001,"cipher":"chacha20-ietf-poly1305","password":"c4f8915d-edf7-4230-86cb-d1bb76980a78","udp":true}
