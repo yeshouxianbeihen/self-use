@@ -1,3 +1,4 @@
+proxies:
   - {"name":"HK1","type":"vmess","server":"43.154.48.141","port":19365,"cipher":"auto","uuid":"0f99d012-eb98-431d-dae5-8458af749728","alterId":15,"tls":false,"network":"http","http-opts":{"path":["/"],"headers":{}}}
   - {"type":"vless","name":"VLESS 43.153.106.66:443","server":"43.153.106.66","port":443,"uuid":"076dd493-536a-4db9-eddf-20c876b49986","tls":false,"skip-cert-verify":false,"network":"ws","ws-opts":{"path":"/"}}
   - {"name":"036a28c3-5c8d-4df3-a79b-9da622640f2b","type":"vmess","server":"192.53.113.156","port":10002,"cipher":"auto","uuid":"036a28c3-5c8d-4df3-a79b-9da622640f2b","alterId":0,"tls":false}
@@ -9,8 +10,8 @@
   - {"skip-cert-verify":true,"sni":"www.gpt123.one","type":"trojan","password":"installshield","server":"179.61.169.74","port":443,"name":"179.61.169.74_trojan_443"}
   - {"skip-cert-verify":true,"sni":"www.gpt123.one","type":"trojan","password":"installshield","server":"179.61.169.179","port":443,"name":"179.61.169.179_trojan_443"}
   - {"type":"ssr","server":"cn17.mynode.me","port":8625,"protocol":"origin","cipher":"chacha20-ietf","obfs":"http_simple","password":"passwd","name":"nr","obfs-param":"20176-L1juani984.download.microsoft.com"}
-  - {"name":"🇭🇰 akile-HK-&gt;NNR广移","type":"ss","server":"82ebf39a-b624-463d-a4da-3d644a4749a9.dybcloud.cn","port":29405,"cipher":"aes-256-gcm","password":"HqLrH5Rj88qK3ZZ1PCYEQnv50nn6sD3vtDlgrOQ2U3hc"}
-  - {"name":"🇭🇰 VMISS-HK.INT-&gt;NNR","type":"ss","server":"82ebf39a-b624-463d-a4da-3d644a4749a9.dybcloud.cn","port":27562,"cipher":"aes-256-gcm","password":"AZSFqmuviOqVI5i7wrIXeYxUwfIU6NOjrnwc0fA6MYRD"}
+  - {"name":"🇭🇰 akile-HK->NNR广移","type":"ss","server":"82ebf39a-b624-463d-a4da-3d644a4749a9.dybcloud.cn","port":29405,"cipher":"aes-256-gcm","password":"HqLrH5Rj88qK3ZZ1PCYEQnv50nn6sD3vtDlgrOQ2U3hc"}
+  - {"name":"🇭🇰 VMISS-HK.INT->NNR","type":"ss","server":"82ebf39a-b624-463d-a4da-3d644a4749a9.dybcloud.cn","port":27562,"cipher":"aes-256-gcm","password":"AZSFqmuviOqVI5i7wrIXeYxUwfIU6NOjrnwc0fA6MYRD"}
   - {"type":"vless","name":"🇺🇸 BWG-CN2GIA-US","server":"67.230.183.210","port":24297,"uuid":"4596b921-029e-41e5-a0a5-7b8d67990431","tls":true,"flow":"xtls-rprx-vision","skip-cert-verify":false,"reality-opts":{"public-key":"OxqavaVRcWwaFRxH2mpz6dW2znnJVg4_e31XXxsVpmI","short-id":"6ba85179e30d4fc2"},"network":"tcp","servername":"swdist.apple.com"}
   - {"type":"vless","name":"🇯🇵 Silicloud-JP","server":"103.214.169.201","port":11496,"uuid":"0db2cf42-f8e4-4381-ac14-b5ffb58f96f4","tls":true,"flow":"xtls-rprx-vision","skip-cert-verify":false,"reality-opts":{"public-key":"vHss4xRsoVzNyCa8SCZ1An0XC42v0GycZNNO4Y0BIh0"},"network":"tcp","servername":"swdist.apple.com"}
   - {"type":"vless","name":"🇺🇸 DMIT-CMIN2-US","server":"154.17.231.39","port":38076,"uuid":"8596ae76-ba48-4c73-a548-af693fd7d979","tls":true,"flow":"xtls-rprx-vision","skip-cert-verify":false,"reality-opts":{"public-key":"XS7niotXELUPcCtpNHfjxUHMnGI273Yurf4mOTGeLC4","short-id":"6ba85179e30d4fc2"},"network":"tcp","servername":"itunes.apple.com"}
@@ -30,4 +31,4 @@
   - {"name":"US-6","type":"vmess","server":"20.3.140.42","port":80,"cipher":"auto","uuid":"04d7fa1a-ed10-4a2b-b231-a9b2caf99e9d","alterId":0,"tls":false,"network":"http","http-opts":{"path":["/"],"headers":{}}}
   - {"name":"US-iPhone","type":"ss","server":"43.153.64.173","port":17129,"cipher":"aes-256-gcm","password":"l1CqRgZrLf"}
   - {"name":"US-wxh904","type":"vmess","server":"wxh904.meiziba5566.com","port":443,"cipher":"auto","uuid":"d0eef423-baf9-4bf9-9a71-7150929393c5","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/d0eef423","headers":{}},"servername":"wxh904.meiziba5566.com"}
-  - {"name":"US-xcmg18","type":"vmess","server":"xcmg18.dtkj0328.com","port":443,"cipher":"auto","uuid":"33fc566c-cd40-443a-9216-266c496ec253","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/xcmg1234","headers":{}},"servername":"xcmg18.dtkj0328.com"}</pre>
+  - {"name":"US-xcmg18","type":"vmess","server":"xcmg18.dtkj0328.com","port":443,"cipher":"auto","uuid":"33fc566c-cd40-443a-9216-266c496ec253","alterId":0,"tls":true,"network":"ws","ws-opts":{"path":"/xcmg1234","headers":{}},"servername":"xcmg18.dtkj0328.com"}
