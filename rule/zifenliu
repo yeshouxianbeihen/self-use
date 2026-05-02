@@ -1,4 +1,7 @@
 payload:
   - DOMAIN-KEYWORD,libvio
   - DOMAIN-KEYWORD,wnacg
+  - DOMAIN-KEYWORD,WNACG
+  - DOMAIN-SUFFIX,wnacg.com
+  - DOMAIN-SUFFIX,WNACG.com
   - DOMAIN-KEYWORD,hanime1
