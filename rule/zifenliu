@@ -1,7 +1,8 @@
 payload:
+### libvio影视
   - DOMAIN-KEYWORD,libvio
+### 绅士漫画
   - DOMAIN-KEYWORD,wnacg
-  - DOMAIN-KEYWORD,WNACG
   - DOMAIN-SUFFIX,wnacg.com
-  - DOMAIN-SUFFIX,WNACG.com
+### H动漫
   - DOMAIN-KEYWORD,hanime1
