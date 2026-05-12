@@ -7,3 +7,5 @@ payload:
   - DOMAIN-SUFFIX,qy0.ru
 ### H动漫
   - DOMAIN-KEYWORD,hanime1
+  - DOMAIN-SUFFIX,HANIME1.ME
+
