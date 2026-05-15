@@ -1,6 +1,8 @@
 payload:
 ### libvio影视
   - DOMAIN-KEYWORD,libvio
+### DD影视
+  - DOMAIN-KEYWORD,ddys
 ### 绅士漫画
   - DOMAIN-KEYWORD,wnacg
   - DOMAIN-SUFFIX,wnacg.com
