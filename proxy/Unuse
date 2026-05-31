@@ -4,10 +4,7 @@ vless://3876a724-18ce-417d-8242-f64ecb409521@172.64.147.139:2096?encryption=none
 vless://3876a724-18ce-417d-8242-f64ecb409521@172.64.159.196:2083?encryption=none&security=tls&sni=qz.886968.xyz&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=qz.886968.xyz&path=%2F#HK%7C%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89%7C80ms
 vless://3876a724-18ce-417d-8242-f64ecb409521@172.64.144.84:2096?encryption=none&security=tls&sni=qz.886968.xyz&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=qz.886968.xyz&path=%2F#HK%7C%E5%AE%98%E6%96%B9%E4%BC%98%E9%80%89%7C86ms
 
-vless://8ee62461-986a-4ca8-df38-e887be3b3f78@104.18.121.236:2096?encryption=none&security=tls&alpn=h2%2Chttp%2F1.1&insecure=0&allowInsecure=0&type=xhttp&host=ac.886968.xyz&path=%2F&mode=auto#vless-cdn-%E7%94%B5%E4%BF%A1%202
 vless://4d2e7bc5-4eeb-4514-fdcb-1308b83fed85@ac.886968.xyz:55638?encryption=none&security=tls&alpn=h2%2Chttp%2F1.1&insecure=0&allowInsecure=0&type=xhttp&path=%2F&mode=auto#vless-tcp-%E7%9B%B4%E8%BF%9E
-vless://8ee62461-986a-4ca8-df38-e887be3b3f78@www.glassdoor.com:2096?encryption=none&security=tls&alpn=h2%2Chttp%2F1.1&insecure=0&allowInsecure=0&type=xhttp&host=ac.886968.xyz&path=%2F&mode=auto#vless-cdn-glassdoor
-vless://8ee62461-986a-4ca8-df38-e887be3b3f78@162.159.35.68:2096?encryption=none&security=tls&alpn=h2%2Chttp%2F1.1&insecure=0&allowInsecure=0&type=xhttp&host=ac.886968.xyz&path=%2F&mode=auto#vless-cdn-%E4%BA%91%E5%8D%97%E7%A7%BB%E5%8A%A8
 vless://9e2b836c-7e93-4d2d-f626-460557d374f0@ac.886968.xyz:8443?encryption=none&security=tls&alpn=h2%2Chttp%2F1.1&insecure=0&allowInsecure=0&type=xhttp&host=ac.886968.xyz&path=%2F&mode=auto#vless-udp
 
 
