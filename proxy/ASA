@@ -1,2 +1,4 @@
 vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIuWKoOaLv+Wkp+WkmuS8puWkmi3oi7nmnpwtMyIsDQogICJhZGQiOiAiMTM5LjcyNDA2NC54eXoiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiZWJiYzNkZjMtZmViZC00M2RjLWFiYWUtZTkwYWNlNDM4ZDk2IiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICIxMzkuNzI0MDY0Lnh5eiIsDQogICJwYXRoIjogIi9xeXdxdndzIiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIjEzOS43MjQwNjQueHl6IiwNCiAgImFscG4iOiAiIiwNCiAgImZwIjogIiIsDQogICJpbnNlY3VyZSI6ICIwIg0KfQ==
 vless://076dd493-536a-4db9-eddf-20c876b49986@43.153.106.66:443?encryption=none&security=none&type=ws&path=%2F#VLESS%2043.153.106.66%3A443
+
+tuic://cc3490eb-21a1-46f3-ad08-045c2c4a91d4:cc3490eb-21a1-46f3-ad08-045c2c4a91d4@156.224.77.87:443?sni=m.ctrip.com&congestion_control=cubic&udp_relay_mode=quic&alpn=h3&allow_insecure=1#HK-TUIC-01
