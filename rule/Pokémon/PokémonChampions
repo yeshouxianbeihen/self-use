@@ -1,4 +1,9 @@
-payload:
-  - DOMAIN-SUFFIX,app.pokemonchampions.jp
+#payload:
+  #- DOMAIN-SUFFIX,app.pokemonchampions.jp
   #- DOMAIN-KEYWORD,pokemonchampions
-  - DOMAIN-SUFFIX,pokemon-home.com
+  #- DOMAIN-SUFFIX,pokemon-home.com
+
+
+DOMAIN-SUFFIX,app.pokemonchampions.jp
+  #- DOMAIN-KEYWORD,pokemonchampions
+DOMAIN-SUFFIX,pokemon-home.com
