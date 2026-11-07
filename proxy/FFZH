@@ -111,38 +111,6 @@ proxies:
     password: C48pKqXOH
     name: 🇩🇪 de-am3-2.eqsunshine.com
     udp: true
-  - type: vless
-    name: 🏴‍☠️ 1
-    server: 38.244.31.207
-    port: 32655
-    uuid: 63638584-4792-444d-9ead-685b554a43b7
-    udp: true
-    tls: true
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    packet-encoding: xudp
-    reality-opts:
-      public-key: 1_Cu-fIT-sn_LU8qWJi2YU4V28oDnx_NNsjmJMO7XQk
-      short-id: "6e2e2b4d"
-    network: tcp
-    client-fingerprint: chrome
-    servername: apple.com
-  - type: vless
-    name: 🏴‍☠️ 2
-    server: 162.248.73.35
-    port: 443
-    uuid: 2fed2803-e6e3-4fea-8ef3-4473e06d8980
-    udp: true
-    tls: true
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    packet-encoding: xudp
-    reality-opts:
-      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-      short-id: "051f20c2344a2dfd"
-    network: tcp
-    client-fingerprint: chrome
-    servername: portal.citygrainla.com
   - type: hysteria2
     name: 🏴‍☠️ 3
     server: lbjd.3344.site
@@ -152,22 +120,6 @@ proxies:
     skip-cert-verify: true
     tfo: false
     udp: true
-  - type: vless
-    name: 🏴‍☠️ 5
-    server: 174.137.55.105
-    port: 443
-    uuid: 2fed2803-e6e3-4fea-8ef3-4473e06d8980
-    udp: true
-    tls: true
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    packet-encoding: xudp
-    reality-opts:
-      public-key: BlSccfT5tvDIOS7v9VaPd0ulUNhUdvlMjGiNzDNDUHE
-      short-id: "051f20c2344a2dfd"
-    network: tcp
-    client-fingerprint: chrome
-    servername: portal.citygrainla.com
   - type: vless
     name: 🇹🇱 电信-SIN-443-WS-TLS
     server: 104.18.33.208
@@ -237,167 +189,6 @@ proxies:
       max-early-data: 2048
       early-data-header-name: Sec-WebSocket-Protocol
     servername: lvdy.fdlk123.dpdns.org
-  - type: vless
-    name: 🇹🇱 移动-HKG-443-WS-TLS
-    server: 2606:4700:9a90::4d5:ae5f
-    port: 443
-    uuid: fe32fd69-ae66-4d46-903e-1c51a82bf340
-    udp: true
-    tls: true
-    alpn:
-      - h3
-    skip-cert-verify: false
-    ech-opts:
-      enable: true
-      _dns: https://223.5.5.5/dns-query
-      query-server-name: cloudflare-ech.com
-    packet-encoding: xudp
-    network: ws
-    ws-opts:
-      headers:
-        Host: lvdy.fdlk123.dpdns.org
-      path: /
-      max-early-data: 2048
-      early-data-header-name: Sec-WebSocket-Protocol
-    servername: lvdy.fdlk123.dpdns.org
-  - type: vless
-    name: 🇹🇱 移动-HKG-443-WS-TLS
-    server: 2606:4700:8392::e86e:c66f
-    port: 443
-    uuid: fe32fd69-ae66-4d46-903e-1c51a82bf340
-    udp: true
-    tls: true
-    alpn:
-      - h3
-    skip-cert-verify: false
-    ech-opts:
-      enable: true
-      _dns: https://223.5.5.5/dns-query
-      query-server-name: cloudflare-ech.com
-    packet-encoding: xudp
-    network: ws
-    ws-opts:
-      headers:
-        Host: lvdy.fdlk123.dpdns.org
-      path: /
-      max-early-data: 2048
-      early-data-header-name: Sec-WebSocket-Protocol
-    servername: lvdy.fdlk123.dpdns.org
-  - type: vless
-    name: 🇹🇱 移动-HKG-443-WS-TLS
-    server: 2606:4700:99e3::ee0f:2f0d
-    port: 443
-    uuid: fe32fd69-ae66-4d46-903e-1c51a82bf340
-    udp: true
-    tls: true
-    alpn:
-      - h3
-    skip-cert-verify: false
-    ech-opts:
-      enable: true
-      _dns: https://223.5.5.5/dns-query
-      query-server-name: cloudflare-ech.com
-    packet-encoding: xudp
-    network: ws
-    ws-opts:
-      headers:
-        Host: lvdy.fdlk123.dpdns.org
-      path: /
-      max-early-data: 2048
-      early-data-header-name: Sec-WebSocket-Protocol
-    servername: lvdy.fdlk123.dpdns.org
-  - type: vless
-    name: 🇹🇱 移动-SEA-443-WS-TLS
-    server: 2606:4700:22::812f:e4dc
-    port: 443
-    uuid: fe32fd69-ae66-4d46-903e-1c51a82bf340
-    udp: true
-    tls: true
-    alpn:
-      - h3
-    skip-cert-verify: false
-    ech-opts:
-      enable: true
-      _dns: https://223.5.5.5/dns-query
-      query-server-name: cloudflare-ech.com
-    packet-encoding: xudp
-    network: ws
-    ws-opts:
-      headers:
-        Host: lvdy.fdlk123.dpdns.org
-      path: /
-      max-early-data: 2048
-      early-data-header-name: Sec-WebSocket-Protocol
-    servername: lvdy.fdlk123.dpdns.org
-  - type: vless
-    name: 🇹🇱 移动-HKG-443-WS-TLS
-    server: 2606:4700:9a63::2c96:b5cc
-    port: 443
-    uuid: fe32fd69-ae66-4d46-903e-1c51a82bf340
-    udp: true
-    tls: true
-    alpn:
-      - h3
-    skip-cert-verify: false
-    ech-opts:
-      enable: true
-      _dns: https://223.5.5.5/dns-query
-      query-server-name: cloudflare-ech.com
-    packet-encoding: xudp
-    network: ws
-    ws-opts:
-      headers:
-        Host: lvdy.fdlk123.dpdns.org
-      path: /
-      max-early-data: 2048
-      early-data-header-name: Sec-WebSocket-Protocol
-    servername: lvdy.fdlk123.dpdns.org
-  - type: vless
-    name: 🇹🇱 电信-FRA-443-WS-TLS
-    server: 2606:4700:9a93::40f7:b944
-    port: 443
-    uuid: fe32fd69-ae66-4d46-903e-1c51a82bf340
-    udp: true
-    tls: true
-    alpn:
-      - h3
-    skip-cert-verify: false
-    ech-opts:
-      enable: true
-      _dns: https://223.5.5.5/dns-query
-      query-server-name: cloudflare-ech.com
-    packet-encoding: xudp
-    network: ws
-    ws-opts:
-      headers:
-        Host: lvdy.fdlk123.dpdns.org
-      path: /
-      max-early-data: 2048
-      early-data-header-name: Sec-WebSocket-Protocol
-    servername: lvdy.fdlk123.dpdns.org
-  - type: vless
-    name: 🇹🇱 电信-FRA-443-WS-TLS
-    server: 2606:4700:9a90::94d8:f177
-    port: 443
-    uuid: fe32fd69-ae66-4d46-903e-1c51a82bf340
-    udp: true
-    tls: true
-    alpn:
-      - h3
-    skip-cert-verify: false
-    ech-opts:
-      enable: true
-      _dns: https://223.5.5.5/dns-query
-      query-server-name: cloudflare-ech.com
-    packet-encoding: xudp
-    network: ws
-    ws-opts:
-      headers:
-        Host: lvdy.fdlk123.dpdns.org
-      path: /
-      max-early-data: 2048
-      early-data-header-name: Sec-WebSocket-Protocol
-    servername: lvdy.fdlk123.dpdns.org
   - name: 🇩🇪 德国-优化2
     type: vmess
     server: m.cnmjcn.com
@@ -440,20 +231,6 @@ proxies:
       headers:
         Host: 587eadc4bfe6656c32383a6810dc9122.mobgslb.tbcache.com
     udp: true
-  - name: 🇸🇬 新加坡-优化3
-    type: vmess
-    server: t.cnmjcn.cyou
-    port: 16618
-    cipher: auto
-    uuid: 702bb17f-f6e6-407b-bc44-b4643ab5bd76
-    alterId: 0
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 587eadc4bfe6656c32383a6810dc9122.mobgslb.tbcache.com
-    udp: true
   - name: 🇨🇦 加拿大-优化2
     type: vmess
     server: m.cnmjcn.com
@@ -482,20 +259,6 @@ proxies:
       headers:
         Host: 587eadc4bfe6656c32383a6810dc9122.mobgslb.tbcache.com
     udp: true
-  - name: 🇯🇵 日本-优化3
-    type: vmess
-    server: t.cnmjcn.cyou
-    port: 16617
-    cipher: auto
-    uuid: 702bb17f-f6e6-407b-bc44-b4643ab5bd76
-    alterId: 0
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 587eadc4bfe6656c32383a6810dc9122.mobgslb.tbcache.com
-    udp: true
   - name: 🇭🇰 香港HY-优化2
     type: vmess
     server: m.cnmjin.net
@@ -510,45 +273,6 @@ proxies:
       headers:
         Host: 587eadc4bfe6656c32383a6810dc9122.mobgslb.tbcache.com
     udp: true
-  - name: 🇼🇸 台湾-优化3
-    type: vmess
-    server: t.cnmjcn.cyou
-    port: 16616
-    cipher: auto
-    uuid: 702bb17f-f6e6-407b-bc44-b4643ab5bd76
-    alterId: 0
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 587eadc4bfe6656c32383a6810dc9122.mobgslb.tbcache.com
-    udp: true
-  - name: 🇺🇸 美国LA-优化3-GPT
-    type: vmess
-    server: t.cnmjcn.cyou
-    port: 16648
-    cipher: auto
-    uuid: 702bb17f-f6e6-407b-bc44-b4643ab5bd76
-    alterId: 0
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 587eadc4bfe6656c32383a6810dc9122.mobgslb.tbcache.com
-    udp: true
-  - name: 🇨🇦 加拿大-优化3
-    type: vmess
-    server: t.cnmjcn.cyou
-    port: 16641
-    cipher: auto
-    uuid: 702bb17f-f6e6-407b-bc44-b4643ab5bd76
-    alterId: 0
-    tls: false
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: 587eadc4bfe6656c32383a6810dc9122.mobgslb.tbcache.com
-    udp: true
+
+
+
